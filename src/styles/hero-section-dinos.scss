@@ -1,0 +1,62 @@
+@import "./variables.scss";
+.hero-section-dinos {
+  width: 100%;
+  position: relative;
+  left: -20px;
+  transform: scale(1.2);
+  display: flex;
+  justify-content: flex-end;
+  .dino1 {
+    z-index: 7;
+    width: 75%;
+  }
+  .dino2 {
+    z-index: 6;
+    top: 7%;
+    left: 7%;
+    position: absolute;
+    width: 65%;
+  }
+  .dino3 {
+    z-index: 5;
+    top: 10%;
+    left: -1%;
+    position: absolute;
+    width: 50%;
+  }
+  .egg1 {
+    z-index: 3;
+    width: 64%;
+    top: -22%;
+    left: 3%;
+    position: absolute;
+  }
+  .egg2 {
+    z-index: 4;
+    width: 76%;
+    top: -36%;
+    left: 15%;
+    position: absolute;
+  }
+  .egg3 {
+    z-index: 4;
+    width: 49%;
+    top: 29%;
+    left: 74%;
+    position: absolute;
+  }
+  .egg4 {
+    z-index: 3;
+    width: 66%;
+    top: 0%;
+    left: 52%;
+    position: absolute;
+  }
+  @media (min-width: 1024px) {
+    top: 55px;
+  }
+
+  @media (min-width: 1280px) {
+    top: 75px;
+  }
+}
