@@ -22,8 +22,8 @@ export default function Slider2({ setLegend, idx, slides }) {
         spaceBetween={0}
         slidesPerView={1}
         navigation={{
-          nextEl: "#swpr-next",
-          prevEl: "#swpr-prev",
+          nextEl: "#swpr-next2",
+          prevEl: "#swpr-prev2",
         }}
       >
         {slides.map((slide, i) => (

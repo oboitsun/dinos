@@ -42,6 +42,7 @@ export default function AboutUs() {
             </SubHeading>
           </div>
         </div>
+
         <AboutUsSlider2 />
       </div>
     </div>

@@ -24,7 +24,7 @@ export default function AboutUsSlider2() {
           {slides.map((slide, i) => (
             <div
               key={i}
-              className={`rounded-xl border-4 border-white bg-black w-full h-full relative ${
+              className={`rounded-xl border-4 border-white bg-black w-full h-full relative overflow-hidden ${
                 i === slideIdx ? "" : "filter grayscale"
               }`}
             >
