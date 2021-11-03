@@ -4,6 +4,7 @@ import SubHeading from "./SubHeading";
 import "../styles/about-us.scss";
 import AboutUsSliders from "./AboutUsSliders";
 import { useInView } from "react-intersection-observer";
+import AboutUsSlider2 from "./AboutUsSlider2";
 
 export default function AboutUs() {
   const { ref, inView } = useInView({ threshold: 0.5 });
@@ -41,7 +42,7 @@ export default function AboutUs() {
             </SubHeading>
           </div>
         </div>
-        <AboutUsSliders />
+        <AboutUsSlider2 />
       </div>
     </div>
   );
