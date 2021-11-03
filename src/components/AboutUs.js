@@ -31,7 +31,7 @@ export default function AboutUs() {
                   className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}
                 >
                   About <br className="lg:hidden" /> dino world{" "}
-                  <div className="map absolute right-0 top-0">dino world</div>
+                  <div className="map absolute right-0 bottom-0">dino world</div>
                 </div>
               </div>
             </Heading>

@@ -63,7 +63,7 @@ export default function Roadmap() {
               ref={ref}
               className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}
             >
-              Roadmap <span className="map absolute">map</span>
+              Roadmap <span className="map absolute right-0 bottom-0">map</span>
             </span>
           </div>
         </Heading>

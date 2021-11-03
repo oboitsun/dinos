@@ -38,7 +38,7 @@ export default function FAQ() {
                 ref={ref}
                 className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}
               >
-                FAQ'S <span className="map absolute">'S</span>
+                FAQ'S <span className="map absolute right-0 bottom-0">'S</span>
               </span>
             </div>
           </Heading>

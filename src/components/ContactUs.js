@@ -31,7 +31,7 @@ export default function ContactUs() {
               ref={ref}
               className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}
             >
-              Contact us<span className="map absolute">US</span>
+              Contact us<span className="map absolute right-0 bottom-0">US</span>
             </span>
           </div>
         </Heading>
