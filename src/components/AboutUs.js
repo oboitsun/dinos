@@ -26,13 +26,13 @@ export default function AboutUs() {
           <div className="">
             <Heading>
               <div className="flex justify-center lg:justify-start">
-                <span
+                <div
                   ref={ref}
                   className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}
                 >
                   About <br className="lg:hidden" /> dino world{" "}
-                  <span className="map absolute">dino world</span>
-                </span>
+                  <div className="map absolute">dino world</div>
+                </div>
               </div>
             </Heading>
             <SubHeading>
