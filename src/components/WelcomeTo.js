@@ -23,8 +23,8 @@ export default function WelcomeTo({
   };
   return (
     <motion.div variants={cont} initial="hidden" animate="show" className="welcome-to ">
-      <motion.p variants={item} key={1} className="title  text-center ">
-        Welcome <br /> to the dino <br /> world
+      <motion.p variants={item} key={1} className="title  text-center pb-10">
+        Welcome to <br /> dino world
       </motion.p>
 
       <motion.div className="pb-5 lg:pb-0" variants={item} key={4}>
