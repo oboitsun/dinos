@@ -72,11 +72,18 @@
     cursor: pointer;
   }
   @media (min-width: 1024px) {
-    .about-grid {
+    .about-grid1 {
       display: grid;
       grid-auto-rows: auto;
 
       grid-template-columns: 1.3fr 1fr;
+      gap: 20px;
+    }
+    .about-grid {
+      display: grid;
+      grid-auto-rows: auto;
+
+      grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
     .about-us-header {

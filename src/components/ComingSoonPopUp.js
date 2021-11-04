@@ -33,9 +33,8 @@ export default function ComingSoonPopUp({ showPopup, setShowPopup }) {
         )}
         {showMint && (
           <div className="popup-mint relative">
-            <img className="bomb " src="/imgs/bomb.png" alt="bomb" />
             <p className="text-white  uppercase text-xl lg:text-5xl ">Sale live now!</p>
-            <p className="text-myRed  uppercase text-xl lg:text-5xl">Bomb Kicks!</p>
+            <p className="text-myRed  uppercase text-xl lg:text-5xl">Dinos!</p>
             <p className="py-4 text-center uppercase text-white font-bold">
               8888 NFTS (1 ICP / NFT)
             </p>
@@ -44,7 +43,7 @@ export default function ComingSoonPopUp({ showPopup, setShowPopup }) {
                 <p className="balance mr-auto">My ICP Balance</p>
                 <p className="text-orange">0 ICP</p>
               </div>
-              <div className="popup-mint-item relative">
+              <div className="popup-mint-item relative overflow-hidden">
                 <p className="">Mint Amount</p>
                 <div className="ml-auto mr-14 ;g:mr-20 flex">
                   <button
@@ -66,7 +65,7 @@ export default function ComingSoonPopUp({ showPopup, setShowPopup }) {
                     +
                   </button>
                 </div>
-                <button className="bg-orange  font-bold h-full absolute top-0 right-0 pr-6">
+                <button className="bg-orange rounded-full font-bold h-full absolute top-0 right-0 px-3">
                   MAX
                 </button>
               </div>

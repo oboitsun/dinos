@@ -20,12 +20,23 @@
     border-radius: 20px;
     color: white;
     place-items: center;
+    cursor: pointer;
   }
   .pet-container {
     position: relative;
     width: 50%;
     padding-bottom: 50%;
     margin: 0 auto;
+    transition: transform 0.3s;
+  }
+  .roadmap-point:hover .pet-container {
+    transform: scale(1.05) rotate(5deg);
+  }
+  .roadmap-point:hover .roadmap-heading {
+    transform: scale(1.05);
+  }
+  .roadmap-point:hover .roadmap-text {
+    transform: scale(1.05);
   }
   .pet {
     width: 100%;
@@ -37,11 +48,13 @@
   .roadmap-heading {
     text-align: center;
     font-size: 32px;
+    transition: transform 0.3s 0.1s;
   }
   .roadmap-text {
     text-align: center;
     font-size: 12px;
     letter-spacing: 1.5;
+    transition: transform 0.3s 0.2s;
   }
   @media (min-width: 1024px) {
     .roadmap-point {

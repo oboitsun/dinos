@@ -82,6 +82,7 @@ function ConnectWallet({
       window.alert("connection was refused");
     }
   };
+
   return (
     <ChakraProvider>
       <>
