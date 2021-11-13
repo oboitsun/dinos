@@ -19,7 +19,7 @@ export default function Header({
     { href: "about-us", text: "About" },
     { href: "team", text: "Team" },
     { href: "roadmap", text: "Roadmap" },
-    // { href: "market", text: "Market" },
+    { href: "https://dino-portal.vercel.app", text: "Portal" },
     { href: "faq", text: "FAQ" },
   ];
 
@@ -42,11 +42,17 @@ export default function Header({
         </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
         <div className="hidden lg:flex justify-evenly  lg:w-1/3 flex-grow ">
-          {links.map((l, i) => (
-            <Anchor key={i} to={l.href} {...linkProps}>
-              {l.text}
-            </Anchor>
-          ))}
+          {links.map((l, i) => {
+            return l.text !== "Portal" ? (
+              <Anchor key={i} to={l.href} {...linkProps}>
+                {l.text}
+              </Anchor>
+            ) : (
+              <a key={i} className="anchor text-white font-mont" href={l.href}>
+                {l.text}
+              </a>
+            );
+          })}
         </div>
 
         <div className="hidden lg:flex lg:w-1/3 text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center  flex-shrink-0 min-w-max">
