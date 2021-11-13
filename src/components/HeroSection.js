@@ -21,7 +21,10 @@ export default function HeroSection({
   ];
   return (
     <motion.div id="hero-section" className="relative overflow-hidden">
-      <div className="absolute w-full h-full overflow-hidden">
+      <div
+        style={{ maxWidth: 1920, margin: "0 auto" }}
+        className="absolute w-full h-full overflow-hidden top-0 left-1/2 transform -translate-x-1/2 "
+      >
         <Swiper
           tyle={{ height: "100%" }}
           initialSlide={1}
@@ -35,7 +38,7 @@ export default function HeroSection({
           {slides.map((slide, i) => (
             <SwiperSlide s className="slide-wrapper" key={i}>
               <img
-                className="w-full h-full bottom-0 absolute left-0  object-cover  2xl:h-auto"
+                className="w-full h-full top-1/2  transform -translate-y-1/2 absolute left-0  object-cover  2xl:h-auto"
                 src={slide}
                 alt="dinos-splash"
               />
