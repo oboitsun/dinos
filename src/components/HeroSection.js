@@ -22,7 +22,7 @@ export default function HeroSection({
   return (
     <motion.div id="hero-section" className="relative overflow-hidden">
       <div
-        style={{ maxWidth: 1920, margin: "0 auto" }}
+        // style={{ maxWidth: 1920, margin: "0 auto" }}
         className="absolute w-full h-full overflow-hidden top-0 left-1/2 transform -translate-x-1/2 "
       >
         <Swiper
