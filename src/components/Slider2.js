@@ -5,11 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
 
 SwiperCore.use([Navigation, Autoplay]);
-export default function Slider2({ setLegend, idx, slides }) {
+export default function Slider2({ setLegend, idx, slides, bg }) {
   return (
     <div className="w-full relative z-10 h-full flex items-end ">
-      <img className="absolute  bottom-0" src="/imgs/slider1-bg.png" alt="bg" />
-
+      <img
+        className="absolute w-full h-full top-0 left-0 object-cover"
+        src={bg}
+        alt="bg"
+      />
       <Swiper
         onSlideChangeTransitionStart={() => {
           setLegend((prev) => (prev < slides.length - 1 ? prev + 1 : 0));
