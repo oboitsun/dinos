@@ -17,7 +17,7 @@ export default function HeroSection({
     "/imgs/slider1-bg3.jpg",
     "/imgs/bg.jpg",
     "/imgs/slider1-bg2.jpg",
-    "/imgs/slider2-bg.png",
+    "/imgs/slider2-bg.jpg",
   ];
   const [currentBG, setCurrentBG] = useState(null);
   useEffect(() => {
