@@ -97,18 +97,30 @@ function ConnectWallet({
               <PopoverContent className="pop-over">
                 <PopoverBody>
                   <Button className="wallet-connect-button" onClick={connectPlugWallet}>
-                    <img className="icon-logo" src="/imgs/plug-logo.jpg" /> Connect with
-                    Plug
+                    <img
+                      className="icon-logo"
+                      src="/imgs/plug-logo.jpg"
+                      alt="plug wallet"
+                    />{" "}
+                    Connect with Plug
                   </Button>
                   <div className="spacer" />
                   <Button className="wallet-connect-button" onClick={connectStoicWallet}>
-                    <img className="icon-logo" src="/imgs/stoic-logo.png" /> Connect with
-                    Stoic
+                    <img
+                      className="icon-logo"
+                      src="/imgs/stoic-logo.png"
+                      alt="stoic wallet"
+                    />{" "}
+                    Connect with Stoic
                   </Button>
                   <div className="spacer" />
                   <Button className="wallet-connect-button" onClick={connectEarthWallet}>
-                    <img className="icon-logo" src="/imgs/earth-logo.jpg" /> Connect with
-                    Earth
+                    <img
+                      className="icon-logo"
+                      src="/imgs/earth-logo.jpg"
+                      alt="earth wallet"
+                    />{" "}
+                    Connect with Earth
                   </Button>
                 </PopoverBody>
               </PopoverContent>
