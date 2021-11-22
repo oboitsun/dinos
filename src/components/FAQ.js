@@ -6,10 +6,10 @@ import SubHeading from "./SubHeading";
 import { useInView } from "react-intersection-observer";
 
 const faqs = [
-  { qstn: "How do I buy a Dino World?", answr: "The Answer" },
-  { qstn: "What Blockhain and technology are Dino World on?", answr: "The Answer" },
-  { qstn: "What can I do with once I get my Dino World NFT?", answr: "The Answer" },
-  { qstn: "How many Dino World caan I buy?", answr: "The Answer" },
+  { qstn: "How do I buy a Dino Planet?", answr: "The Answer" },
+  { qstn: "What Blockhain and technology are Dino Planet on?", answr: "The Answer" },
+  { qstn: "What can I do with once I get my Dino Planet NFT?", answr: "The Answer" },
+  { qstn: "How many Dino Planet caan I buy?", answr: "The Answer" },
 ];
 export default function FAQ() {
   const { ref, inView } = useInView({ threshold: 0.5 });

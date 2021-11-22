@@ -30,20 +30,20 @@ export default function AboutUs() {
                   ref={ref}
                   className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}
                 >
-                  About <br className="lg:hidden" /> dino world{" "}
-                  <div className="map absolute right-0 bottom-0">dino world</div>
+                  About <br className="lg:hidden" /> dino planet{" "}
+                  <div className="map absolute right-0 bottom-0">dino planet</div>
                 </div>
               </div>
             </Heading>
             <SubHeading>
-              Dino World is a game centered around breedable, and oh-so-adorable creatures
-              we call Dino World! Each cat is one-of-a-kind and 100% owned by you; it
-              cannot be replicated, taken away, or destroyed.
+              Dino Planet is a game centered around breedable, and oh-so-adorable
+              creatures we call Dino Planet! Each cat is one-of-a-kind and 100% owned by
+              you; it cannot be replicated, taken away, or destroyed.
             </SubHeading>
           </div>
         </div>
-
-        <AboutUsSlider2 />
+        <AboutUsSliders />
+        {/* <AboutUsSlider2 /> */}
       </div>
     </div>
   );

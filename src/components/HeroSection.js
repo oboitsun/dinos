@@ -30,7 +30,7 @@ export default function HeroSection({
         className="absolute w-full h-full overflow-hidden top-0 left-1/2 transform -translate-x-1/2 "
       >
         <img
-          className="w-full h-full top-1/2  transform -translate-y-1/2 absolute left-0  object-cover  2xl:h-auto"
+          className="w-full h-full top-1/2  transform -translate-y-1/2 absolute left-0  object-cover  "
           src={currentBG ? currentBG : "/imgs/bg.jpg"}
           alt="dinos-splash"
         />
