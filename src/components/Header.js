@@ -37,7 +37,7 @@ export default function Header({
       className={` ${scrolled ? "bg-turf bg-opacity-80 py-3 shadow-lg" : "py-7"}`}
     >
       <div className="my-container justify-between flex items-center">
-        <div className="w-1/4 lg:w-1/8 flex-shrink-0 ">
+        <div className="w-1/4 lg:w-1/8  flex-shrink-0 ">
           <Logo wide={false} />
         </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
