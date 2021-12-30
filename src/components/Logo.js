@@ -19,12 +19,28 @@ export default function Logo({ wide }) {
     hidden: { scale: 0, opacity: 0, transition: { duration: 1 } },
   };
   const item = {
-    show: { scale: 1, opacity: 1, pathLength: 0, transition: { duration: 0.3 } },
-    hidden: { scale: 0, opacity: 0, pathLength: 1, transition: { duration: 1 } },
+    show: {
+      scale: 1,
+      opacity: 1,
+      pathLength: 0,
+      transition: { duration: 0.3 },
+    },
+    hidden: {
+      scale: 0,
+      opacity: 0,
+      pathLength: 1,
+      transition: { duration: 1 },
+    },
   };
   return (
-    <Anchor to="top" {...linkProps} className="flex justify-center">
-      <img src="/imgs/logo.png" layout="responsive" alt="Bombs logo" />
+    <Anchor to="top" {...linkProps} className="flex justify-center w-3/4">
+      <img
+        className="w-full"
+        style={{ maxWidth: 154 }}
+        src="/imgs/logo.png"
+        layout="responsive"
+        alt="Bombs logo"
+      />
     </Anchor>
   );
 }

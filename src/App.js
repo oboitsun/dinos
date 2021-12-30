@@ -10,6 +10,8 @@ import ContactUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
 import Team from "./components/Team";
 import Roadmap from "./components/Roadmap";
+import NFTUtils from "./components/NFTUtils";
+import Roadmap2 from "./components/Roadmap2";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -49,8 +51,10 @@ export default function App() {
 
       <HeroSection {...props_through} />
       <AboutUs />
+      <NFTUtils />
       <Team />
-      <Roadmap />
+      <Roadmap2 />
+      {/* <Roadmap /> */}
       <FAQ />
       <ContactUs />
       <Footer {...props_through} />

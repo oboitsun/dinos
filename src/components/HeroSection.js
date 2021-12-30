@@ -14,10 +14,11 @@ export default function HeroSection({
   setUserAddress,
 }) {
   const slides = [
-    "/imgs/slider1-bg3.jpg",
-    "/imgs/bg.jpg",
-    "/imgs/slider1-bg2.jpg",
-    "/imgs/slider2-bg.jpg",
+    "/imgs/hero-bg3.jpeg",
+    "/imgs/hero-bg4.jpeg",
+
+    "/imgs/hero-bg2.jpeg",
+    "/imgs/hero-bg1.jpeg",
   ];
   const [currentBG, setCurrentBG] = useState(null);
   useEffect(() => {
@@ -43,7 +44,7 @@ export default function HeroSection({
           userAddress={userAddress}
           setUserAddress={setUserAddress}
         />
-        <HeroSectionDinos />
+        {/* <HeroSectionDinos /> */}
       </div>
     </motion.div>
   );

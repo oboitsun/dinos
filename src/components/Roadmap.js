@@ -6,40 +6,34 @@ import RoadmapPoint from "./RoadmapPoint";
 import { useInView } from "react-intersection-observer";
 const roadmap = [
   {
-    month: "March 2021",
+    month: "March ",
     text: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     Ipsum has been`,
-    dino: "/imgs/dinos/1.png",
+    dino: "/imgs/eggs/big1.png",
   },
   {
-    month: "April 2021",
+    month: "April ",
     text: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     Ipsum has been`,
-    dino: "/imgs/dinos/2.png",
+    dino: "/imgs/eggs/big1.png",
   },
   {
-    month: "May 2021",
+    month: "May ",
     text: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     Ipsum has been`,
-    dino: "/imgs/dinos/3.png",
+    dino: "/imgs/eggs/big1.png",
   },
   {
-    month: "June 2021",
+    month: "June ",
     text: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     Ipsum has been`,
-    dino: "/imgs/dinos/4.png",
+    dino: "/imgs/eggs/big1.png",
   },
   {
-    month: "July 2021",
+    month: "July ",
     text: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     Ipsum has been`,
-    dino: "/imgs/dinos/5.png",
-  },
-  {
-    month: "August 2021",
-    text: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-    Ipsum has been`,
-    dino: "/imgs/dinos/6.png",
+    dino: "/imgs/eggs/big1.png",
   },
 ];
 export default function Roadmap() {
@@ -61,17 +55,20 @@ export default function Roadmap() {
           <div className="flex justify-center">
             <span
               ref={ref}
-              className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}
+              className={`relative  block ${
+                inView ? "shadow-show" : "shadow-none"
+              }`}
             >
               Roadmap <span className="map absolute right-0 bottom-0">map</span>
             </span>
           </div>
         </Heading>
         <SubHeading>
-          Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris.
-          Sed sollicitudin congue nunc ac iaculis. Vivamus tristique massa ante, et
-          accumsan felis imperdiet at. In purus libero, venenatis dignissim massa ac,
-          sodales malesuada quam. Aliquam in fermentum metus. Donec in mauris arcu.
+          Donec gravida tellus nec elit consequat ultrices. Vivamus vel
+          tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. Vivamus
+          tristique massa ante, et accumsan felis imperdiet at. In purus libero,
+          venenatis dignissim massa ac, sodales malesuada quam. Aliquam in
+          fermentum metus. Donec in mauris arcu.
         </SubHeading>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-10">

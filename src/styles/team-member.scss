@@ -17,10 +17,10 @@
     max-width: unset;
     position: absolute;
     bottom: 5%;
-    left: -5%;
-    width: 110%;
+    left: 50%;
+    width: 50%;
     transition: transform 0.3s;
-    transform: translateX(0%);
+    transform: translateX(-50%);
   }
   .egg-opened {
     transform: translateX(110%);

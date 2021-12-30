@@ -22,9 +22,23 @@ export default function WelcomeTo({
     hidden: { x: "-60vw", opacity: 0, transition: { duration: 1 } },
   };
   return (
-    <motion.div variants={cont} initial="hidden" animate="show" className="welcome-to ">
-      <motion.p variants={item} key={1} className="title  text-center pb-10">
-        Welcome to <br /> dino planet
+    <motion.div
+      variants={cont}
+      initial="hidden"
+      animate="show"
+      className="welcome-to "
+    >
+      <motion.p
+        variants={item}
+        key={1}
+        className="title flex flex-col items-center  text-center mb-24 relative"
+      >
+        Welcome to the
+        <img
+          className="absolute bottom-0 left-1/2 w-4/5 transform translate-y-2/3 -translate-x-1/2"
+          src="/imgs/logo.png"
+          alt="IC Dinos  logo"
+        />
       </motion.p>
 
       <motion.div className="pb-5 lg:pb-0" variants={item} key={4}>

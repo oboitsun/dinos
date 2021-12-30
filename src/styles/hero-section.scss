@@ -11,8 +11,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 25%;
+    height: 10%;
     background: linear-gradient(180deg, rgba(173, 157, 104, 0) 0%, #ad9d68 90%);
+    z-index: 2;
   }
   .swiper-container {
     height: 100%;
@@ -30,46 +31,73 @@
     font-weight: 400;
     font-size: 46px;
     text-transform: uppercase;
-    text-shadow: rgb(58, 58, 58) 12px 0px 0px, rgb(58, 58, 58) 11.9584px 0.998843px 0px,
-      rgb(58, 58, 58) 11.8337px 1.99075px 0px, rgb(58, 58, 58) 11.6269px 2.96885px 0px,
-      rgb(58, 58, 58) 11.3395px 3.92634px 0px, rgb(58, 58, 58) 10.9733px 4.85657px 0px,
-      rgb(58, 58, 58) 10.531px 5.75311px 0px, rgb(58, 58, 58) 10.0156px 6.60971px 0px,
-      rgb(58, 58, 58) 9.43065px 7.42044px 0px, rgb(58, 58, 58) 8.78027px 8.17967px 0px,
-      rgb(58, 58, 58) 8.06895px 8.88212px 0px, rgb(58, 58, 58) 7.30163px 9.52293px 0px,
-      rgb(58, 58, 58) 6.48363px 10.0977px 0px, rgb(58, 58, 58) 5.62063px 10.6023px 0px,
-      rgb(58, 58, 58) 4.71862px 11.0333px 0px, rgb(58, 58, 58) 3.78387px 11.3878px 0px,
-      rgb(58, 58, 58) 2.82285px 11.6633px 0px, rgb(58, 58, 58) 1.84224px 11.8577px 0px,
-      rgb(58, 58, 58) 0.848846px 11.9699px 0px, rgb(58, 58, 58) -0.15044px 11.9991px 0px,
-      rgb(58, 58, 58) -1.14868px 11.9449px 0px, rgb(58, 58, 58) -2.13895px 11.8078px 0px,
-      rgb(58, 58, 58) -3.11438px 11.5888px 0px, rgb(58, 58, 58) -4.06819px 11.2894px 0px,
-      rgb(58, 58, 58) -4.99376px 10.9116px 0px, rgb(58, 58, 58) -5.88468px 10.458px 0px,
-      rgb(58, 58, 58) -6.73475px 9.93192px 0px, rgb(58, 58, 58) -7.53808px 9.33688px 0px,
-      rgb(58, 58, 58) -8.2891px 8.67703px 0px, rgb(58, 58, 58) -8.98258px 7.95696px 0px,
-      rgb(58, 58, 58) -9.61372px 7.18167px 0px, rgb(58, 58, 58) -10.1781px 6.35653px 0px,
-      rgb(58, 58, 58) -10.6719px 5.48727px 0px, rgb(58, 58, 58) -11.0916px 4.57993px 0px,
-      rgb(58, 58, 58) -11.4344px 3.64081px 0px, rgb(58, 58, 58) -11.6977px 2.67641px 0px,
-      rgb(58, 58, 58) -11.8799px 1.69344px 0px, rgb(58, 58, 58) -11.9796px 0.698716px 0px,
-      rgb(58, 58, 58) -11.9962px -0.300857px 0px,
-      rgb(58, 58, 58) -11.9296px -1.29834px 0px, rgb(58, 58, 58) -11.7801px -2.28682px 0px,
-      rgb(58, 58, 58) -11.5489px -3.25942px 0px, rgb(58, 58, 58) -11.2375px -4.2094px 0px,
-      rgb(58, 58, 58) -10.8481px -5.13016px 0px, rgb(58, 58, 58) -10.3834px -6.01532px 0px,
-      rgb(58, 58, 58) -9.84671px -6.85874px 0px, rgb(58, 58, 58) -9.24164px -7.65454px 0px,
-      rgb(58, 58, 58) -8.57243px -8.39723px 0px, rgb(58, 58, 58) -7.84372px -9.08163px 0px,
-      rgb(58, 58, 58) -7.06058px -9.703px 0px, rgb(58, 58, 58) -6.22843px -10.257px 0px,
-      rgb(58, 58, 58) -5.35305px -10.7399px 0px, rgb(58, 58, 58) -4.44052px -11.1482px 0px,
-      rgb(58, 58, 58) -3.49717px -11.4791px 0px, rgb(58, 58, 58) -2.52955px -11.7304px 0px,
-      rgb(58, 58, 58) -1.54437px -11.9002px 0px,
-      rgb(58, 58, 58) -0.548477px -11.9875px 0px,
-      rgb(58, 58, 58) 0.451226px -11.9915px 0px, rgb(58, 58, 58) 1.4478px -11.9123px 0px,
-      rgb(58, 58, 58) 2.43432px -11.7505px 0px, rgb(58, 58, 58) 3.40395px -11.5071px 0px,
-      rgb(58, 58, 58) 4.34995px -11.1838px 0px, rgb(58, 58, 58) 5.26576px -10.7829px 0px,
-      rgb(58, 58, 58) 6.14503px -10.3072px 0px, rgb(58, 58, 58) 6.98164px -9.75995px 0px,
-      rgb(58, 58, 58) 7.7698px -9.14495px 0px, rgb(58, 58, 58) 8.50404px -8.46648px 0px,
-      rgb(58, 58, 58) 9.17925px -7.72925px 0px, rgb(58, 58, 58) 9.79076px -6.93838px 0px,
-      rgb(58, 58, 58) 10.3343px -6.09935px 0px, rgb(58, 58, 58) 10.8061px -5.21799px 0px,
-      rgb(58, 58, 58) 11.203px -4.30041px 0px, rgb(58, 58, 58) 11.522px -3.35299px 0px,
-      rgb(58, 58, 58) 11.7612px -2.38229px 0px, rgb(58, 58, 58) 11.9186px -1.39506px 0px,
-      rgb(58, 58, 58) 11.9934px -0.398151px 0px;
+    text-shadow: rgb(0, 0, 0) 12px 0px 0px,
+      rgb(0, 0, 0) 11.9584px 0.998843px 0px,
+      rgb(0, 0, 0) 11.8337px 1.99075px 0px, rgb(0, 0, 0) 11.6269px 2.96885px 0px,
+      rgb(0, 0, 0) 11.3395px 3.92634px 0px, rgb(0, 0, 0) 10.9733px 4.85657px 0px,
+      rgb(0, 0, 0) 10.531px 5.75311px 0px, rgb(0, 0, 0) 10.0156px 6.60971px 0px,
+      rgb(0, 0, 0) 9.43065px 7.42044px 0px, rgb(0, 0, 0) 8.78027px 8.17967px 0px,
+      rgb(0, 0, 0) 8.06895px 8.88212px 0px, rgb(0, 0, 0) 7.30163px 9.52293px 0px,
+      rgb(0, 0, 0) 6.48363px 10.0977px 0px, rgb(0, 0, 0) 5.62063px 10.6023px 0px,
+      rgb(0, 0, 0) 4.71862px 11.0333px 0px, rgb(0, 0, 0) 3.78387px 11.3878px 0px,
+      rgb(0, 0, 0) 2.82285px 11.6633px 0px, rgb(0, 0, 0) 1.84224px 11.8577px 0px,
+      rgb(0, 0, 0) 0.848846px 11.9699px 0px,
+      rgb(0, 0, 0) -0.15044px 11.9991px 0px,
+      rgb(0, 0, 0) -1.14868px 11.9449px 0px,
+      rgb(0, 0, 0) -2.13895px 11.8078px 0px,
+      rgb(0, 0, 0) -3.11438px 11.5888px 0px,
+      rgb(0, 0, 0) -4.06819px 11.2894px 0px,
+      rgb(0, 0, 0) -4.99376px 10.9116px 0px,
+      rgb(0, 0, 0) -5.88468px 10.458px 0px,
+      rgb(0, 0, 0) -6.73475px 9.93192px 0px,
+      rgb(0, 0, 0) -7.53808px 9.33688px 0px,
+      rgb(0, 0, 0) -8.2891px 8.67703px 0px,
+      rgb(0, 0, 0) -8.98258px 7.95696px 0px,
+      rgb(0, 0, 0) -9.61372px 7.18167px 0px,
+      rgb(0, 0, 0) -10.1781px 6.35653px 0px,
+      rgb(0, 0, 0) -10.6719px 5.48727px 0px,
+      rgb(0, 0, 0) -11.0916px 4.57993px 0px,
+      rgb(0, 0, 0) -11.4344px 3.64081px 0px,
+      rgb(0, 0, 0) -11.6977px 2.67641px 0px,
+      rgb(0, 0, 0) -11.8799px 1.69344px 0px,
+      rgb(0, 0, 0) -11.9796px 0.698716px 0px,
+      rgb(0, 0, 0) -11.9962px -0.300857px 0px,
+      rgb(0, 0, 0) -11.9296px -1.29834px 0px,
+      rgb(0, 0, 0) -11.7801px -2.28682px 0px,
+      rgb(0, 0, 0) -11.5489px -3.25942px 0px,
+      rgb(0, 0, 0) -11.2375px -4.2094px 0px,
+      rgb(0, 0, 0) -10.8481px -5.13016px 0px,
+      rgb(0, 0, 0) -10.3834px -6.01532px 0px,
+      rgb(0, 0, 0) -9.84671px -6.85874px 0px,
+      rgb(0, 0, 0) -9.24164px -7.65454px 0px,
+      rgb(0, 0, 0) -8.57243px -8.39723px 0px,
+      rgb(0, 0, 0) -7.84372px -9.08163px 0px,
+      rgb(0, 0, 0) -7.06058px -9.703px 0px,
+      rgb(0, 0, 0) -6.22843px -10.257px 0px,
+      rgb(0, 0, 0) -5.35305px -10.7399px 0px,
+      rgb(0, 0, 0) -4.44052px -11.1482px 0px,
+      rgb(0, 0, 0) -3.49717px -11.4791px 0px,
+      rgb(0, 0, 0) -2.52955px -11.7304px 0px,
+      rgb(0, 0, 0) -1.54437px -11.9002px 0px,
+      rgb(0, 0, 0) -0.548477px -11.9875px 0px,
+      rgb(0, 0, 0) 0.451226px -11.9915px 0px,
+      rgb(0, 0, 0) 1.4478px -11.9123px 0px,
+      rgb(0, 0, 0) 2.43432px -11.7505px 0px,
+      rgb(0, 0, 0) 3.40395px -11.5071px 0px,
+      rgb(0, 0, 0) 4.34995px -11.1838px 0px,
+      rgb(0, 0, 0) 5.26576px -10.7829px 0px,
+      rgb(0, 0, 0) 6.14503px -10.3072px 0px,
+      rgb(0, 0, 0) 6.98164px -9.75995px 0px,
+      rgb(0, 0, 0) 7.7698px -9.14495px 0px,
+      rgb(0, 0, 0) 8.50404px -8.46648px 0px,
+      rgb(0, 0, 0) 9.17925px -7.72925px 0px,
+      rgb(0, 0, 0) 9.79076px -6.93838px 0px,
+      rgb(0, 0, 0) 10.3343px -6.09935px 0px,
+      rgb(0, 0, 0) 10.8061px -5.21799px 0px,
+      rgb(0, 0, 0) 11.203px -4.30041px 0px, rgb(0, 0, 0) 11.522px -3.35299px 0px,
+      rgb(0, 0, 0) 11.7612px -2.38229px 0px,
+      rgb(0, 0, 0) 11.9186px -1.39506px 0px,
+      rgb(0, 0, 0) 11.9934px -0.398151px 0px;
   }
 
   .title-big {
@@ -78,24 +106,29 @@
     text-align: center;
   }
   .timer {
-    width: 220px;
+    min-width: 220px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    place-content: center;
+    place-content: left;
+    column-gap: 14px;
   }
 
   .timer-digits {
     font-size: 24px;
-
     line-height: 38px;
-    text-align: center;
+    text-align: left;
   }
   .timer-date {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(60%) translateX(-50%);
     font-size: 8px;
     font-weight: 400;
     color: white;
+    text-transform: uppercase;
     @media (min-width: 1024px) {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
   .splash {
@@ -115,13 +148,6 @@
       flex-direction: row;
       align-items: center;
     }
-    .bombs {
-      width: 50%;
-    }
-    .welcome-to {
-      max-width: 450px;
-      align-items: center;
-    }
 
     .title {
       font-size: 60px;
@@ -132,8 +158,6 @@
     .timer-digits {
       font-size: 32px;
     }
-    .connect-wallet {
-    }
   }
 
   @media (min-width: 1280px) {
@@ -143,9 +167,7 @@
       font-size: 40px;
       line-height: 48px;
     }
-    .welcome-to {
-      max-width: 525px;
-    }
+
     .title {
       font-size: 84px;
     }
