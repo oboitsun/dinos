@@ -47,7 +47,7 @@ export default function AboutUs() {
       </div>
       <div className="relative lg:-top-10">
         <EndlessEggs />
-        <EndlessEggs reverse />
+        {/* <EndlessEggs reverse /> */}
       </div>
     </div>
   );

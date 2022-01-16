@@ -3,15 +3,16 @@ import "../styles/nft-utils.scss";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 const NFTUtilsItem = ({ iconSrc, heading, text, delay, inView }) => {
+  console.log(inView,delay)
   return (
     <motion.div
       initial={{ x: "100vw", opacity: 0 }}
       animate={inView ? { x: 0, opacity: 1 } : { opacity: 0, x: "100vw" }}
-      transition={{ delay: 0.2 * delay, duration: 0.4 }}
+      transition={inView ? { delay: 0.2 * delay, duration: 0.4 } : {delay:0.3}}
       className="flex flex-col items-center NUI"
     >
-      <div className="NUI__circle">
-        <img className="NUI__icon" src={iconSrc} alt={`${heading} utility`} />
+      <div className="NUI__circle overflow-hidden">
+        <motion.img initial={{y:'150%'}} animate={inView ? {y:'-50%',x:'-50%'} :{y:'150%'} } transition={inView ? {delay: 0.2 * delay +1}:{delay:0}} className="NUI__icon" src={iconSrc} alt={`${heading} utility`} />
       </div>
       <div className="NUI__textpart">
         <p className="NUI__heading text-border">{heading}</p>
