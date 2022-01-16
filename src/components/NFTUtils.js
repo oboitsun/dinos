@@ -3,7 +3,7 @@ import "../styles/nft-utils.scss";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 const NFTUtilsItem = ({ iconSrc, heading, text, delay, inView }) => {
-  console.log(inView,delay)
+ 
   return (
     <motion.div
       initial={{ x: "100vw", opacity: 0 }}
