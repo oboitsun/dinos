@@ -1,23 +1,28 @@
+.nft-utils-wrapper {
+  position: relative;
+  transform: translateY(-30px);
+  z-index: 10;
+  @media (min-width: 1024px) {
+    transform: translateY(-50%);
+  }
+}
 .NUI {
+  padding: 16px 16px;
   &:last-child {
     grid-column: 1/3;
     justify-content: center;
     place-content: center;
     margin: 0 auto;
-    width: calc(50% - 40px);
+    width: calc(50% - 10px);
   }
   &__circle {
-    position: relative;
-    width: 90%;
-    padding-bottom: 90%;
-    border-radius: 100%;
-    background-color: #9c8d5e;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
     img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 50%;
-      transform: translateX(-50%) translateY(-50%);
+      width: 20px;
+      height: auto;
     }
   }
   &__textpart {
@@ -25,12 +30,13 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: -20px;
+    line-height: 0.9;
     text-align: center;
   }
   &__heading {
     font-size: 20px;
-    color: #e8b72c;
+    color: white;
+    padding-bottom: 4px;
   }
   &__text {
     color: white;
@@ -73,12 +79,12 @@
       font-size: 24px;
     }
     &__text {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
   @media (min-width: 1280px) {
     &__heading {
-      font-size: 32px;
+      font-size: 24px;
     }
   }
 }

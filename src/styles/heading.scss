@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import './variables.scss';
 
 .heading {
   position: relative;
@@ -7,7 +7,7 @@
   font-size: 32px;
   line-height: 1.1;
   transition: all 0.3s;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   text-shadow: rgb(58, 58, 58) 12px 0px 0px,
     rgb(58, 58, 58) 11.9584px 0.998843px 0px,
     rgb(58, 58, 58) 11.8337px 1.99075px 0px,
@@ -97,6 +97,6 @@
     font-size: 60px;
   }
   @media (min-width: 1280px) {
-    font-size: 64px;
+    font-size: 58px;
   }
 }

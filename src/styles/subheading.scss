@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import './variables.scss';
 .subheading {
   position: relative;
   z-index: 4;
@@ -6,11 +6,11 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 29px;
-  text-align: center;
+  text-align: left;
 
   @media (min-width: 1024px) {
     text-align: left;
-    font-size: 16px;
-    line-height: 38px;
+    font-size: 14px;
+    line-height: 28px;
   }
 }

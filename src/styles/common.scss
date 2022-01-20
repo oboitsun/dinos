@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import './variables.scss';
 .app {
   background: $turf;
   .btn {
@@ -7,7 +7,7 @@
     text-align: center;
     // width: 100%;
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     padding: 9px 13px !important;
     color: #fff;
@@ -76,6 +76,26 @@
   }
   .shadow-none {
     text-shadow: none;
+  }
+  .orange-btn {
+    background: linear-gradient(180deg, #ff9400 0%, #cc7703 100%);
+    border: 5px solid #9b6418;
+  }
+  .yellow-btn {
+    background: linear-gradient(180deg, #e7b628 0%, #a9892c 100%);
+    border: 5px solid #a58115;
+  }
+  .green-btn {
+    background: linear-gradient(180deg, #739a3a 0%, #5b7c29 100%);
+    border: 5px solid #486819;
+  }
+  .turf-btn {
+    background: linear-gradient(180deg, #bfad75 0%, #988857 100%);
+    border: 5px solid #8a7c4e;
+  }
+  .brown-btn {
+    background: linear-gradient(180deg, #8c7d4e 0%, #6f6033 100%);
+    border: 5px solid #645422;
   }
   @media (min-width: 1024px) {
     .special-grid {

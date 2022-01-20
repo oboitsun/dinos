@@ -1,27 +1,36 @@
-@import "./variables.scss";
+@import './variables.scss';
 
 #team {
   padding-top: 60px;
-
+  padding-bottom: 60px;
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr max(25%, 290px);
+    column-gap: 40px;
+  }
   .heading {
-    text-align: center;
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-bottom: 8px;
   }
   .subheading {
-    text-align: center;
+    text-align: left;
+    font-size: 18px;
   }
   .team-name {
     color: white;
     text-transform: uppercase;
     font-size: 16px;
+    line-height: 0.9;
   }
   .team-pos {
     color: white;
     font-size: 12px;
+    line-height: 0.9;
   }
 
   @media (min-width: 1024px) {
+    padding-top: 100px;
+    padding-bottom: 80px;
     .team-name {
       font-size: 24px;
     }
@@ -30,11 +39,5 @@
     }
   }
   @media (min-width: 1280px) {
-    .team-name {
-      font-size: 32px;
-    }
-    .team-pos {
-      font-size: 16px;
-    }
   }
 }

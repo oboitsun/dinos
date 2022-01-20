@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
-import "./styles/common.scss";
-import HeroSection from "./components/HeroSection";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import ModalMenu from "./components/ModalMenu";
-import ComingSoonPopUp from "./components/ComingSoonPopUp";
-import FAQ from "./components/FAQ";
-import ContactUs from "./components/ContactUs";
-import AboutUs from "./components/AboutUs";
-import Team from "./components/Team";
-import Roadmap from "./components/Roadmap";
-import NFTUtils from "./components/NFTUtils";
-import Roadmap2 from "./components/Roadmap2";
+import React, { useState, useEffect } from 'react';
+import './styles/common.scss';
+import HeroSection from './components/HeroSection';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ModalMenu from './components/ModalMenu';
+import ComingSoonPopUp from './components/ComingSoonPopUp';
+import FAQ from './components/FAQ';
+import ContactUs from './components/ContactUs';
+import AboutUs from './components/AboutUs';
+import Team from './components/Team';
+import Roadmap from './components/Roadmap';
+import NFTUtils from './components/NFTUtils';
+import Roadmap2 from './components/Roadmap2';
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,14 +22,14 @@ export default function App() {
   };
   //scrolling listener
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   });
   //connect wallet functions
-  const [userAddress, setUserAddress] = useState("");
+  const [userAddress, setUserAddress] = useState('');
   const [showPopup, setShowPopup] = useState(false);
 
   const props_through = {
@@ -50,8 +50,23 @@ export default function App() {
       />
 
       <HeroSection {...props_through} />
-      <AboutUs />
-      <NFTUtils />
+      <div className="about-section relative bg-lightTurf">
+        <img
+          className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 z-10"
+          src="/imgs/border.svg"
+          alt="border"
+        />
+        <img
+          className="w-full h-full object-cover absolute top-0 left-0 z-10"
+          src="/imgs/turf.svg"
+          alt="turf"
+        />
+        <div className="bg-gradient-to-b from-lightTurf to-transparent absolute w-full h-10 top-0 left-0 z-10"></div>
+        <div className="bg-gradient-to-t from-lightTurf to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div>
+        <NFTUtils />
+        <AboutUs />
+      </div>
+
       <Team />
       <Roadmap2 />
       {/* <Roadmap /> */}

@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import './variables.scss';
 #about-us {
   .heading {
     position: relative;
@@ -11,7 +11,15 @@
   }
   .subheading {
     max-width: 825px;
-    text-align: center;
+  }
+  .pic {
+    display: block;
+    width: 45%;
+    z-index: 10;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 8px;
   }
   @media (min-width: 1024px) {
     .heading {
