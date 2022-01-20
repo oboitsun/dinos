@@ -1,39 +1,39 @@
-import React from "react";
-import Heading from "./Heading";
-import SubHeading from "./SubHeading";
-import "../styles/roadmap.scss";
-import RoadmapPoint from "./RoadmapPoint";
-import { useInView } from "react-intersection-observer";
+import React from 'react';
+import Heading from './Heading';
+import SubHeading from './SubHeading';
+import '../styles/roadmap.scss';
+import RoadmapPoint from './RoadmapPoint';
+import { useInView } from 'react-intersection-observer';
 const roadmap = [
   {
-    month: "March ",
+    month: 'March ',
     text: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     Ipsum has been`,
-    dino: "/imgs/eggs/big1.png",
+    dino: '/imgs/eggs/big1.png',
   },
   {
-    month: "April ",
+    month: 'April ',
     text: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     Ipsum has been`,
-    dino: "/imgs/eggs/big1.png",
+    dino: '/imgs/eggs/big1.png',
   },
   {
-    month: "May ",
+    month: 'May ',
     text: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     Ipsum has been`,
-    dino: "/imgs/eggs/big1.png",
+    dino: '/imgs/eggs/big1.png',
   },
   {
-    month: "June ",
+    month: 'June ',
     text: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     Ipsum has been`,
-    dino: "/imgs/eggs/big1.png",
+    dino: '/imgs/eggs/big1.png',
   },
   {
-    month: "July ",
+    month: 'July ',
     text: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     Ipsum has been`,
-    dino: "/imgs/eggs/big1.png",
+    dino: '/imgs/eggs/big1.png',
   },
 ];
 export default function Roadmap() {
@@ -56,10 +56,11 @@ export default function Roadmap() {
             <span
               ref={ref}
               className={`relative  block ${
-                inView ? "shadow-show" : "shadow-none"
+                inView ? 'shadow-show' : 'shadow-none'
               }`}
             >
-              Roadmap <span className="map absolute right-0 bottom-0">map</span>
+              Roadmap
+              {/* <span className="map absolute right-0 bottom-0">map</span> */}
             </span>
           </div>
         </Heading>

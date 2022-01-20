@@ -1,0 +1,74 @@
+@import './variables.scss';
+#roadmap {
+  .roadmap-point {
+    position: relative;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 40px 40px 40px 80px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+  }
+  .roadmap-point:first-child {
+    .road-line.top {
+      height: calc(50% + 40px);
+      top: -40px;
+    }
+  }
+  .roadmap-point:last-child {
+    .road-line.bottom {
+      display: none;
+    }
+  }
+  .roadmap-point {
+    &.checked {
+      .road-line.top {
+        background: $orange;
+      }
+    }
+  }
+  .road-line {
+    width: 2px;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 36px;
+    &.bottom {
+      height: calc(50% + 40px);
+      top: 50%;
+    }
+  }
+
+  .point-mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    top: 50%;
+    left: 20px;
+    transform: rotate(45deg) translateY(-50%);
+    background: #948350;
+    &.checked {
+      background: $orange;
+      border-color: $orange;
+    }
+  }
+  .progress {
+    font-size: 40px;
+    line-height: 1;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 2;
+  }
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1280px) {
+  }
+}

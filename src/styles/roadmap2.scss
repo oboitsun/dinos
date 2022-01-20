@@ -1,5 +1,9 @@
-@import "./variables.scss";
+@import './variables.scss';
 #roadmap {
+  .heading,
+  .subheading {
+    text-align: left;
+  }
   .point-block {
     display: grid;
     column-gap: 36px;
