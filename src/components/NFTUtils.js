@@ -5,14 +5,10 @@ import { motion } from 'framer-motion';
 const NFTUtilsItem = ({ btnStyle, iconSrc, heading, text, delay, inView }) => {
   return (
     <motion.div
-      initial={{ y: ['100vw'], opacity: 0 }}
-      animate={
-        inView
-          ? { y: ['2vw', '0vw'], opacity: 1 }
-          : { opacity: 0, y: ['100vw'] }
-      }
+      initial={{ x: '100vw', opacity: 0 }}
+      animate={inView ? { x: 0, opacity: 1 } : { opacity: 0 }}
       transition={
-        inView ? { delay: 0.2 * delay, duration: 0.6 } : { delay: 0.3 }
+        inView ? { delay: 0.2 * delay, duration: 0.4 } : { delay: 0.3 }
       }
       className={`flex flex-col items-center NUI rounded-2xl box-border ${btnStyle} shadow-lg`}
     >
@@ -72,7 +68,7 @@ function NFTUtils() {
     <div className="my-container">
       <div
         ref={ref}
-        className="grid grid-cols-2 lg:grid-cols-5 gap-5 xl:gap-10 mb-5 nft-utils-wrapper"
+        className="grid grid-cols-2 lg:grid-cols-5 gap-5 xl:gap-10 mb-10 nft-utils-wrapper"
       >
         {nft_utils.map((item, i) => (
           <NFTUtilsItem
