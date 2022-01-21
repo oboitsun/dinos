@@ -42,16 +42,14 @@ export default function App() {
   return (
     <div className=" relative overflow-hidden app">
       <div id="top"></div>
-
       <Header
         {...props_through}
         setShowMenu={setShowMenu}
         showMenu={showMenu}
         scrolled={scrolled}
       />
-
       <HeroSection {...props_through} />
-      <div className="about-section relative bg-lightTurf">
+      <div className="about-section relative bg-lightTurf py-10">
         <img
           className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 z-10"
           src="/imgs/border.svg"
@@ -67,13 +65,28 @@ export default function App() {
         <NFTUtils />
         <AboutUs />
       </div>
-
       <Team />
       <Roadmap3 />
       {/* <Roadmap2 /> */}
       {/* <Roadmap /> */}
-      <FAQ />
-      <ContactUs />
+      <div className=" lg:py-20 bg-faq relative">
+        <img
+          className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 z-10"
+          src="/imgs/border4.svg"
+          alt="border"
+        />
+        <img
+          className="w-full h-full object-cover absolute top-0 left-0 z-10"
+          src="/imgs/turf.svg"
+          alt="turf"
+        />
+        <div className="bg-gradient-to-b from-faq to-transparent absolute w-full h-10 top-0 left-0 "></div>
+        <div className="bg-gradient-to-t from-faq to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div>
+        <div className="my-container grid lg:grid-cols-2 gap-10  relative z-10">
+          <FAQ />
+          <ContactUs />
+        </div>
+      </div>
       <Footer {...props_through} />
 
       <ComingSoonPopUp showPopup={showPopup} setShowPopup={setShowPopup} />

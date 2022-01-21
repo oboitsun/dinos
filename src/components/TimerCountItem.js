@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function TimerCountItem({ time, text }) {
   return (
@@ -6,10 +6,10 @@ export default function TimerCountItem({ time, text }) {
       <p className="timer-digits relative top-2">
         {time.length > 1 ? time : 0 + time}
       </p>
-      {text === "Seconds" ? (
-        <p className="timer-date relative left-1  ">{text}</p>
+      {text === 'Seconds' ? (
+        <p className="timer-date relative lg:left-1  ">{text}</p>
       ) : (
-        <p className="timer-date relative left-0.5  ">{text}</p>
+        <p className="timer-date relative lg:left-0.5  ">{text}</p>
       )}
     </div>
   );

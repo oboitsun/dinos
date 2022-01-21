@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import Burger from "./Burger";
-import Logo from "./Logo";
-import { Link as Anchor } from "react-scroll";
-import "../styles/header.scss";
-import Socials from "./Socials";
-import ConnectWallet from "./ConnectWallet";
+import React, { useEffect, useState } from 'react';
+import Burger from './Burger';
+import Logo from './Logo';
+import { Link as Anchor } from 'react-scroll';
+import '../styles/header.scss';
+import Socials from './Socials';
+import ConnectWallet from './ConnectWallet';
 
 export default function Header({
   showPopup,
@@ -16,11 +16,11 @@ export default function Header({
   scrolled,
 }) {
   const links = [
-    { href: "about-us", text: "About" },
-    { href: "team", text: "Team" },
-    { href: "roadmap", text: "Roadmap" },
-    { href: "https://dino-portal.vercel.app", text: "Portal" },
-    { href: "faq", text: "FAQ" },
+    { href: 'about-us', text: 'About' },
+    { href: 'team', text: 'Team' },
+    { href: 'roadmap', text: 'Roadmap' },
+    { href: 'https://dino-portal.vercel.app', text: 'Portal' },
+    { href: 'faq', text: 'FAQ' },
   ];
 
   const linkProps = {
@@ -28,14 +28,14 @@ export default function Header({
     smooth: true,
     offset: -100,
     duration: 500,
-    activeClass: "active",
-    className: "anchor text-white font-mont ",
+    activeClass: 'active',
+    className: 'anchor text-white relative top-0.5 ',
   };
   return (
     <div
       id="header"
       className={` ${
-        scrolled ? "bg-turf bg-opacity-80 py-3 shadow-lg" : "py-7"
+        scrolled ? 'bg-turf bg-opacity-80 py-3 shadow-lg' : 'py-7'
       }`}
     >
       <div className="my-container justify-between flex items-center">
@@ -45,12 +45,16 @@ export default function Header({
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
         <div className="hidden lg:flex justify-evenly  lg:w-1/3 flex-grow ">
           {links.map((l, i) => {
-            return l.text !== "Portal" ? (
+            return l.text !== 'Portal' ? (
               <Anchor key={i} to={l.href} {...linkProps}>
                 {l.text}
               </Anchor>
             ) : (
-              <a key={i} className="anchor text-white font-mont" href={l.href}>
+              <a
+                key={i}
+                className="anchor text-white relative top-0.5"
+                href={l.href}
+              >
                 {l.text}
               </a>
             );

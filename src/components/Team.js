@@ -52,7 +52,7 @@ export default function Team() {
             <TeamMember key={i} bio={member} />
           ))}
         </div>
-        <div className="relative z-10 pt-5">
+        <div className="relative z-10 pt-5 row-start-1 lg:col-start-2 pb-10 lg:pb-0">
           <Heading>
             <span
               ref={ref}

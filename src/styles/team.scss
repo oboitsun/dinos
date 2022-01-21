@@ -5,15 +5,16 @@
   padding-bottom: 60px;
   .team-grid {
     display: grid;
-    grid-template-columns: 1fr max(25%, 290px);
+    grid-template-columns: 1fr;
     column-gap: 40px;
   }
   .heading {
     margin: 0 auto;
     padding-bottom: 8px;
+    text-align: center;
   }
   .subheading {
-    text-align: left;
+    text-align: center;
     font-size: 18px;
   }
   .team-name {
@@ -31,6 +32,15 @@
   @media (min-width: 1024px) {
     padding-top: 100px;
     padding-bottom: 80px;
+    .team-grid {
+      grid-template-columns: 1fr max(25%, 290px);
+    }
+    .heading {
+      text-align: left;
+    }
+    .subheading {
+      text-align: left;
+    }
     .team-name {
       font-size: 24px;
     }

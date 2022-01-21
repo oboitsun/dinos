@@ -45,8 +45,20 @@ function Roadmap3() {
   const { ref, inView } = useInView({ threshold: 0.5 });
 
   return (
-    <div id="roadmap">
-      <div className="my-container relative">
+    <div id="roadmap" className="relative bg-roadmap">
+      <img
+        className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 z-10"
+        src="/imgs/border3.svg"
+        alt="border"
+      />
+      <img
+        className="w-full h-full object-cover absolute top-0 left-0 z-10"
+        src="/imgs/turf.svg"
+        alt="turf"
+      />
+      <div className="bg-gradient-to-b from-roadmap to-transparent absolute w-full h-10 top-0 left-0 "></div>
+      <div className="bg-gradient-to-t from-roadmap to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div>
+      <div className="my-container relative z-10">
         <Heading>
           <span
             ref={ref}

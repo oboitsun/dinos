@@ -15,6 +15,9 @@ module.exports = {
         orange: '#e8b72c',
         turf: '#ad9d68',
         team: '#B2A065',
+        roadmap: '#A49259',
+        faq: '#8B7A46',
+        footer: '#544825',
         lightTurf: '#BFAC70',
       },
       maxWidth: {

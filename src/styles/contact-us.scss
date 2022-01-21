@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import './variables.scss';
 #contact-us {
   padding: 40px 0;
   .subheading {
@@ -35,8 +35,8 @@
     width: 100%;
   }
   @media (min-width: 1024px) {
-    padding: 100px 0;
-    padding-bottom: 40px;
+    padding: 0;
+
     .contact-form {
       display: flex;
       flex-direction: column;

@@ -58,9 +58,7 @@ export default function AboutUs() {
           <div className="grid grid-cols-4 gap-2">
             {hamsters.map((item, i) => (
               <div
-                className={`relative border-white rounded-lg border-4 overflow-hidden shadow-lg ${
-                  i > 3 && 'hidden lg:block'
-                }`}
+                className={`relative border-white rounded-lg border-4 overflow-hidden shadow-lg `}
                 key={i}
               >
                 <EggTemplate src={item} />
