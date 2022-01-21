@@ -5,10 +5,14 @@ import { motion } from 'framer-motion';
 const NFTUtilsItem = ({ btnStyle, iconSrc, heading, text, delay, inView }) => {
   return (
     <motion.div
-      initial={{ x: '100vw', opacity: 0 }}
-      animate={inView ? { x: 0, opacity: 1 } : { opacity: 0, x: '100vw' }}
+      initial={{ y: ['100vw'], opacity: 0 }}
+      animate={
+        inView
+          ? { y: ['2vw', '0vw'], opacity: 1 }
+          : { opacity: 0, y: ['100vw'] }
+      }
       transition={
-        inView ? { delay: 0.2 * delay, duration: 0.4 } : { delay: 0.3 }
+        inView ? { delay: 0.2 * delay, duration: 0.6 } : { delay: 0.3 }
       }
       className={`flex flex-col items-center NUI rounded-2xl box-border ${btnStyle} shadow-lg`}
     >

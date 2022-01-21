@@ -49,8 +49,8 @@ export default function ContactUs() {
         <form className="contact-form z-10 relative">
           <motion.div
             variants={cont}
-            initial="hidden"
-            animate={inView ? 'show' : 'hidden'}
+            // initial="hidden"
+            // animate={inView ? 'show' : 'hidden'}
             className="contact-grid"
           >
             <input

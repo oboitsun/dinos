@@ -3,6 +3,7 @@ import Heading from './Heading';
 import SubHeading from './SubHeading';
 import '../styles/roadmap3.scss';
 import { useInView } from 'react-intersection-observer';
+import RoadMap3Point from './RoadMap3Point';
 const roadmap = [
   {
     isChecked: true,
@@ -80,21 +81,7 @@ function Roadmap3() {
 
         <div className="roadmap__road-wrapper py-10 lg:py-16">
           {roadmap.map((point, i) => (
-            <div
-              className={`roadmap-point ${point.isChecked ? 'checked' : ''}`}
-            >
-              <div className="road-line top"></div>
-              <div className="road-line bottom"></div>
-              <div
-                className={`point-mark ${point.isChecked ? 'checked' : ''}`}
-              ></div>
-              <div className="text-part">
-                <p className="progress text-orange">
-                  {point.progress}% {point.name}
-                </p>
-                <p className="description">{point.text}</p>
-              </div>
-            </div>
+            <RoadMap3Point idx={i} point={point} key={i} />
           ))}
         </div>
       </div>

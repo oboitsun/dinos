@@ -3,8 +3,8 @@ import Heading from './Heading';
 import SubHeading from './SubHeading';
 import '../styles/about-us.scss';
 import { useInView } from 'react-intersection-observer';
-import EndlessEggs from './EndlessEggs';
-const EggTemplate = ({ src }) => <></>;
+import { motion } from 'framer-motion';
+
 const hamsters = [
   '/imgs/eggs/1.png',
   '/imgs/eggs/2.png',
@@ -15,8 +15,10 @@ const hamsters = [
   '/imgs/eggs/7.png',
   '/imgs/eggs/4.png',
 ];
+
 export default function AboutUs() {
   const { ref, inView } = useInView({ threshold: 0.5 });
+  const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.5 });
   return (
     <div id="about-us">
       <div className="my-container relative lg:pb-16">
@@ -46,7 +48,7 @@ export default function AboutUs() {
               <span className="relative top-1">join the community</span>
             </a>
           </div>
-          <div className="grid grid-cols-4 gap-2 self-start">
+          <div ref={ref2} className="grid grid-cols-4 gap-2 self-start">
             {hamsters.map((item, i) => (
               <div
                 className={`relative border-white rounded-lg border-4 overflow-hidden shadow-lg pic-template `}
@@ -57,7 +59,16 @@ export default function AboutUs() {
                   src="/imgs/slider1-bg.png"
                   alt="bg"
                 />
-                <img className={`absolute  pic z-10`} src={item} alt="ham" />
+                <motion.img
+                  initial={{ x: i > 3 ? '200%' : '-200%' }}
+                  animate={
+                    inView2 ? { x: '-50%' } : { x: i > 3 ? '200%' : '-200%' }
+                  }
+                  transition={{ duration: 0.4, delay: inView2 ? i * 0.1 : 0 }}
+                  className={`absolute  pic z-10`}
+                  src={item}
+                  alt="ham"
+                />
               </div>
             ))}
           </div>

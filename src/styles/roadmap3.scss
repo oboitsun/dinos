@@ -26,20 +26,36 @@
   .roadmap-point {
     &.checked {
       .road-line.top {
-        background: $orange;
+        .yellow-line {
+          height: 100%;
+        }
       }
     }
   }
   .road-line {
+    transition: all 0.5s;
     width: 2px;
     height: 50%;
     background-color: white;
     position: absolute;
     top: 0;
     left: 36px;
+    .yellow-line {
+      height: 0;
+      transition: all linear 0.5s 0.5s;
+    }
     &.bottom {
       height: calc(50% + 40px);
       top: 50%;
+      .yellow-line {
+        height: 0;
+        transition: all linear 0.5s;
+      }
+      &.checked {
+        .yellow-line {
+          height: 100%;
+        }
+      }
     }
   }
 
@@ -53,6 +69,7 @@
     left: 20px;
     transform: rotate(45deg) translateY(-50%);
     background: #948350;
+    transition: all 0.5s;
     &.checked {
       background: $orange;
       border-color: $orange;
