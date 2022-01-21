@@ -4,16 +4,7 @@ import SubHeading from './SubHeading';
 import '../styles/about-us.scss';
 import { useInView } from 'react-intersection-observer';
 import EndlessEggs from './EndlessEggs';
-const EggTemplate = ({ src }) => (
-  <>
-    <img
-      className="w-full object-cover h-full"
-      src="/imgs/slider1-bg.png"
-      alt="bg"
-    />
-    <img className={`absolute  pic z-10`} src={src} alt="ham" />
-  </>
-);
+const EggTemplate = ({ src }) => <></>;
 const hamsters = [
   '/imgs/eggs/1.png',
   '/imgs/eggs/2.png',
@@ -55,13 +46,18 @@ export default function AboutUs() {
               <span className="relative top-1">join the community</span>
             </a>
           </div>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 gap-2 self-start">
             {hamsters.map((item, i) => (
               <div
-                className={`relative border-white rounded-lg border-4 overflow-hidden shadow-lg `}
+                className={`relative border-white rounded-lg border-4 overflow-hidden shadow-lg pic-template `}
                 key={i}
               >
-                <EggTemplate src={item} />
+                <img
+                  className="absolute top-0 left-0 w-full object-cover h-full"
+                  src="/imgs/slider1-bg.png"
+                  alt="bg"
+                />
+                <img className={`absolute  pic z-10`} src={item} alt="ham" />
               </div>
             ))}
           </div>

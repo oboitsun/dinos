@@ -51,12 +51,12 @@ export default function App() {
       <HeroSection {...props_through} />
       <div className="about-section relative bg-lightTurf py-10">
         <img
-          className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 z-10"
+          className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 z-10 pointer-events-none"
           src="/imgs/border.svg"
           alt="border"
         />
         <img
-          className="w-full h-full object-cover absolute top-0 left-0 z-10"
+          className="w-full h-full object-cover absolute top-0 left-0 z-10 pointer-events-none"
           src="/imgs/turf.svg"
           alt="turf"
         />
