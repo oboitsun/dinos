@@ -97,6 +97,22 @@
     background: linear-gradient(180deg, #8c7d4e 0%, #6f6033 100%);
     border: 5px solid #645422;
   }
+  .about-section {
+    .top-gradient {
+      background: linear-gradient(
+        180deg,
+        rgba(191, 172, 112, 1),
+        rgba(191, 172, 112, 0)
+      );
+    }
+    .bottom-gradient {
+      background: linear-gradient(
+        0deg,
+        rgba(191, 172, 112, 1),
+        rgba(191, 172, 112, 0)
+      );
+    }
+  }
   @media (min-width: 1024px) {
     .special-grid {
       gap: 40px;

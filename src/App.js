@@ -61,8 +61,8 @@ export default function App() {
           src="/imgs/turf.svg"
           alt="turf"
         />
-        <div className="bg-gradient-to-b from-lightTurf to-transparent absolute w-full h-10 top-0 left-0 z-10"></div>
-        <div className="bg-gradient-to-t from-lightTurf to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div>
+        <div className="top-gradient absolute w-full h-10 top-0 left-0 z-10"></div>
+        <div className="bottom-gradient absolute w-full h-20 bottom-0 left-0 z-10"></div>
         <NFTUtils />
         <AboutUs />
       </div>
@@ -82,8 +82,8 @@ export default function App() {
           src="/imgs/turf.svg"
           alt="turf"
         />
-        <div className="bg-gradient-to-b from-faq to-transparent absolute w-full h-10 top-0 left-0 "></div>
-        <div className="bg-gradient-to-t from-faq to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div>
+        {/* <div className="bg-gradient-to-b from-faq to-transparent absolute w-full h-10 top-0 left-0 "></div>
+        <div className="bg-gradient-to-t from-faq to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div> */}
         <div className="my-container grid lg:grid-cols-2 gap-10  relative z-10">
           <FAQ />
           <ContactUs />
