@@ -1,3 +1,4 @@
+import { border } from '@chakra-ui/react';
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
@@ -24,12 +25,29 @@ function RoadMap3Point({ point, idx }) {
         className={`point-mark ${inView || point.isChecked ? 'checked' : ''}`}
       ></div>
       <div className="text-part">
-        <p className="progress text-orange">{point.name}</p>
+        <p className="progress text-white text-border pb-5">{point.name}</p>
         <div className="columns">
           {point.content.map((p, i) => (
-            <p className="">
-              <span className="text-orange">{p.head}</span>{' '}
-              <span>{p.text}</span>
+            <p
+              key={i}
+              className={` ${p.isChecked ? 'text-orange' : 'text-white'}`}
+            >
+              <span
+                className={`inline-block w-3 h-3 rounded-sm  border-2 mr-2 ${
+                  p.isChecked ? 'border-orange bg-orange' : 'border-white'
+                }`}
+              >
+                {p.isChecked && (
+                  <img
+                    className="w-2 h-2"
+                    src="/imgs/check-mark.svg"
+                    alt="checked"
+                  />
+                )}
+              </span>
+              <span className="">
+                {p.head} {p.text}
+              </span>
             </p>
           ))}
         </div>

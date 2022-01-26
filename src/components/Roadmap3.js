@@ -10,21 +10,42 @@ const roadmap = [
     progress: 0,
     name: 'First Stage',
     content: [
-      { head: 'grow twitter', text: 'account and following' },
-      { head: 'design', text: 'of eggs and dinosaurs NFTs' },
-      { head: 'design and launch', text: 'website' },
-      { head: 'announce', text: 'roadmap' },
-      { head: 'launch discord', text: 'and assign pre-sale whitelist roles' },
-      { head: 'grow community', text: 'including giveaways and contents' },
-      { head: 'announce', text: 'partnership' },
+      { isChecked: true, head: 'grow twitter', text: 'account and following' },
+      { isChecked: true, head: 'design', text: 'of eggs and dinosaurs NFTs' },
+      { isChecked: true, head: 'design and launch', text: 'website' },
+      { isChecked: true, head: 'announce', text: 'roadmap' },
       {
+        isChecked: false,
+        head: 'launch discord',
+        text: 'and assign pre-sale whitelist roles',
+      },
+      {
+        isChecked: false,
+        head: 'grow community',
+        text: 'including giveaways and contents',
+      },
+      { isChecked: false, head: 'announce', text: 'partnership' },
+      {
+        isChecked: false,
         head: 'assign rarities',
         text: 'to dinosaur species includuing super rare mints',
       },
-      { head: 'announce dates', text: 'for pre-sale and public sale' },
-      { head: 'pre-sale of dinosaur eggs', text: 'at a discounted rate' },
-      { head: 'public sale', text: 'for remainder of eggs' },
-      { head: 'second hand marketplace', text: 'trading launched on entrepot' },
+      {
+        isChecked: false,
+        head: 'announce dates',
+        text: 'for pre-sale and public sale',
+      },
+      {
+        isChecked: false,
+        head: 'pre-sale of dinosaur eggs',
+        text: 'at a discounted rate',
+      },
+      { isChecked: false, head: 'public sale', text: 'for remainder of eggs' },
+      {
+        isChecked: false,
+        head: 'second hand marketplace',
+        text: 'trading launched on entrepot',
+      },
     ],
   },
   {
@@ -33,20 +54,32 @@ const roadmap = [
     name: 'Second Stage',
     content: [
       {
+        isChecked: false,
         head: 'design & development',
         text: 'of dino portal to manage eggs hatching and dinos',
       },
       {
+        isChecked: false,
         head: 'deploy dino portal',
         text: 'on ic blockchain and connect major wallets',
       },
       {
+        isChecked: false,
         head: 'announce rarity charts',
         text: 'and teasers for dinosaurs that will hatch',
       },
-      { head: 'announce dates', text: 'in which hatching will be available' },
-      { head: 'allow users', text: 'to now hatch their eggs' },
       {
+        isChecked: false,
+        head: 'announce dates',
+        text: 'in which hatching will be available',
+      },
+      {
+        isChecked: false,
+        head: 'allow users',
+        text: 'to now hatch their eggs',
+      },
+      {
+        isChecked: false,
         head: 'allow users',
         text: 'to see the dinosaur that inside of their egg and the species and gender',
       },
@@ -58,22 +91,27 @@ const roadmap = [
     name: 'Third Stage',
     content: [
       {
+        isChecked: false,
         head: 'ability',
         text: 'to name your own dinosaur',
       },
       {
+        isChecked: false,
         head: 'development and launch',
         text: 'of our own dino token to be used in game',
       },
       {
+        isChecked: false,
         head: 'ability yo interact',
         text: 'and look after your dinosaurs, tamagotchi style',
       },
       {
+        isChecked: false,
         head: 'ability for your dinosaur ',
         text: 'to age with time - baby, teenager and adult',
       },
       {
+        isChecked: false,
         head: 'ability to purchase',
         text: 'other add-ons and customisations for your pet dinosaur using icp or dino tokens',
       },
@@ -84,14 +122,20 @@ const roadmap = [
     name: 'Fourth Stage',
     content: [
       {
+        isChecked: false,
         head: 'development ',
         text: 'of augmented reality/virtual reality options for ic dinos',
       },
       {
+        isChecked: false,
         head: 'air-drops',
         text: 'for existing holders for another similar collection to enter the dino-verse',
       },
-      { head: 'development', text: 'and design of 3d dinosaurs' },
+      {
+        isChecked: false,
+        head: 'development',
+        text: 'and design of 3d dinosaurs',
+      },
     ],
   },
   {
@@ -99,14 +143,17 @@ const roadmap = [
     name: 'Fifth stage',
     content: [
       {
+        isChecked: false,
         head: 'development',
         text: 'of p2e game which dinosaurs will be used in and earn dino tokens',
       },
       {
+        isChecked: false,
         head: 'leaderboard',
         text: 'will be live and viewable on blockchain',
       },
       {
+        isChecked: false,
         head: 'look at options',
         text: 'for ic dinos to enter the meta-verse',
       },
@@ -117,14 +164,17 @@ const roadmap = [
     name: 'Perks of project',
     content: [
       {
+        isChecked: false,
         head: '25% of monthly sales',
         text: 'will go back to holders - to be announced',
       },
       {
+        isChecked: false,
         head: '25% of initial public sale',
         text: 'will be held to use to buy back to stabilise the floor and paper hands',
       },
       {
+        isChecked: false,
         head: 'the more dinosaurs you hold',
         text: 'the more benefits you get',
       },
