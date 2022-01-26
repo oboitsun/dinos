@@ -65,7 +65,7 @@ export default function App() {
         <NFTUtils />
         <AboutUs />
       </div>
-      <Team />
+      {/* <Team /> */}
       <Roadmap3 />
       {/* <Roadmap2 /> */}
       {/* <Roadmap /> */}
