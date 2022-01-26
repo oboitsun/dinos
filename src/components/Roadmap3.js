@@ -159,27 +159,6 @@ const roadmap = [
       },
     ],
   },
-  {
-    isChecked: false,
-    name: 'Perks of project',
-    content: [
-      {
-        isChecked: false,
-        head: '25% of monthly sales',
-        text: 'will go back to holders - to be announced',
-      },
-      {
-        isChecked: false,
-        head: '25% of initial public sale',
-        text: 'will be held to use to buy back to stabilise the floor and paper hands',
-      },
-      {
-        isChecked: false,
-        head: 'the more dinosaurs you hold',
-        text: 'the more benefits you get',
-      },
-    ],
-  },
 ];
 function Roadmap3() {
   const { ref, inView } = useInView({ threshold: 0.5 });

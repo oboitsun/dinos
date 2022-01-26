@@ -13,6 +13,7 @@ import Roadmap from './components/Roadmap';
 import NFTUtils from './components/NFTUtils';
 import Roadmap2 from './components/Roadmap2';
 import Roadmap3 from './components/Roadmap3';
+import Percs from './components/Percs';
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -65,6 +66,7 @@ export default function App() {
         <NFTUtils />
         <AboutUs />
       </div>
+      <Percs />
       {/* <Team /> */}
       <Roadmap3 />
       {/* <Roadmap2 /> */}
