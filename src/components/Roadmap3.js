@@ -8,38 +8,127 @@ const roadmap = [
   {
     isChecked: true,
     progress: 0,
-    name: 'Welcome ',
-    text: `Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris. `,
+    name: 'First Stage',
+    content: [
+      { head: 'grow twitter', text: 'account and following' },
+      { head: 'design', text: 'of eggs and dinosaurs NFTs' },
+      { head: 'design and launch', text: 'website' },
+      { head: 'announce', text: 'roadmap' },
+      { head: 'launch discord', text: 'and assign pre-sale whitelist roles' },
+      { head: 'grow community', text: 'including giveaways and contents' },
+      { head: 'announce', text: 'partnership' },
+      {
+        head: 'assign rarities',
+        text: 'to dinosaur species includuing super rare mints',
+      },
+      { head: 'announce dates', text: 'for pre-sale and public sale' },
+      { head: 'pre-sale of dinosaur eggs', text: 'at a discounted rate' },
+      { head: 'public sale', text: 'for remainder of eggs' },
+      { head: 'second hand marketplace', text: 'trading launched on entrepot' },
+    ],
   },
   {
     isChecked: false,
     progress: 20,
-    name: 'Warm up ',
-    text: ` Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. Vivamus tristique massa ante, et accumsan felis imperdiet at. In purus libero, venenatis dignissim massa ac, sodales malesuada quam. `,
+    name: 'Second Stage',
+    content: [
+      {
+        head: 'design & development',
+        text: 'of dino portal to manage eggs hatching and dinos',
+      },
+      {
+        head: 'deploy dino portal',
+        text: 'on ic blockchain and connect major wallets',
+      },
+      {
+        head: 'announce rarity charts',
+        text: 'and teasers for dinosaurs that will hatch',
+      },
+      { head: 'announce dates', text: 'in which hatching will be available' },
+      { head: 'allow users', text: 'to now hatch their eggs' },
+      {
+        head: 'allow users',
+        text: 'to see the dinosaur that inside of their egg and the species and gender',
+      },
+    ],
   },
   {
     isChecked: false,
-    progress: 40,
-    name: 'Marketing',
-    text: ` Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. Vivamus tristique massa ante, et accumsan felis imperdiet at. In purus libero, venenatis dignissim massa ac, sodales malesuada quam. `,
+    progress: 0,
+    name: 'Third Stage',
+    content: [
+      {
+        head: 'ability',
+        text: 'to name your own dinosaur',
+      },
+      {
+        head: 'development and launch',
+        text: 'of our own dino token to be used in game',
+      },
+      {
+        head: 'ability yo interact',
+        text: 'and look after your dinosaurs, tamagotchi style',
+      },
+      {
+        head: 'ability for your dinosaur ',
+        text: 'to age with time - baby, teenager and adult',
+      },
+      {
+        head: 'ability to purchase',
+        text: 'other add-ons and customisations for your pet dinosaur using icp or dino tokens',
+      },
+    ],
   },
   {
     isChecked: false,
-    progress: 60,
-    name: 'Portal',
-    text: ` Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. Vivamus tristique massa ante, et accumsan felis imperdiet at. In purus libero, venenatis dignissim massa ac, sodales malesuada quam. `,
+    name: 'Fourth Stage',
+    content: [
+      {
+        head: 'development ',
+        text: 'of augmented reality/virtual reality options for ic dinos',
+      },
+      {
+        head: 'air-drops',
+        text: 'for existing holders for another similar collection to enter the dino-verse',
+      },
+      { head: 'development', text: 'and design of 3d dinosaurs' },
+    ],
   },
   {
     isChecked: false,
-    progress: 80,
-    name: 'Online Minigames',
-    text: ` Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. Vivamus tristique massa ante, et accumsan felis imperdiet at. In purus libero, venenatis dignissim massa ac, sodales malesuada quam. `,
+    name: 'Fifth stage',
+    content: [
+      {
+        head: 'development',
+        text: 'of p2e game which dinosaurs will be used in and earn dino tokens',
+      },
+      {
+        head: 'leaderboard',
+        text: 'will be live and viewable on blockchain',
+      },
+      {
+        head: 'look at options',
+        text: 'for ic dinos to enter the meta-verse',
+      },
+    ],
   },
   {
     isChecked: false,
-    progress: 100,
-    name: 'Giftuary',
-    text: ` Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. Vivamus tristique massa ante, et accumsan felis imperdiet at. In purus libero, venenatis dignissim massa ac, sodales malesuada quam. `,
+    name: 'Perks of project',
+    content: [
+      {
+        head: '25% of monthly sales',
+        text: 'will go back to holders - to be announced',
+      },
+      {
+        head: '25% of initial public sale',
+        text: 'will be held to use to buy back to stabilise the floor and paper hands',
+      },
+      {
+        head: 'the more dinosaurs you hold',
+        text: 'the more benefits you get',
+      },
+    ],
   },
 ];
 function Roadmap3() {
