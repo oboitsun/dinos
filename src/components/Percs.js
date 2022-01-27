@@ -21,6 +21,24 @@ const percs = [
     head: 'the more dinosaurs you hold - the more benefits you get',
     text: '',
   },
+  {
+    icon: '/imgs/badge.svg',
+    head: '25% of monthly sales will go back to holders - to be announced',
+    text: '',
+    btnStyle: 'darkBrown-btn',
+  },
+  {
+    icon: '/imgs/coins.svg',
+    btnStyle: 'turf-btn',
+    head: '25% of initial public sale will be held to use to buy back to stabilise the floor and paper hands',
+    text: '',
+  },
+  {
+    icon: '/imgs/star.svg',
+    btnStyle: 'brown-btn',
+    head: 'the more dinosaurs you hold - the more benefits you get',
+    text: '',
+  },
 ];
 
 function Percs() {
@@ -37,8 +55,8 @@ function Percs() {
         src="/imgs/turf.svg"
         alt="turf"
       />
-      <div className="bg-gradient-to-b from-team to-transparent absolute w-full h-10 top-0 left-0 "></div>
-      <div className="bg-gradient-to-t from-team to-transparent absolute w-full h-20 bottom-0 left-0  z-10"></div>
+      {/* <div className="bg-gradient-to-b from-team to-transparent absolute w-full h-10 top-0 left-0 "></div>
+      <div className="bg-gradient-to-t from-team to-transparent absolute w-full h-20 bottom-0 left-0  z-10"></div> */}
       <div className="my-container relative  ">
         <Heading>
           <span

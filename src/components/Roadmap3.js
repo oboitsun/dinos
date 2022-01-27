@@ -175,8 +175,8 @@ function Roadmap3() {
         src="/imgs/turf.svg"
         alt="turf"
       />
-      <div className="bg-gradient-to-b from-roadmap to-transparent absolute w-full h-10 top-0 left-0 "></div>
-      <div className="bg-gradient-to-t from-roadmap to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div>
+      {/* <div className="bg-gradient-to-b from-roadmap to-transparent absolute w-full h-10 top-0 left-0 "></div>
+      <div className="bg-gradient-to-t from-roadmap to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div> */}
       <div className="my-container relative z-10">
         <Heading>
           <span
@@ -197,11 +197,15 @@ function Roadmap3() {
           fermentum metus. Donec in mauris arcu.
         </SubHeading>
 
-        <div className="roadmap__road-wrapper py-10 lg:py-16">
+        <div className="roadmap__road-wrapper pt-10 lg:pt-16">
           {roadmap.map((point, i) => (
             <RoadMap3Point idx={i} point={point} key={i} />
           ))}
         </div>
+        <p className="text-center text-white pb-10 pb-16">
+          *Please note this roadmap is subject to change at any time and will be
+          updated
+        </p>
       </div>
     </div>
   );

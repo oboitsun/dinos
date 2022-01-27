@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "../styles/hero-section.scss";
-import WelcomeTo from "./WelcomeTo";
-import { motion } from "framer-motion";
-import HeroSectionDinos from "./HeroSectionDinos";
-import "swiper/swiper.scss";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Autoplay } from "swiper";
+import React, { useEffect, useState } from 'react';
+import '../styles/hero-section.scss';
+import WelcomeTo from './WelcomeTo';
+import { motion } from 'framer-motion';
+import HeroSectionDinos from './HeroSectionDinos';
+import 'swiper/swiper.scss';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Autoplay } from 'swiper';
 SwiperCore.use([Navigation, Autoplay]);
 export default function HeroSection({
   showPopup,
@@ -14,12 +14,17 @@ export default function HeroSection({
   setUserAddress,
 }) {
   const slides = [
-    "/imgs/hero-bg3.jpeg",
-    "/imgs/hero-bg4.jpeg",
+    '/imgs/hero-bg3.jpeg',
+    '/imgs/hero-bg4.jpeg',
 
-    "/imgs/hero-bg2.jpeg",
-    "/imgs/hero-bg1.jpeg",
+    '/imgs/hero-bg2.jpeg',
+    '/imgs/hero-bg1.jpeg',
   ];
+  // <img
+  //         className="w-full h-full top-1/2  transform -translate-y-1/2 absolute left-0  object-cover  "
+  //         src={currentBG ? currentBG : "/imgs/bg.jpg"}
+  //         alt="dinos-splash"
+  //       />
   const [currentBG, setCurrentBG] = useState(null);
   useEffect(() => {
     setCurrentBG(slides[Math.floor(Math.random() * slides.length)]);
@@ -30,11 +35,17 @@ export default function HeroSection({
         // style={{ maxWidth: 1920, margin: "0 auto" }}
         className="absolute w-full h-full overflow-hidden top-0 left-1/2 transform -translate-x-1/2 "
       >
-        <img
-          className="w-full h-full top-1/2  transform -translate-y-1/2 absolute left-0  object-cover  "
-          src={currentBG ? currentBG : "/imgs/bg.jpg"}
-          alt="dinos-splash"
-        />
+        <Swiper loop autoplay={{ delay: 3500 }}>
+          {slides.map((slide, i) => (
+            <SwiperSlide>
+              <img
+                className="w-full h-full top-1/2  transform -translate-y-1/2 absolute left-0  object-cover  "
+                src={slide}
+                alt="dinos-splash"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <div className="gradient z-10"></div>
       <div className="my-container relative splash z-10">

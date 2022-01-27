@@ -24,7 +24,13 @@ function RoadMap3Point({ point, idx }) {
         className={`point-mark ${inView || point.isChecked ? 'checked' : ''}`}
       ></div>
       <div className="text-part">
-        <p className="progress text-white text-border pb-5">{point.name}</p>
+        <p
+          className={`progress ${
+            point.isChecked ? 'text-orange' : ' text-white'
+          } text-border pb-5`}
+        >
+          {point.name}
+        </p>
         <div className="columns">
           {point.content.map((p, i) => (
             <p

@@ -5,15 +5,15 @@ import '../styles/about-us.scss';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
-const hamsters = [
-  '/imgs/eggs/1.png',
-  '/imgs/eggs/2.png',
-  '/imgs/eggs/3.png',
-  '/imgs/eggs/4.png',
-  '/imgs/eggs/5.png',
-  '/imgs/eggs/6.png',
-  '/imgs/eggs/7.png',
-  '/imgs/eggs/4.png',
+const dinos = [
+  { egg: '/imgs/eggs/1.png', back: '/imgs/nftBacks/1.jpg' },
+  { egg: '/imgs/eggs/2.png', back: '/imgs/nftBacks/2.jpg' },
+  { egg: '/imgs/eggs/3.png', back: '/imgs/nftBacks/3.jpg' },
+  { egg: '/imgs/eggs/4.png', back: '/imgs/nftBacks/4.jpg' },
+  { egg: '/imgs/eggs/5.png', back: '/imgs/nftBacks/3.jpg' },
+  { egg: '/imgs/eggs/6.png', back: '/imgs/nftBacks/1.jpg' },
+  { egg: '/imgs/eggs/7.png', back: '/imgs/nftBacks/4.jpg' },
+  { egg: '/imgs/eggs/5.png', back: '/imgs/nftBacks/2.jpg' },
 ];
 
 export default function AboutUs() {
@@ -28,11 +28,11 @@ export default function AboutUs() {
               <div className="flex justify-center lg:justify-start">
                 <div
                   ref={ref}
-                  className={`relative text-left block text-orange ${
+                  className={`relative z-20 text-left block text-orange ${
                     inView ? 'shadow-show' : 'shadow-none'
                   }`}
                 >
-                  10,000 <br /> eggs to hatch
+                  8888 Unique <br /> NFT Dinosaur <br /> Eggs to Hatch
                 </div>
               </div>
             </Heading>
@@ -42,31 +42,38 @@ export default function AboutUs() {
               owned by you; it cannot be replicated, taken away, or destroyed.
             </SubHeading>
             <a
-              className="bg-black w-max text-white leading-none py-4 px-6 rounded-full cursor-pointer mt-2"
+              className="bg-black w-max text-white leading-none py-4 px-6 rounded-full cursor-pointer mt-2 hover:bg-orange transition-all duration-500"
               href="https://discord.com"
             >
               <span className="relative top-1">join the community</span>
             </a>
           </div>
           <div ref={ref2} className="grid grid-cols-4 gap-2 self-start">
-            {hamsters.map((item, i) => (
+            {dinos.map((item, i) => (
               <div
                 className={`relative border-white rounded-lg border-4 overflow-hidden shadow-lg pic-template `}
                 key={i}
               >
                 <img
                   className="absolute top-0 left-0 w-full object-cover h-full"
-                  src="/imgs/slider1-bg.png"
+                  src={item.back}
                   alt="bg"
                 />
                 <motion.img
                   initial={{ x: i > 3 ? '200%' : '-200%' }}
                   animate={
-                    inView2 ? { x: '-50%' } : { x: i > 3 ? '200%' : '-200%' }
+                    inView2
+                      ? {
+                          x: '-50%',
+                          transition: {
+                            duration: 0.4,
+                            delay: inView2 ? i * 0.1 : 0,
+                          },
+                        }
+                      : { x: i > 3 ? '200%' : '-200%' }
                   }
-                  transition={{ duration: 0.4, delay: inView2 ? i * 0.1 : 0 }}
                   className={`absolute  pic z-10`}
-                  src={item}
+                  src={item.egg}
                   alt="ham"
                 />
               </div>

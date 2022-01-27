@@ -17,7 +17,7 @@ export default function Header({
 }) {
   const links = [
     { href: 'about-us', text: 'About' },
-    { href: 'team', text: 'Team' },
+    { href: 'percs', text: 'Percs' },
     { href: 'roadmap', text: 'Roadmap' },
     { href: 'https://dino-portal.vercel.app', text: 'Portal' },
     { href: 'faq', text: 'FAQ' },

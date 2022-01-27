@@ -5,10 +5,16 @@ import { motion } from 'framer-motion';
 const NFTUtilsItem = ({ btnStyle, iconSrc, heading, text, delay, inView }) => {
   return (
     <motion.div
+      whileHover={{ scale: 1.1, transition: { delay: 0, duration: 0.3 } }}
       initial={{ x: '100vw', opacity: 0 }}
-      animate={inView ? { x: 0, opacity: 1 } : { opacity: 0 }}
-      transition={
-        inView ? { delay: 0.2 * delay, duration: 0.4 } : { delay: 0.3 }
+      animate={
+        inView
+          ? {
+              x: 0,
+              opacity: 1,
+              transition: { delay: 0.2 * delay, duration: 0.4 },
+            }
+          : { opacity: 0, transition: { delay: 0.3 } }
       }
       className={`flex flex-col items-center NUI rounded-2xl box-border ${btnStyle} shadow-lg`}
     >

@@ -31,17 +31,21 @@ export default function WelcomeTo({
       <motion.p
         variants={item}
         key={1}
-        className="title flex flex-col items-center  text-center mb-5 relative"
+        className="title flex flex-col items-center  text-center mb-2 relative"
       >
-        <span className="text-white"> Hatch.grow.play</span>
+        <span className="text-white "> Hatch.grow.play.</span>
+
         <span className="title-big">Eggs on sale soon</span>
+
         {/* <img
           className="absolute bottom-0 left-1/2 w-4/5 transform translate-y-2/3 -translate-x-1/2"
           src="/imgs/logo.png"
           alt="IC Dinos  logo"
         /> */}
       </motion.p>
-
+      <span className="text-lg mb-2 text-center  text-white leading-none">
+        An NFT based dinosaur project of 8888 dinos on the ICP blockchain
+      </span>
       <motion.div className="pb-5 lg:pb-0" variants={item} key={4}>
         <Timer />
       </motion.div>
@@ -51,6 +55,7 @@ export default function WelcomeTo({
         className="w-full lg:w-auto connect-wallet z-20 flex flex-col lg:flex-row items-center  gap-3"
       >
         <ConnectWallet
+          header
           showPopup={showPopup}
           setShowPopup={setShowPopup}
           setUserAddress={setUserAddress}
