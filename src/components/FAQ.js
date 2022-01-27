@@ -26,7 +26,7 @@ const faqs = [
   {
     qstn: 'HOW LONG WILL IT TAKE FOR MY DINO EGG TO HATCH?',
     answr: `We do not have an exact time frame right now, but it will be announced shortly on when the eggs will be ready to be hatched. Don't worry you won't be waiting for too long!`,
-    back: 'green-btn',
+    back: 'brown-btn',
   },
   {
     qstn: 'HOW MUCH WILL AN IC DINOS EGG COST?',
