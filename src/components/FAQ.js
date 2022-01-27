@@ -18,6 +18,12 @@ const faqs = [
     back: 'yellow-btn',
   },
   {
+    qstn: 'HOW MANY IC DINOS CAN I BUY?',
+    answr: `20 dinosaurs max per wallet - this is to keep under control the Whales. Please note there are white-listed dinos who will get the eggs at a lower price then the normal dinos.
+    `,
+    back: 'green-btn',
+  },
+  {
     qstn: 'HOW LONG WILL IT TAKE FOR MY DINO EGG TO HATCH?',
     answr: `We do not have an exact time frame right now, but it will be announced shortly on when the eggs will be ready to be hatched. Don't worry you won't be waiting for too long!`,
     back: 'green-btn',
