@@ -55,7 +55,6 @@ export default function WelcomeTo({
         className="w-full lg:w-auto connect-wallet z-20 flex flex-col lg:flex-row items-center  gap-3"
       >
         <ConnectWallet
-          header
           showPopup={showPopup}
           setShowPopup={setShowPopup}
           setUserAddress={setUserAddress}

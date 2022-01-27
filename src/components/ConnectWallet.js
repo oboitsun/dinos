@@ -89,9 +89,7 @@ function ConnectWallet({
         {!userAddress ? (
           <Popover>
             <PopoverTrigger>
-              <button className={`btn ${header ? '' : 'outlined'}`}>
-                Connect Wallet
-              </button>
+              <button className={`btn `}>Connect Wallet</button>
             </PopoverTrigger>
             <Portal>
               <PopoverContent className="pop-over">
@@ -141,7 +139,7 @@ function ConnectWallet({
               <p
                 onClick={() => setUserAddress('')}
                 className="pb-1 cursor-pointer"
-              >{`${userAddress.slice(0, 8)}...${userAddress.slice(-6)}`}</p>
+              >{`${userAddress.slice(0, 4)}...${userAddress.slice(-4)}`}</p>
             )}
             <a
               href="#"

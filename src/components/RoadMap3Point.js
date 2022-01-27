@@ -37,7 +37,20 @@ function RoadMap3Point({ point, idx }) {
               key={i}
               className={` ${p.isChecked ? 'text-orange' : 'text-white'}`}
             >
-              <span className="">- {p.head}</span>
+              <span
+                className={`inline-block w-3 h-3 rounded-sm  border-2 mr-2 ${
+                  p.isChecked ? 'border-orange bg-orange' : 'border-white'
+                }`}
+              >
+                {p.isChecked && (
+                  <img
+                    className="w-2 h-2"
+                    src="/imgs/check-mark.svg"
+                    alt="checked"
+                  />
+                )}
+              </span>
+              <span className="">{p.head}</span>
             </p>
           ))}
         </div>

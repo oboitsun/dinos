@@ -29,7 +29,7 @@ export default function Header({
     offset: -100,
     duration: 500,
     activeClass: 'active',
-    className: 'anchor text-white relative top-0.5  mr-3',
+    className: 'anchor text-white relative top-0.5  mr-5',
   };
   return (
     <div
@@ -38,7 +38,12 @@ export default function Header({
         scrolled ? 'bg-turf bg-opacity-80 py-3 shadow-lg' : 'py-7'
       }`}
     >
+      {' '}
       <div className="my-container justify-between flex items-center">
+        {' '}
+        <div className="w-1/4 lg:w-1/8 flex justify-center  flex-shrink-0 ">
+          <Logo wide={false} />
+        </div>
         <div className="hidden lg:flex    ">
           {links.map((l, i) => {
             return l.text !== 'Portal' ? (
@@ -51,7 +56,7 @@ export default function Header({
                   setShowPopup(true);
                 }}
                 key={i}
-                className="anchor text-white relative top-0.5 mr-3"
+                className="anchor text-white relative top-0.5 mr-5"
                 href={l.href}
               >
                 {l.text}
@@ -59,11 +64,7 @@ export default function Header({
             );
           })}
         </div>
-        <div className="w-1/4 lg:w-1/8 flex justify-center  flex-shrink-0 ">
-          <Logo wide={false} />
-        </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
-
         <div className="hidden lg:flex lg:w-1/4 text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center  flex-shrink-0 min-w-max">
           <ConnectWallet
             header
