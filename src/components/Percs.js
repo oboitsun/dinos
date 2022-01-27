@@ -5,14 +5,14 @@ import { useInView } from 'react-intersection-observer';
 const percs = [
   {
     icon: '/imgs/badge.svg',
-    head: '25% of monthly sales will go back to holders - to be announced',
+    head: '25% of monthly sales will go back to holders',
     text: '',
     btnStyle: 'orange-btn',
   },
   {
     icon: '/imgs/coins.svg',
     btnStyle: 'yellow-btn',
-    head: '25% of initial public sale will be held to use to buy back to stabilise the floor and paper hands',
+    head: '25% of initial public sale held to buy back and stabilise floor',
     text: '',
   },
   {
@@ -22,21 +22,21 @@ const percs = [
     text: '',
   },
   {
-    icon: '/imgs/badge.svg',
-    head: '25% of monthly sales will go back to holders - to be announced',
+    icon: '/imgs/nft-utils/diamond.svg',
+    head: 'Gold, Silver or Platinum are rare valuable eggs',
     text: '',
     btnStyle: 'darkBrown-btn',
   },
   {
-    icon: '/imgs/coins.svg',
+    icon: '/imgs/breed.svg',
     btnStyle: 'turf-btn',
-    head: '25% of initial public sale will be held to use to buy back to stabilise the floor and paper hands',
+    head: 'Different rare breeds of dinosaurs (albinos, blue spotted etc) ',
     text: '',
   },
   {
-    icon: '/imgs/star.svg',
+    icon: '/imgs/egg.svg',
     btnStyle: 'brown-btn',
-    head: 'the more dinosaurs you hold - the more benefits you get',
+    head: 'Over 10 different species of dinosaurs in first collection',
     text: '',
   },
 ];
@@ -65,7 +65,7 @@ function Percs() {
               inView ? 'shadow-show' : 'shadow-none'
             }`}
           >
-            Perks of project
+            Perks for NFT Holders
           </span>
         </Heading>
 

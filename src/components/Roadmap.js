@@ -65,11 +65,11 @@ export default function Roadmap() {
           </div>
         </Heading>
         <SubHeading>
-          Donec gravida tellus nec elit consequat ultrices. Vivamus vel
-          tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. Vivamus
-          tristique massa ante, et accumsan felis imperdiet at. In purus libero,
-          venenatis dignissim massa ac, sodales malesuada quam. Aliquam in
-          fermentum metus. Donec in mauris arcu.
+          We have been working hard on the roadmap for the IC Dinos project and
+          the Dino World. We believe that a successful NFT project requires
+          transparency and a clear vision for the future so that holders know
+          what they can expect from the team and how their NFT's may be utilised
+          in the future.
         </SubHeading>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-10">

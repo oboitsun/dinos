@@ -37,9 +37,12 @@ export default function AboutUs() {
               </div>
             </Heading>
             <SubHeading>
-              Dino World is a game centered around breedable, and oh-so-adorable
-              creatures we call Dino World! Each cat is one-of-a-kind and 100%
-              owned by you; it cannot be replicated, taken away, or destroyed.
+              IC Dinos is an NFT collection on the DFINITY Internet Computer
+              blockchain centered around hatchable, breedable and oh-so-adorable
+              dinosaurs that make up the Dino World. Each dino egg is unique and
+              owned 100% by you. It will not be replicated, taken away or
+              destroyed. Your eggs will hatch into a baby dinosaur, and then
+              grow into a teen and adult. Enjoy the journey!
             </SubHeading>
             <a
               className="bg-black w-max text-white leading-none py-4 px-6 rounded-full cursor-pointer mt-2 hover:bg-orange transition-all duration-500"

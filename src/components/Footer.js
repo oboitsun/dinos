@@ -41,8 +41,8 @@ export default function Footer({
             <Socials big />
           </div>
           <p className=" max-w-2xl text-center  text-white leading-loose">
-            Head over to our Discord, INSTAGRAM and Twitter to keep up with the
-            latest information on release dates, giveaways and more!
+            Head over to our Discord and Twitter to keep up with the latest
+            information on release dates, giveaways and more!
           </p>
           <div className="flex  items-center mx-auto gap-4">
             <Logo wide={false} />

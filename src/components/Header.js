@@ -17,7 +17,7 @@ export default function Header({
 }) {
   const links = [
     { href: 'about-us', text: 'About' },
-    { href: 'percs', text: 'Percs' },
+    { href: 'percs', text: 'Perks' },
     { href: 'roadmap', text: 'Roadmap' },
     { href: 'https://dino-portal.vercel.app', text: 'Portal' },
     { href: 'faq', text: 'FAQ' },
@@ -29,7 +29,7 @@ export default function Header({
     offset: -100,
     duration: 500,
     activeClass: 'active',
-    className: 'anchor text-white relative top-0.5 ',
+    className: 'anchor text-white relative top-0.5  mr-3',
   };
   return (
     <div
@@ -39,27 +39,30 @@ export default function Header({
       }`}
     >
       <div className="my-container justify-between flex items-center">
-        <div className="w-1/4 lg:w-1/8  flex-shrink-0 ">
-          <Logo wide={false} />
-        </div>
-        <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
-        <div className="hidden lg:flex justify-evenly  lg:w-1/3 flex-grow ">
+        <div className="hidden lg:flex    ">
           {links.map((l, i) => {
             return l.text !== 'Portal' ? (
               <Anchor key={i} to={l.href} {...linkProps}>
                 {l.text}
               </Anchor>
             ) : (
-              <a
+              <p
+                onClick={() => {
+                  setShowPopup(true);
+                }}
                 key={i}
-                className="anchor text-white relative top-0.5"
+                className="anchor text-white relative top-0.5 mr-3"
                 href={l.href}
               >
                 {l.text}
-              </a>
+              </p>
             );
           })}
         </div>
+        <div className="w-1/4 lg:w-1/8 flex justify-center  flex-shrink-0 ">
+          <Logo wide={false} />
+        </div>
+        <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
 
         <div className="hidden lg:flex lg:w-1/4 text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center  flex-shrink-0 min-w-max">
           <ConnectWallet

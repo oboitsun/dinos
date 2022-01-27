@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import "../styles/pop-up.scss";
+import React, { useState } from 'react';
+import '../styles/pop-up.scss';
 export default function ComingSoonPopUp({ showPopup, setShowPopup }) {
-  const dayX = new Date("November 23, 2021 00:00:00").getTime();
+  const dayX = new Date('November 23, 2021 00:00:00').getTime();
   const today = Date.now();
   const [mintAmount, setmintAmount] = useState(1);
   const [showMint, setShowMint] = useState(dayX > today ? !false : !true);
@@ -13,7 +13,7 @@ export default function ComingSoonPopUp({ showPopup, setShowPopup }) {
     <div
       onClick={handleClosePopup}
       className={`${
-        showPopup ? "opacity-100 " : "pointer-events-none opacity-0"
+        showPopup ? 'opacity-100 ' : 'pointer-events-none opacity-0'
       } transition-all duration-300 fixed z-40 bg-black bg-opacity-70 top-0 left-0 w-screen h-screen flex justify-center items-center`}
     >
       <div
@@ -29,11 +29,15 @@ export default function ComingSoonPopUp({ showPopup, setShowPopup }) {
           x
         </button>
         {!showMint && (
-          <p className="text-white text-7xl uppercase  font-guera">Coming soon!:)</p>
+          <p className="text-white text-center text-7xl uppercase  font-guera">
+            Coming soon!:)
+          </p>
         )}
         {showMint && (
           <div className="popup-mint relative">
-            <p className="text-white  uppercase text-xl lg:text-5xl ">Sale live now!</p>
+            <p className="text-white  uppercase text-xl lg:text-5xl ">
+              Sale live now!
+            </p>
             <p className="text-myRed  uppercase text-xl lg:text-5xl">Dinos!</p>
             <p className="py-4 text-center uppercase text-white font-bold">
               8888 NFTS (1 ICP / NFT)
@@ -70,11 +74,14 @@ export default function ComingSoonPopUp({ showPopup, setShowPopup }) {
                 </button>
               </div>
               <div className="popup-mint-item">
-                {" "}
+                {' '}
                 <p className="balance mr-auto">Total Price</p>
                 <p className="text-orange">{mintAmount * 1} ICP</p>
               </div>
-              <button className="popup-mint-item popup-mint-button"> Mint now </button>
+              <button className="popup-mint-item popup-mint-button">
+                {' '}
+                Mint now{' '}
+              </button>
             </div>
           </div>
         )}

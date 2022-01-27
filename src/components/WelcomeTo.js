@@ -61,7 +61,7 @@ export default function WelcomeTo({
           setUserAddress={setUserAddress}
           userAddress={userAddress}
         />
-        <a className="block w-full" href="https://discord.com">
+        <a className="block w-full" href="#">
           <button className="btn btn-discord w-full"> Join The Discord</button>{' '}
         </a>
         <img

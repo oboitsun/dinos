@@ -39,7 +39,7 @@ const NFTUtilsItem = ({ btnStyle, iconSrc, heading, text, delay, inView }) => {
 const nft_utils = [
   {
     iconSrc: '/imgs/nft-utils/favorite.svg',
-    heading: 'royalty',
+    heading: 'royalties',
     text: 'monthly royalty back to holders',
     style: 'orange-btn',
   },
@@ -57,14 +57,14 @@ const nft_utils = [
   },
   {
     iconSrc: '/imgs/nft-utils/gamepad.svg',
-    heading: 'games',
-    text: 'More cards - more games!',
+    heading: 'P2E Game',
+    text: 'Take part of the IC Dinos p2e game-verse',
     style: 'turf-btn',
   },
   {
     iconSrc: '/imgs/nft-utils/diamond.svg',
     heading: 'Perks',
-    text: 'Secret Perks for Cardholders',
+    text: 'Many Perks for NFT Holders',
     style: 'brown-btn',
   },
 ];

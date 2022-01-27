@@ -7,29 +7,25 @@ import { useInView } from 'react-intersection-observer';
 
 const faqs = [
   {
-    qstn: 'How do I buy a Dino Planet?',
-    answr: 'The Answer',
+    qstn: 'How do I buy a  IC Dinos?',
+    answr: `We are going to most likely be partnered with Entrepot for our initial sale of the eggs - this will be confirmed soon. You will be able to connect your Stoic Wallet and purchase from the Entrepot marketplace.
+    `,
     back: 'orange-btn',
   },
   {
-    qstn: 'What Blockhain and technology are Dino Planet on?',
-    answr: 'The Answer',
+    qstn: 'What Blockhain and technology are  IC Dinos on?',
+    answr: 'IC Dinos is based on DFINITY Internet Computer Blockchain.',
     back: 'yellow-btn',
   },
   {
-    qstn: 'What can I do with once I get my Dino Planet NFT?',
-    answr: 'The Answer',
+    qstn: 'HOW LONG WILL IT TAKE FOR MY DINO EGG TO HATCH?',
+    answr: `We do not have an exact time frame right now, but it will be announced shortly on when the eggs will be ready to be hatched. Don't worry you won't be waiting for too long!`,
     back: 'green-btn',
   },
   {
-    qstn: 'How many Dino Planet can I buy?',
-    answr: 'The Answer',
+    qstn: 'HOW MUCH WILL AN IC DINOS EGG COST?',
+    answr: `We will announce the pricing in Discord as well as the launch date when it's ready.`,
     back: 'turf-btn',
-  },
-  {
-    qstn: 'How many Dino Planet can I buy?',
-    answr: 'The Answer',
-    back: 'brown-btn',
   },
 ];
 export default function FAQ() {
@@ -66,11 +62,8 @@ export default function FAQ() {
             </div>
           </Heading>
           <SubHeading>
-            Donec gravida tellus nec elit consequat ultrices. Vivamus vel
-            tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. Vivamus
-            tristique massa ante, et accumsan felis imperdiet at. In purus
-            libero, venenatis dignissim massa ac, sodales malesuada quam.
-            Aliquam in fermentum metus. Donec in mauris arcu.
+            Some answers to the questions you may have about the IC Dinos
+            project and NFT collection
           </SubHeading>
         </div>
         <div className="grid grid-cols-1  gap-4 lg:gap-4 w-full">

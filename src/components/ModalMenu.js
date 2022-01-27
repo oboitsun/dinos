@@ -9,7 +9,7 @@ import ConnectWallet from './ConnectWallet';
 export default function ModalMenu({ showMenu, setShowMenu }) {
   const links = [
     { href: 'about-us', text: 'About Us' },
-    { href: 'percs', text: 'Percs' },
+    { href: 'percs', text: 'Perks' },
     { href: 'roadmap', text: 'Roadmap' },
     // { href: "market", text: "Market" },
     { href: 'faq', text: 'FAQ' },
