@@ -31,7 +31,7 @@ const faqs = [
   {
     qstn: 'HOW MUCH WILL AN IC DINOS EGG COST?',
     answr: `We will announce the pricing in Discord as well as the launch date when it's ready.`,
-    back: 'turf-btn',
+    back: 'darkBrown-btn',
   },
 ];
 export default function FAQ() {

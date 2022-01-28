@@ -4,37 +4,37 @@ import '../styles/Percs.scss';
 import { useInView } from 'react-intersection-observer';
 const percs = [
   {
-    icon: '/imgs/badge.svg',
+    icon: '/imgs/perks/badge.svg',
     head: '25% of monthly sales will go back to holders',
     text: '',
     btnStyle: 'orange-btn',
   },
   {
-    icon: '/imgs/coins.svg',
+    icon: '/imgs/perks/coins.svg',
     btnStyle: 'yellow-btn',
     head: '25% of initial public sale held to buy back and stabilise floor',
     text: '',
   },
   {
-    icon: '/imgs/star.svg',
+    icon: '/imgs/perks/star.svg',
     btnStyle: 'green-btn',
     head: 'the more dinosaurs you hold - the more benefits you get',
     text: '',
   },
   {
-    icon: '/imgs/nft-utils/diamond.svg',
+    icon: '/imgs/perks/diamond.svg',
     head: 'Gold, Silver or Platinum are rare valuable eggs',
     text: '',
     btnStyle: 'darkBrown-btn',
   },
   {
-    icon: '/imgs/breed.svg',
+    icon: '/imgs/perks/breed.svg',
     btnStyle: 'turf-btn',
     head: 'Different rare breeds of dinosaurs (albinos, blue spotted etc) ',
     text: '',
   },
   {
-    icon: '/imgs/egg.svg',
+    icon: '/imgs/perks/egg.svg',
     btnStyle: 'brown-btn',
     head: 'Over 10 different species of dinosaurs in first collection',
     text: '',
