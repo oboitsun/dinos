@@ -35,7 +35,23 @@ export default function HeroSection({
         // style={{ maxWidth: 1920, margin: "0 auto" }}
         className="absolute w-full h-full overflow-hidden top-0 left-1/2 transform -translate-x-1/2 "
       >
-        <Swiper loop autoplay={{ delay: 3500 }}>
+        <div
+          id="prev-slide"
+          className="absolute top-1/2 transform -translate-y-1/2 left-4 z-10 cursor-pointer hover:scale-110 transition-all"
+        >
+          <img src="/imgs/arrow-prev.svg" alt="previous slide" />
+        </div>
+        <div
+          id="next-slide"
+          className="absolute top-1/2 transform -translate-y-1/2 rotate-180 right-4 z-10 cursor-pointer hover:scale-110 transition-all"
+        >
+          <img src="/imgs/arrow-prev.svg" alt="previous slide" />
+        </div>
+        <Swiper
+          navigation={{ nextEl: '#next-slide', prevEl: '#prev-slide' }}
+          loop
+          autoplay={{ delay: 3500 }}
+        >
           {slides.map((slide, i) => (
             <SwiperSlide>
               <img

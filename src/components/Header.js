@@ -29,7 +29,7 @@ export default function Header({
     offset: -100,
     duration: 500,
     activeClass: 'active',
-    className: 'anchor text-white relative top-0.5  mr-5',
+    className: 'anchor text-white  relative top-0.5  mr-5',
   };
   return (
     <div
