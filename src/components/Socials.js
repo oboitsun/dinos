@@ -31,7 +31,10 @@ export default function Socials({ big = false }) {
           />
         </svg>
       </a>
-      <a className={`socials-icon ${big ? 'w-10' : 'w-5'}`} href="#">
+      <a
+        className={`socials-icon ${big ? 'w-10' : 'w-5'}`}
+        href="https://twitter.com/icdinos"
+      >
         <svg
           className="fill-current w-full"
           viewBox="0 0 20 20"
