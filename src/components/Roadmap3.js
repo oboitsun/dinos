@@ -88,6 +88,14 @@ const roadmap = [
         isChecked: false,
         head: ` Ability to buy other add-ons using ICP or DINOs`,
       },
+      {
+        isChecked: false,
+        head: ` Network with Dinosaur FB Groups`,
+      },
+      {
+        isChecked: false,
+        head: ` Market to Mainstream Dinosaur lovers`,
+      },
     ],
   },
   {
