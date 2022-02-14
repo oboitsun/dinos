@@ -5,14 +5,14 @@ import { useInView } from 'react-intersection-observer';
 const percs = [
   {
     icon: '/imgs/perks/badge.svg',
-    head: '25% of monthly sales will go back to holders',
+    head: 'We are going to announce monthly rewards for holders soon',
     text: '',
     btnStyle: 'orange-btn',
   },
   {
     icon: '/imgs/perks/coins.svg',
     btnStyle: 'yellow-btn',
-    head: '25% of initial public sale held to buy back and stabilise floor',
+    head: '25% of public sale will be used for on-going marketing of project online and offline',
     text: '',
   },
   {

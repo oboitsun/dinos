@@ -39,8 +39,8 @@ const NFTUtilsItem = ({ btnStyle, iconSrc, heading, text, delay, inView }) => {
 const nft_utils = [
   {
     iconSrc: '/imgs/nft-utils/favorite.svg',
-    heading: 'royalties',
-    text: 'monthly royalty back to holders',
+    heading: 'rewards',
+    text: 'rewards go back to holders',
     style: 'orange-btn',
   },
   {

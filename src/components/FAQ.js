@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 
 const faqs = [
   {
-    qstn: 'How do I buy a  IC Dinos?',
+    qstn: 'How do I buy a  An IC Dinos Egg?',
     answr: `We are going to most likely be partnered with Entrepot for our initial sale of the eggs - this will be confirmed soon. You will be able to connect your Stoic Wallet and purchase from the Entrepot marketplace.
     `,
     back: 'orange-btn',
