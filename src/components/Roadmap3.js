@@ -105,11 +105,11 @@ const roadmap = [
       { isChecked: false, head: ` Design and development of p2e game concept` },
       {
         isChecked: false,
-        head: ` Air-drops for existing holders for another similar collection to enter the dino-verse`,
+        head: `Air-drops for existing holders for another similar collection to enter the dino-verse`,
       },
       {
         isChecked: false,
-        head: ` Leaderboard will be live and viewable on blockchain`,
+        head: `Leaderboard will be live and viewable on blockchain`,
       },
     ],
   },
@@ -119,19 +119,19 @@ const roadmap = [
     content: [
       {
         isChecked: false,
-        head: ` Development of a p2e game which the dinosaurs will be used in and to earn DINO tokens`,
+        head: `Development of a p2e game which the dinosaurs will be used in and to earn DINO tokens`,
       },
       {
         isChecked: false,
-        head: ` Development and design concept of 3D Dinosaurs `,
+        head: `Development and design concept of 3D Dinosaurs `,
       },
       {
         isChecked: false,
-        head: ` Development of augmented reality/virtual reality options for IC Dinos`,
+        head: `Development of augmented reality/virtual reality options for IC Dinos`,
       },
       {
         isChecked: false,
-        head: ` Look at options for IC Dinos to enter the meta-verse`,
+        head: `Look at options for IC Dinos to enter the meta-verse`,
       },
     ],
   },
@@ -178,7 +178,7 @@ function Roadmap3() {
             <RoadMap3Point idx={i} point={point} key={i} />
           ))}
         </div>
-        <p className="text-center text-white pb-10 pb-16">
+        <p className="text-center text-white  pb-16">
           *Please note this roadmap is subject to change at any time and will be
           updated
         </p>

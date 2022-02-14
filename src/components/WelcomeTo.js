@@ -35,7 +35,7 @@ export default function WelcomeTo({
       >
         <span className="text-white "> Hatch.grow.play.</span>
 
-        <span className="title-big">Eggs on sale soon</span>
+        <span className="title-big">Dino Eggs on sale soon</span>
 
         {/* <img
           className="absolute bottom-0 left-1/2 w-4/5 transform translate-y-2/3 -translate-x-1/2"
