@@ -143,9 +143,9 @@ function ConnectWallet({
             )}
             <a
               href="#"
-              // onClick={() => {
-              //   setShowPopup(true);
-              // }}
+              onClick={() => {
+                setShowPopup(true);
+              }}
               className={`btn bg-orange h-full ${header && 'text-xs'}`}
             >
               Mint NFT

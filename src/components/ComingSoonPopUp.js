@@ -1,14 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/pop-up.scss';
 export default function ComingSoonPopUp({ showPopup, setShowPopup }) {
-  const dayX = new Date('November 23, 2021 00:00:00').getTime();
+  const dayX = new Date('November 23, 2022 00:00:00').getTime();
   const today = Date.now();
   const [mintAmount, setmintAmount] = useState(1);
-  const [showMint, setShowMint] = useState(dayX > today ? !false : !true);
+  const [showMint, setShowMint] = useState(dayX > today ? false : true);
   const handleClosePopup = () => {
     setShowPopup(false);
   };
-
+  useEffect(() => {
+    const timedOut =
+      showPopup &&
+      !showMint &&
+      setTimeout(() => {
+        setShowPopup(false);
+      }, 1500);
+    return function () {
+      clearTimeout(timedOut);
+    };
+  }, [showPopup]);
   return (
     <div
       onClick={handleClosePopup}
@@ -30,7 +40,7 @@ export default function ComingSoonPopUp({ showPopup, setShowPopup }) {
         </button>
         {!showMint && (
           <p className="text-white text-center text-7xl uppercase  font-guera">
-            Coming soon!:)
+            Minting is coming soon!:)
           </p>
         )}
         {showMint && (
