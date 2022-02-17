@@ -51,16 +51,16 @@ export default function Header({
                 {l.text}
               </Anchor>
             ) : (
-              <p
+              <button
                 onClick={() => {
-                  setShowPopup(true);
+                  setDiscord(true);
                 }}
                 key={i}
                 className="anchor text-white relative top-0.5 mr-5"
                 href={l.href}
               >
                 {l.text}
-              </p>
+              </button>
             );
           })}
         </div>
