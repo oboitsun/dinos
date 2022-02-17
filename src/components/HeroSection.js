@@ -12,6 +12,7 @@ export default function HeroSection({
   setShowPopup,
   userAddress,
   setUserAddress,
+  setDiscord,
 }) {
   const slides = [
     '/imgs/hero-bg3.jpeg',
@@ -70,6 +71,7 @@ export default function HeroSection({
           setShowPopup={setShowPopup}
           userAddress={userAddress}
           setUserAddress={setUserAddress}
+          setDiscord={setDiscord}
         />
         {/* <HeroSectionDinos /> */}
       </div>

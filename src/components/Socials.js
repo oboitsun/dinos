@@ -1,8 +1,6 @@
-import React from 'react';
-
-export default function Socials({ big = false }) {
+export default function Socials({ big = false, setDiscord }) {
   return (
-    <div className="flex gap-6">
+    <div className="flex gap-6 relative z-10">
       {/* <a className={`socials-icon ${big ? "w-10" : "w-5"}`} href="https://instagram.com">
         <svg
           className="fill-current w-full"
@@ -16,7 +14,12 @@ export default function Socials({ big = false }) {
           />
         </svg>
       </a> */}
-      <a className={`socials-icon ${big ? 'w-10' : 'w-5'}`} href="#">
+      <button
+        onClick={() => {
+          setDiscord(true);
+        }}
+        className={`socials-icon ${big ? 'w-10' : 'w-5'}`}
+      >
         <svg
           className="fill-current w-full"
           viewBox="0 0 19 20"
@@ -30,7 +33,7 @@ export default function Socials({ big = false }) {
             fill="current"
           />
         </svg>
-      </a>
+      </button>
       <a
         className={`socials-icon ${big ? 'w-10' : 'w-5'}`}
         href="https://twitter.com/icdinos"

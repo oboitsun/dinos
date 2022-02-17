@@ -11,12 +11,13 @@ export default function Footer({
   setShowPopup,
   userAddress,
   setUserAddress,
+  setDiscord,
 }) {
   const links = [
     { href: 'about-us', text: 'About Us' },
     { href: 'team', text: 'Team' },
     { href: 'roadmap', text: 'Roadmap' },
-    // { href: "market", text: "Market" },
+    { href: 'market', text: 'Market' },
     { href: 'faq', text: 'FAQ' },
   ];
 
@@ -29,7 +30,7 @@ export default function Footer({
     className: 'anchor text-white ',
   };
   return (
-    <div className="footer bg-footer py-16 relative">
+    <div className="footer bg-footer py-16 relative z-10">
       <img
         className="w-full h-full object-cover absolute top-0 left-0 z-10 pointer-events-none"
         src="/imgs/turf.svg"
@@ -38,7 +39,7 @@ export default function Footer({
       <div className="my-container relative z-10">
         <div className="w-full justify-between flex flex-col items-center gap-4">
           <div className=" ">
-            <Socials big />
+            <Socials big showPopup={showPopup} setDiscord={setDiscord} />
           </div>
           <p className=" max-w-2xl text-center  text-white leading-loose">
             Head over to our Discord and Twitter to keep up with the latest

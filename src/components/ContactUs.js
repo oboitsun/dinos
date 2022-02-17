@@ -19,7 +19,7 @@ export default function ContactUs() {
   const { ref, inView } = useInView({ threshold: 0.5, triggerOnce: true });
   return (
     <div id="contact-us">
-      <div className="relative ">
+      <div className=" ">
         {/* <img
           className=" absolute top-3/4 right-full ml-10 w-1/12"
           src="/imgs/turf4.png"
@@ -81,7 +81,7 @@ export default function ContactUs() {
               })
               .catch((err) => console.log(err.message));
           }}
-          className="contact-form z-10 relative"
+          className="contact-form "
         >
           <motion.div variants={cont} className="contact-grid">
             <input

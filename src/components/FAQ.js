@@ -18,8 +18,8 @@ const faqs = [
     back: 'yellow-btn',
   },
   {
-    qstn: 'HOW MANY IC DINOS CAN I BUY?',
-    answr: `20 dinosaurs max per wallet - this is to keep under control the Whales. Please note there are white-listed dinos who will get the eggs at a lower price than the normal dinos.
+    qstn: 'how many dino eggs can I buy??',
+    answr: `20 eggs max per wallet - this is to keep under control the Whales. Please note there are white-listed dinos who will get the eggs at a lower price than the normal dinos.
     `,
     back: 'green-btn',
   },

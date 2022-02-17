@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import Burger from './Burger';
 import Logo from './Logo';
 import { Link as Anchor } from 'react-scroll';
@@ -7,6 +6,7 @@ import Socials from './Socials';
 import ConnectWallet from './ConnectWallet';
 
 export default function Header({
+  setDiscord,
   showPopup,
   setShowPopup,
   userAddress,
@@ -73,7 +73,7 @@ export default function Header({
             setUserAddress={setUserAddress}
             userAddress={userAddress}
           />
-          <Socials />
+          <Socials setDiscord={setDiscord} />
         </div>
       </div>
     </div>

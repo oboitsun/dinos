@@ -9,6 +9,7 @@ export default function WelcomeTo({
   showPopup,
   setUserAddress,
   userAddress,
+  setDiscord,
 }) {
   const cont = {
     show: {
@@ -60,9 +61,15 @@ export default function WelcomeTo({
           setUserAddress={setUserAddress}
           userAddress={userAddress}
         />
-        <a className="block w-full" href="#">
-          <button className="btn btn-discord w-full"> Join The Discord</button>{' '}
-        </a>
+        <button
+          onClick={() => {
+            setDiscord(true);
+          }}
+          className="btn btn-discord w-full"
+        >
+          {' '}
+          Join The Discord
+        </button>{' '}
         <img
           style={{ width: 64 }}
           className="block   h-auto"
