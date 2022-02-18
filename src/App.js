@@ -69,7 +69,7 @@ export default function App() {
         <div className="top-gradient absolute w-full h-10 top-0 left-0 z-10"></div>
         <div className="bottom-gradient absolute w-full h-20 bottom-0 left-0 z-10"></div>
         <NFTUtils />
-        <AboutUs />
+        <AboutUs {...props_through} />
       </div>
       <Percs />
       {/* <Team /> */}

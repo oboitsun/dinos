@@ -21,7 +21,7 @@ function DiscordPopup({ showDiscord, setDiscord }) {
       } transition-all duration-300 fixed z-50 bg-black bg-opacity-70 top-0 left-0 w-screen h-screen flex justify-center items-center`}
     >
       <p className="text-xl xl:text-7xl text-center text-white">
-        Coming Soon:)
+        Discord is coming soon:)
       </p>
     </div>
   );

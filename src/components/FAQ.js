@@ -19,8 +19,7 @@ const faqs = [
   },
   {
     qstn: 'how many dino eggs can I buy??',
-    answr: `20 eggs max per wallet - this is to keep under control the Whales. Please note there are white-listed dinos who will get the eggs at a lower price than the normal dinos.
-    `,
+    answr: `There is going to be a limit of how many dino eggs can be given to those who have whitelist. In the public sale, you will be able to buy as many as you want! Get in quick - afterwards you will be able to buy eggs on the secondary marketplace.`,
     back: 'green-btn',
   },
   {

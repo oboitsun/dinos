@@ -16,7 +16,7 @@ const dinos = [
   { egg: '/imgs/eggs/5.png', back: '/imgs/nftBacks/2.jpg' },
 ];
 
-export default function AboutUs() {
+export default function AboutUs({ setDiscord }) {
   const { ref, inView } = useInView({ threshold: 0.5 });
   const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.5 });
   return (
@@ -39,16 +39,20 @@ export default function AboutUs() {
             <SubHeading>
               IC Dinos is an NFT collection on the DFINITY Internet Computer
               blockchain centered around hatchable, breedable and oh-so-adorable
-              dinosaurs that make up the Dino World. Each dino egg is unique and
-              owned 100% by you. Your eggs will hatch into a baby dinosaur, and
-              then grow into a teen and adult. Enjoy the journey!
+              dinosaurs that make up the Dino Planet. Each dino egg is unique
+              and owned 100% by you. Your eggs will hatch when ready onto a baby
+              dinosaur and then grow into a teen and adult in time. Enjoy the
+              journey!
             </SubHeading>
-            <a
+            <button
+              onClick={() => {
+                setDiscord(true);
+              }}
               className="bg-black w-max text-white leading-none py-4 px-6 rounded-full cursor-pointer mt-2 hover:bg-orange transition-all duration-500"
               href="#"
             >
               <span className="relative top-1">join the community</span>
-            </a>
+            </button>
           </div>
           <div ref={ref2} className="grid grid-cols-4 gap-2 self-start">
             {dinos.map((item, i) => (
