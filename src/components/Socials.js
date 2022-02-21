@@ -16,7 +16,7 @@ export default function Socials({ big = false, setDiscord }) {
       </a> */}
       <button
         onClick={() => {
-          setDiscord(true);
+          setDiscord({ show: true, what: 'discord' });
         }}
         className={`socials-icon ${big ? 'w-10' : 'w-5'}`}
       >

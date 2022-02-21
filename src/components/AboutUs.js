@@ -46,7 +46,7 @@ export default function AboutUs({ setDiscord }) {
             </SubHeading>
             <button
               onClick={() => {
-                setDiscord(true);
+                setDiscord({ show: true, what: 'discord' });
               }}
               className="bg-black w-max text-white leading-none py-4 px-6 rounded-full cursor-pointer mt-2 hover:bg-orange transition-all duration-500"
               href="#"

@@ -63,7 +63,7 @@ export default function WelcomeTo({
         />
         <button
           onClick={() => {
-            setDiscord(true);
+            setDiscord({ show: true, what: 'discord' });
           }}
           className="btn btn-discord w-full"
         >

@@ -53,7 +53,7 @@ export default function Header({
             ) : (
               <button
                 onClick={() => {
-                  setDiscord(true);
+                  setDiscord({ show: true, what: 'Portal' });
                 }}
                 key={i}
                 className="anchor text-white relative top-0.5 mr-5"

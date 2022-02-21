@@ -21,7 +21,7 @@ export default function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [userAddress, setUserAddress] = useState('');
   const [showPopup, setShowPopup] = useState(false);
-  const [showDiscord, setDiscord] = useState(false);
+  const [showDiscord, setDiscord] = useState({ show: true, what: 'discord' });
   const handleScroll = (e) => {
     if (e.target.scrollingElement.scrollTop < 10) setScrolled(false);
     if (e.target.scrollingElement.scrollTop >= 10) setScrolled(true);
