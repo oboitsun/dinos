@@ -29,7 +29,6 @@ export default function App() {
   //scrolling listener
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
