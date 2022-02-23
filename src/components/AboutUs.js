@@ -38,11 +38,10 @@ export default function AboutUs({ setDiscord }) {
             </Heading>
             <SubHeading>
               IC Dinos is an NFT collection on the DFINITY Internet Computer
-              blockchain centered around hatchable, breedable and oh-so-adorable
-              dinosaurs that make up the Dino Planet. Each dino egg is unique
-              and owned 100% by you. Your eggs will hatch when ready onto a baby
-              dinosaur and then grow into a teen and adult in time. Enjoy the
-              journey!
+              blockchain centered around hatchable and oh-so-adorable dinosaurs
+              that make up the Dino Planet. Each dino egg is unique and owned
+              100% by you. Your eggs will hatch when ready onto a baby dinosaur
+              and then grow into a teen and adult in time. Enjoy the journey!
             </SubHeading>
             <button
               onClick={() => {
