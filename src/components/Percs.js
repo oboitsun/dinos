@@ -30,7 +30,7 @@ const percs = [
   {
     icon: '/imgs/perks/breed.svg',
     btnStyle: 'turf-btn',
-    head: 'Different rare breeds of dinosaurs (albinos, blue spotted etc) ',
+    head: 'Many Breeds of Dinosaurs including Legendary Rares',
     text: '',
   },
   {

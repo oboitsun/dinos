@@ -15,14 +15,14 @@ const roadmap = [
       { isChecked: true, head: `Design and launch website` },
       { isChecked: true, head: `Announce roadmap` },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Launch Discord and assign pre-sale whitelist roles`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Grow community including giveaways and contests`,
       },
-      { isChecked: false, head: `Announce partnerships/collabs ` },
+      { isChecked: true, head: `Announce partnerships/collabs ` },
       {
         isChecked: false,
         head: `Assign rarities to dinosaur species including super rare mints`,
