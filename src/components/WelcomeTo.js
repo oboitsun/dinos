@@ -66,7 +66,7 @@ export default function WelcomeTo({
           //   onClick={() => {
           //     setDiscord({ show: true, what: 'discord' });
           //   }}
-          //   className="btn btn-discord w-full"
+          className="btn btn-discord w-full"
         >
           {' '}
           Join The Discord
