@@ -10,10 +10,10 @@ const dinos = [
   { egg: '/imgs/eggs/2.png', back: '/imgs/nftBacks/2.jpg' },
   { egg: '/imgs/eggs/3.png', back: '/imgs/nftBacks/3.jpg' },
   { egg: '/imgs/eggs/4.png', back: '/imgs/nftBacks/4.jpg' },
-  { egg: '/imgs/eggs/5.png', back: '/imgs/nftBacks/3.jpg' },
-  { egg: '/imgs/eggs/6.png', back: '/imgs/nftBacks/1.jpg' },
-  { egg: '/imgs/eggs/7.png', back: '/imgs/nftBacks/4.jpg' },
-  { egg: '/imgs/eggs/5.png', back: '/imgs/nftBacks/2.jpg' },
+  { egg: '/imgs/eggs/5.png', back: '/imgs/nftBacks/5.jpg' },
+  { egg: '/imgs/eggs/6.png', back: '/imgs/nftBacks/6.jpg' },
+  { egg: '/imgs/eggs/7.png', back: '/imgs/nftBacks/7.jpg' },
+  { egg: '/imgs/eggs/8.png', back: '/imgs/nftBacks/8.jpg' },
 ];
 
 export default function AboutUs({ setDiscord }) {

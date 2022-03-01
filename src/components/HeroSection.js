@@ -15,10 +15,13 @@ export default function HeroSection({
   setDiscord,
 }) {
   const slides = [
-    '/imgs/hero-bg1.jpeg',
-    '/imgs/hero-bg2.jpeg',
-    '/imgs/hero-bg3.jpeg',
-    '/imgs/hero-bg4.jpeg',
+    '/imgs/backs/bg1.jpg',
+    '/imgs/backs/bg2.jpg',
+    '/imgs/backs/bg3.jpg',
+    '/imgs/backs/bg4.jpg',
+    '/imgs/backs/bg5.jpg',
+    '/imgs/backs/bg6.jpg',
+    '/imgs/backs/bg7.jpg',
   ];
   // <img
   //         className="w-full h-full top-1/2  transform -translate-y-1/2 absolute left-0  object-cover  "
