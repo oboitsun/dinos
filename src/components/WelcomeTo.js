@@ -61,15 +61,16 @@ export default function WelcomeTo({
           setUserAddress={setUserAddress}
           userAddress={userAddress}
         />
-        <button
-          onClick={() => {
-            setDiscord({ show: true, what: 'discord' });
-          }}
-          className="btn btn-discord w-full"
+        <a
+          href="https://discord.gg/icdinos"
+          //   onClick={() => {
+          //     setDiscord({ show: true, what: 'discord' });
+          //   }}
+          //   className="btn btn-discord w-full"
         >
           {' '}
           Join The Discord
-        </button>{' '}
+        </a>{' '}
         <img
           style={{ width: 64 }}
           className="block   h-auto"
