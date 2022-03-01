@@ -24,10 +24,10 @@ const roadmap = [
       },
       { isChecked: true, head: `Announce partnerships/collabs ` },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Assign rarities to dinosaur species including super rare mints`,
       },
-      { isChecked: false, head: `Announce dates for pre-sale and public sale` },
+      { isChecked: true, head: `Announce dates for pre-sale and public sale` },
       {
         isChecked: false,
         head: `Pre-sale of dinosaur eggs at a discounted rate`,

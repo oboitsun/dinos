@@ -15,11 +15,10 @@ export default function HeroSection({
   setDiscord,
 }) {
   const slides = [
+    '/imgs/hero-bg1.jpeg',
+    '/imgs/hero-bg2.jpeg',
     '/imgs/hero-bg3.jpeg',
     '/imgs/hero-bg4.jpeg',
-
-    '/imgs/hero-bg2.jpeg',
-    '/imgs/hero-bg1.jpeg',
   ];
   // <img
   //         className="w-full h-full top-1/2  transform -translate-y-1/2 absolute left-0  object-cover  "
@@ -34,8 +33,13 @@ export default function HeroSection({
     <motion.div id="hero-section" className="relative overflow-hidden">
       <div
         // style={{ maxWidth: 1920, margin: "0 auto" }}
-        className="absolute w-full h-full overflow-hidden top-0 left-1/2 transform -translate-x-1/2 "
+        className="absolute w-full h-full overflow-hidden bottom-0 left-1/2 transform -translate-x-1/2 "
       >
+        {/* <img
+          className="absolute w-full h-auto z-10 bottom-0 left-0 pointer-events-none"
+          src="/imgs/eggs-hero-section.png"
+          alt="eggs"
+        /> */}
         <div
           id="prev-slide"
           className="absolute top-1/2 transform -translate-y-1/2 left-4 z-10 cursor-pointer hover:scale-110 transition-all"
@@ -56,7 +60,7 @@ export default function HeroSection({
           {slides.map((slide, i) => (
             <SwiperSlide>
               <img
-                className="w-full h-full top-1/2  transform -translate-y-1/2 absolute left-0  object-cover  "
+                className="w-full h-full bottom-0  transform  absolute left-0  object-cover  "
                 src={slide}
                 alt="dinos-splash"
               />
