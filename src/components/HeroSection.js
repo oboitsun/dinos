@@ -20,7 +20,7 @@ export default function HeroSection({
     '/imgs/backs/bg3.jpg',
     '/imgs/backs/bg4.jpg',
     '/imgs/backs/bg5.jpg',
-    '/imgs/backs/bg6.jpg',
+    // '/imgs/backs/bg6.jpg',
     '/imgs/backs/bg7.jpg',
   ];
   // <img

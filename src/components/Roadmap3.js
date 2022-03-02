@@ -61,7 +61,7 @@ const roadmap = [
       { isChecked: false, head: ` Allow users to now hatch their eggs` },
       {
         isChecked: false,
-        head: ` User can see their dinosaur, gender and rarity/species`,
+        head: ` User can see their dinosaur and rarity/species`,
       },
     ],
   },
