@@ -23,14 +23,14 @@ const percs = [
   },
   {
     icon: '/imgs/perks/diamond.svg',
-    head: 'Gold, Silver or Platinum are rare valuable eggs',
+    head: 'Some eggs will hold some rare valuable dinosaurs!',
     text: '',
     btnStyle: 'darkBrown-btn',
   },
   {
     icon: '/imgs/perks/breed.svg',
     btnStyle: 'turf-btn',
-    head: 'Many Breeds of Dinosaurs including Legendary Rares',
+    head: 'Many Breeds of Dinosaurs INCLUDING ELEMENTAL SUPER RARES AND LEGENDARY RARES',
     text: '',
   },
   {
