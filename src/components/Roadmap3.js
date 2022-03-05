@@ -37,6 +37,22 @@ const roadmap = [
         isChecked: false,
         head: `Second hand marketplace trading ,launched on Entrepot`,
       },
+      {
+        isChecked: false,
+        head: `Second hand marketplace trading ,launched on Entrepot`,
+      },
+      {
+        isChecked: false,
+        head: `Hatch date 2 weeks after minting date to see baby dinosaur`,
+      },
+      {
+        isChecked: false,
+        head: `More sneak peaks done for the project before dinos are hatched`,
+      },
+      {
+        isChecked: false,
+        head: `User can now hatch eggs and see rarity of the dinosaurs`,
+      },
     ],
   },
   {
@@ -46,22 +62,17 @@ const roadmap = [
     content: [
       {
         isChecked: false,
-        head: ` Design and development of Dino Portal to manage dinos`,
+        head: `Design and development of Dino Portal to manage dinos`,
       },
-      { isChecked: false, head: ` Deploy Dino Portal on IC blockchain ` },
+      {
+        isChecked: false,
+        head: ` Air-drop for OG members and anybody who has purchased a dino(To be announced)`,
+      },
+      { isChecked: false, head: ` Deploy Dino Portal on IC blockchain` },
       { isChecked: false, head: ` Connect major wallets to our portal ` },
       {
         isChecked: false,
-        head: ` Announce rarity charts for potential dinos to hatch`,
-      },
-      {
-        isChecked: false,
-        head: ` Announce dates for when hatching is available`,
-      },
-      { isChecked: false, head: ` Allow users to now hatch their eggs` },
-      {
-        isChecked: false,
-        head: ` User can see their dinosaur and rarity/species`,
+        head: ` User can see their dinosaur and meta-data of the NFT`,
       },
     ],
   },
@@ -75,14 +86,17 @@ const roadmap = [
         isChecked: false,
         head: ` Launch of our own DINO token to be used in portal`,
       },
+      //   {
+      //     isChecked: false,
+      //     head: ` Ability to interact and look after your dinosaur`,
+      //   },
       {
         isChecked: false,
-        head: ` Ability to interact and look after your dinosaur`,
+        head: ` Ability for your dinosaur to age with time - 2 more NFT layers for everybody`,
       },
-      { isChecked: false, head: ` Ability for your dinosaur to age with time` },
       {
         isChecked: false,
-        head: ` NFT can change into baby, teenager and adult with age`,
+        head: ` NFT can change into teenager and adult with age`,
       },
       {
         isChecked: false,
@@ -94,7 +108,7 @@ const roadmap = [
       },
       {
         isChecked: false,
-        head: ` Market to Mainstream Dinosaur lovers`,
+        head: ` Extra marketing done`,
       },
     ],
   },
@@ -102,14 +116,9 @@ const roadmap = [
     isChecked: false,
     name: 'Fourth Stage',
     content: [
-      { isChecked: false, head: ` Design and development of p2e game concept` },
       {
         isChecked: false,
-        head: `Air-drops for existing holders for another similar collection to enter the dino-verse`,
-      },
-      {
-        isChecked: false,
-        head: `Leaderboard will be live and viewable on blockchain`,
+        head: ` Design and ideas of different p2e game ideas for the dino NFT's`,
       },
     ],
   },
@@ -123,15 +132,11 @@ const roadmap = [
       },
       {
         isChecked: false,
+        head: `Leaderboard will be live and viewable on blockchain`,
+      },
+      {
+        isChecked: false,
         head: `Development and design concept of 3D Dinosaurs `,
-      },
-      {
-        isChecked: false,
-        head: `Development of augmented reality/virtual reality options for IC Dinos`,
-      },
-      {
-        isChecked: false,
-        head: `Look at options for IC Dinos to enter the meta-verse`,
       },
     ],
   },
