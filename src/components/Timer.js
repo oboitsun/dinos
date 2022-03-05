@@ -24,9 +24,12 @@ export default function Timer() {
   return (
     <div className=" flex items-center  mb-4 lg:mb-6  relative ">
       {dayX < today ? (
-        <p className="font-fright text-xl lg:text-4xl text-white">
-          Ready to Mint now!
-        </p>
+        <a
+          href="https://entrepot.app/sale/icdinos"
+          className="btn btn-entrepot text-xl lg:text-4xl text-white"
+        >
+          <span className="relative top-1">Buy on Entrepot</span>
+        </a>
       ) : (
         <>
           <p className="text-white leading-none top-2 mr-1 transform  relative font-mont font-bold">

@@ -36,7 +36,7 @@ export default function HeroSection({
     <motion.div id="hero-section" className="relative overflow-hidden">
       <div
         // style={{ maxWidth: 1920, margin: "0 auto" }}
-        className="absolute w-full h-full overflow-hidden bottom-0 left-1/2 transform -translate-x-1/2 "
+        className="absolute w-full h-full overflow-hidden bottom-0 left-1/2 transform -translate-x-1/2 z-10"
       >
         {/* <img
           className="absolute w-full h-auto z-10 bottom-0 left-0 pointer-events-none"
@@ -45,13 +45,13 @@ export default function HeroSection({
         /> */}
         <div
           id="prev-slide"
-          className="absolute top-1/2 transform -translate-y-1/2 left-4 z-10 cursor-pointer hover:scale-110 transition-all"
+          className="hidden lg:block absolute  top-2/3 lg:top-1/2 transform -translate-y-1/2 left-4 z-10 cursor-pointer hover:scale-110 transition-all"
         >
           <img src="/imgs/arrow-prev.svg" alt="previous slide" />
         </div>
         <div
           id="next-slide"
-          className="absolute top-1/2 transform -translate-y-1/2 rotate-180 right-4 z-10 cursor-pointer hover:scale-110 transition-all"
+          className="hidden lg:block absolute top-2/3 lg:top-1/2 transform -translate-y-1/2 rotate-180 right-4 z-10 cursor-pointer hover:scale-110 transition-all"
         >
           <img src="/imgs/arrow-prev.svg" alt="previous slide" />
         </div>
@@ -72,7 +72,7 @@ export default function HeroSection({
         </Swiper>
       </div>
       <div className="gradient z-10"></div>
-      <div className="my-container relative splash z-10">
+      <div className="my-container relative splash  z-10 ">
         <WelcomeTo
           showPopup={showPopup}
           setShowPopup={setShowPopup}
