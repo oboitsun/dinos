@@ -71,7 +71,7 @@ export default function HeroSection({
           ))}
         </Swiper>
       </div>
-      <div className="gradient z-10"></div>
+      <div className="gradient z-20"></div>
       <div className="my-container relative splash  z-10 ">
         <WelcomeTo
           showPopup={showPopup}
