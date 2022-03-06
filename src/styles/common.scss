@@ -28,6 +28,9 @@
     font-family: 'Luckiest Guy', sans-serif;
     font-size: 36px;
     padding: 12px 24px !important;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
   .btn-discord {
     background: #3a3a3a;
