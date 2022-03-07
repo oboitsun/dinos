@@ -29,18 +29,15 @@ const roadmap = [
       },
       { isChecked: true, head: `Announce dates for pre-sale and public sale` },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Pre-sale of dinosaur eggs at a discounted rate`,
       },
-      { isChecked: false, head: `Public sale for remainder of eggs` },
+      { isChecked: true, head: `Public sale for remainder of eggs` },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Second hand marketplace trading ,launched on Entrepot`,
       },
-      {
-        isChecked: false,
-        head: `Second hand marketplace trading ,launched on Entrepot`,
-      },
+
       {
         isChecked: false,
         head: `Hatch date 2 weeks after minting date to see baby dinosaur`,
