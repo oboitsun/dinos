@@ -16,6 +16,7 @@
     transition: all 0.3s ease-in-out;
     border: 3px solid transparent;
     min-width: max-content;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.5);
   }
   .btn:hover {
     background: $khaki;
