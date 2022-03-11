@@ -39,11 +39,11 @@ const roadmap = [
       },
 
       {
-        isChecked: false,
+        isChecked: true,
         head: `Hatch date 2 weeks after minting date to see baby dinosaur`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `More sneak peaks done for the project before dinos are hatched`,
       },
       {
