@@ -28,7 +28,7 @@ export default function Timer() {
           href="https://entrepot.app/sale/icdinos"
           className="btn btn-entrepot text-2xl lg:text-4xl text-white"
         >
-          <span className="relative top-1">Buy on Entrepot</span>
+          <span className="relative top-1">Trade on Entrepot</span>
         </a>
       ) : (
         <>
