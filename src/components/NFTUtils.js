@@ -1,12 +1,12 @@
-import React from 'react';
-import '../styles/nft-utils.scss';
-import { useInView } from 'react-intersection-observer';
-import { motion } from 'framer-motion';
+import React from "react";
+import "../styles/nft-utils.scss";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 const NFTUtilsItem = ({ btnStyle, iconSrc, heading, text, delay, inView }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.1, transition: { delay: 0, duration: 0.3 } }}
-      initial={{ x: '100vw', opacity: 0 }}
+      initial={{ x: "100vw", opacity: 0 }}
       animate={
         inView
           ? {
@@ -38,34 +38,34 @@ const NFTUtilsItem = ({ btnStyle, iconSrc, heading, text, delay, inView }) => {
 
 const nft_utils = [
   {
-    iconSrc: '/imgs/nft-utils/favorite.svg',
-    heading: 'rewards',
-    text: 'rewards go back to holders',
-    style: 'orange-btn',
+    iconSrc: "/imgs/nft-utils/favorite.svg",
+    heading: "rewards",
+    text: "Monthly collection challenges",
+    style: "orange-btn",
   },
   {
-    iconSrc: '/imgs/nft-utils/airdrop.svg',
-    heading: 'airdrops',
-    text: 'Future airdrops to IC dinos holders',
-    style: 'yellow-btn',
+    iconSrc: "/imgs/nft-utils/airdrop.svg",
+    heading: "airdrops",
+    text: "Future airdrops to IC dinos holders",
+    style: "yellow-btn",
   },
   {
-    iconSrc: '/imgs/nft-utils/globe.svg',
-    heading: 'portal',
-    text: 'Access to the IC dinos Portal',
-    style: 'green-btn',
+    iconSrc: "/imgs/nft-utils/globe.svg",
+    heading: "portal",
+    text: "Access to the IC dinos Portal",
+    style: "green-btn",
   },
   {
-    iconSrc: '/imgs/nft-utils/gamepad.svg',
-    heading: 'P2E Game',
-    text: 'Take part of the IC Dinos p2e game-verse',
-    style: 'turf-btn',
+    iconSrc: "/imgs/nft-utils/gamepad.svg",
+    heading: "P2E Game",
+    text: "Take part of the IC Dinos p2e game-verse",
+    style: "turf-btn",
   },
   {
-    iconSrc: '/imgs/nft-utils/diamond.svg',
-    heading: 'Perks',
-    text: 'Many Perks for NFT Holders',
-    style: 'brown-btn',
+    iconSrc: "/imgs/nft-utils/diamond.svg",
+    heading: "Perks",
+    text: "Many Perks for NFT Holders",
+    style: "brown-btn",
   },
 ];
 function NFTUtils() {

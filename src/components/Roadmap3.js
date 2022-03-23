@@ -1,14 +1,14 @@
-import React from 'react';
-import Heading from './Heading';
-import SubHeading from './SubHeading';
-import '../styles/roadmap3.scss';
-import { useInView } from 'react-intersection-observer';
-import RoadMap3Point from './RoadMap3Point';
+import React from "react";
+import Heading from "./Heading";
+import SubHeading from "./SubHeading";
+import "../styles/roadmap3.scss";
+import { useInView } from "react-intersection-observer";
+import RoadMap3Point from "./RoadMap3Point";
 const roadmap = [
   {
     isChecked: true,
     progress: 0,
-    name: 'First Stage',
+    name: "First Stage",
     content: [
       { isChecked: true, head: `Grow Twitter Account and following` },
       { isChecked: true, head: `Design of Dino eggs and Dinosaurs NFT’s ` },
@@ -47,7 +47,7 @@ const roadmap = [
         head: `More sneak peaks done for the project before dinos are hatched`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `User can now hatch eggs and see rarity of the dinosaurs`,
       },
     ],
@@ -55,7 +55,7 @@ const roadmap = [
   {
     isChecked: false,
     progress: 20,
-    name: 'Second Stage',
+    name: "Second Stage",
     content: [
       {
         isChecked: false,
@@ -76,7 +76,7 @@ const roadmap = [
   {
     isChecked: false,
     progress: 0,
-    name: 'Third Stage',
+    name: "Third Stage",
     content: [
       { isChecked: false, head: ` Ability to name your own dinosaur` },
       {
@@ -111,7 +111,7 @@ const roadmap = [
   },
   {
     isChecked: false,
-    name: 'Fourth Stage',
+    name: "Fourth Stage",
     content: [
       {
         isChecked: false,
@@ -121,7 +121,7 @@ const roadmap = [
   },
   {
     isChecked: false,
-    name: 'Fifth stage',
+    name: "Fifth stage",
     content: [
       {
         isChecked: false,
@@ -160,7 +160,7 @@ function Roadmap3() {
           <span
             ref={ref}
             className={`relative  block ${
-              inView ? 'shadow-show' : 'shadow-none'
+              inView ? "shadow-show" : "shadow-none"
             }`}
           >
             Roadmap

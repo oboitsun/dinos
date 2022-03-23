@@ -1,43 +1,43 @@
-import React from 'react';
-import Heading from './Heading';
-import '../styles/Percs.scss';
-import { useInView } from 'react-intersection-observer';
+import React from "react";
+import Heading from "./Heading";
+import "../styles/Percs.scss";
+import { useInView } from "react-intersection-observer";
 const percs = [
   {
-    icon: '/imgs/perks/badge.svg',
-    head: 'We are going to announce monthly rewards for holders soon',
-    text: '',
-    btnStyle: 'orange-btn',
+    icon: "/imgs/perks/badge.svg",
+    head: "We are going to announce monthly rewards for holders soon",
+    text: "",
+    btnStyle: "orange-btn",
   },
   {
-    icon: '/imgs/perks/coins.svg',
-    btnStyle: 'yellow-btn',
-    head: '25% of public sale will be used for on-going marketing of project online and offline',
-    text: '',
+    icon: "/imgs/perks/coins.svg",
+    btnStyle: "yellow-btn",
+    head: "25% of public sale will be used for on-going marketing of project online and offline",
+    text: "",
   },
   {
-    icon: '/imgs/perks/star.svg',
-    btnStyle: 'green-btn',
-    head: 'the more dinosaurs you hold - the more benefits you get',
-    text: '',
+    icon: "/imgs/perks/star.svg",
+    btnStyle: "green-btn",
+    head: "the more dinosaurs you hold - the more benefits you get",
+    text: "",
   },
   {
-    icon: '/imgs/perks/diamond.svg',
-    head: 'Some eggs will hold some rare valuable dinosaurs!',
-    text: '',
-    btnStyle: 'darkBrown-btn',
+    icon: "/imgs/perks/diamond.svg",
+    head: "Some eggs will hold some rare valuable dinosaurs!",
+    text: "",
+    btnStyle: "darkBrown-btn",
   },
   {
-    icon: '/imgs/perks/breed.svg',
-    btnStyle: 'turf-btn',
-    head: 'Many Breeds of Dinosaurs INCLUDING ELEMENTAL SUPER RARES AND LEGENDARY RARES',
-    text: '',
+    icon: "/imgs/perks/breed.svg",
+    btnStyle: "turf-btn",
+    head: "Many Breeds of Dinosaurs INCLUDING ELEMENTAL SUPER RARES AND LEGENDARY RARES",
+    text: "",
   },
   {
-    icon: '/imgs/perks/egg.svg',
-    btnStyle: 'brown-btn',
-    head: 'Over 10 different species of dinosaurs in first collection',
-    text: '',
+    icon: "/imgs/perks/egg.svg",
+    btnStyle: "brown-btn",
+    head: "Over 20 different species of dinosaurs in first collection",
+    text: "",
   },
 ];
 
@@ -62,7 +62,7 @@ function Percs() {
           <span
             ref={ref}
             className={`relative  block ${
-              inView ? 'shadow-show' : 'shadow-none'
+              inView ? "shadow-show" : "shadow-none"
             }`}
           >
             Perks for NFT Holders

@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import TimerCountItem from './TimerCountItem';
+import React, { useEffect, useState } from "react";
+import TimerCountItem from "./TimerCountItem";
 
-import { calculateTimeLeft } from './utils';
+import { calculateTimeLeft } from "./utils";
 export default function Timer() {
   const today = Date.now();
   const dayX = new Date(Date.UTC(2022, 2, 6, 15, 0, 0)).getTime();
   const [timeLeft, setTimeLeft] = useState({
-    hours: '0',
-    days: '0',
-    minutes: '0',
-    seconds: '0',
+    hours: "0",
+    days: "0",
+    minutes: "0",
+    seconds: "0",
   });
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function Timer() {
           href="https://entrepot.app/sale/icdinos"
           className="btn btn-entrepot text-2xl lg:text-4xl text-white"
         >
-          <span className="relative top-1">Trade on Entrepot</span>
+          <span className="relative top-1">Buy on Entrepot</span>
         </a>
       ) : (
         <>

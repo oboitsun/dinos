@@ -1,8 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Timer from './Timer';
+import React from "react";
+import { motion } from "framer-motion";
+import Timer from "./Timer";
 // import dynamic from "next/dynamic";
-import ConnectWallet from './ConnectWallet';
+import ConnectWallet from "./ConnectWallet";
 // const DynamicComponent = dynamic(() => import("./ConnectWallet"), { ssr: false });
 export default function WelcomeTo({
   setShowPopup,
@@ -20,7 +20,7 @@ export default function WelcomeTo({
   };
   const item = {
     show: { x: 0, opacity: 1, transition: { duration: 0.3 } },
-    hidden: { x: '-60vw', opacity: 0, transition: { duration: 1 } },
+    hidden: { x: "-60vw", opacity: 0, transition: { duration: 1 } },
   };
   return (
     <motion.div
@@ -36,7 +36,7 @@ export default function WelcomeTo({
       >
         <span className="text-white "> Hatch.grow.play.</span>
 
-        <span className="title-big">Dino Eggs Hatching 20th March</span>
+        <span className="title-big">Enter the Dino-verse now</span>
 
         {/* <img
           className="absolute bottom-0 left-1/2 w-4/5 transform translate-y-2/3 -translate-x-1/2"
@@ -68,9 +68,9 @@ export default function WelcomeTo({
           //   }}
           className="btn btn-discord w-full"
         >
-          {' '}
+          {" "}
           Join The Discord
-        </a>{' '}
+        </a>{" "}
         <img
           style={{ width: 64 }}
           className="block   h-auto"

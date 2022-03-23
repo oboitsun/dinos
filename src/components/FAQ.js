@@ -1,36 +1,36 @@
-import React from 'react';
-import FaqItem from './FaqItem';
-import '../styles/faq.scss';
-import Heading from './Heading';
-import SubHeading from './SubHeading';
-import { useInView } from 'react-intersection-observer';
+import React from "react";
+import FaqItem from "./FaqItem";
+import "../styles/faq.scss";
+import Heading from "./Heading";
+import SubHeading from "./SubHeading";
+import { useInView } from "react-intersection-observer";
 
 const faqs = [
   {
-    qstn: 'How do I buy a  An IC Dinos Egg?',
+    qstn: "How do I buy a  An IC Dinos Egg?",
     answr: `We are going to most likely be partnered with Entrepot for our initial sale of the eggs - this will be confirmed soon. You will be able to connect your Stoic Wallet and purchase from the Entrepot marketplace.
     `,
-    back: 'orange-btn',
+    back: "orange-btn",
   },
   {
-    qstn: 'What Blockhain and technology are  IC Dinos on?',
-    answr: 'IC Dinos is based on DFINITY Internet Computer Blockchain.',
-    back: 'yellow-btn',
+    qstn: "What Blockhain  are  IC Dinos on?",
+    answr: "IC Dinos is based on DFINITY Internet Computer Blockchain.",
+    back: "yellow-btn",
   },
   {
-    qstn: 'how many dino eggs can I buy??',
+    qstn: "how many dino eggs can I buy??",
     answr: `There is going to be a limit of how many dino eggs can be given to those who have whitelist. In the public sale, you will be able to buy as many as you want! Get in quick - afterwards you will be able to buy eggs on the secondary marketplace.`,
-    back: 'green-btn',
+    back: "green-btn",
   },
   {
-    qstn: 'HOW LONG WILL IT TAKE FOR MY DINO EGG TO HATCH?',
+    qstn: "HOW LONG WILL IT TAKE FOR MY DINO EGG TO HATCH?",
     answr: `We do not have an exact time frame right now, but it will be announced shortly on when the eggs will be ready to be hatched. Don't worry you won't be waiting for too long!`,
-    back: 'brown-btn',
+    back: "brown-btn",
   },
   {
-    qstn: 'HOW MUCH WILL AN IC DINOS EGG COST?',
+    qstn: "HOW MUCH WILL AN IC DINOS EGG COST?",
     answr: `We will announce the pricing in Discord as well as the launch date when it's ready.`,
-    back: 'darkBrown-btn',
+    back: "darkBrown-btn",
   },
 ];
 export default function FAQ() {
@@ -59,7 +59,7 @@ export default function FAQ() {
               <span
                 ref={ref}
                 className={`relative  block ${
-                  inView ? 'shadow-show' : 'shadow-none'
+                  inView ? "shadow-show" : "shadow-none"
                 }`}
               >
                 FAQ'S <span className="map absolute right-0 bottom-0">'S</span>
