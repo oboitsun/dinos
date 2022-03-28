@@ -18,25 +18,25 @@ const percs = [
   {
     icon: "/imgs/perks/star.svg",
     btnStyle: "green-btn",
-    head: "the more dinosaurs you hold - the more benefits you get",
+    head: "Monthly collectors challenges to receive awards",
     text: "",
   },
   {
     icon: "/imgs/perks/diamond.svg",
-    head: "Some eggs will hold some rare valuable dinosaurs!",
+    head: "Some eggs will hold rare valuable dinosaurs",
     text: "",
     btnStyle: "darkBrown-btn",
   },
   {
     icon: "/imgs/perks/breed.svg",
     btnStyle: "turf-btn",
-    head: "Many Breeds of Dinosaurs INCLUDING ELEMENTAL SUPER RARES AND LEGENDARY RARES",
+    head: "Many rarity of dinosaurs including albino, super rare elementals and ultra rare/legendaries",
     text: "",
   },
   {
     icon: "/imgs/perks/egg.svg",
     btnStyle: "brown-btn",
-    head: "Over 20 different species of dinosaurs in first collection",
+    head: "20 different species of dinosaurs in first collection",
     text: "",
   },
 ];

@@ -59,17 +59,43 @@ const roadmap = [
     content: [
       {
         isChecked: false,
+        head: `Design of NFT air-drop for OG/Whitelisted/Wallet Holders`,
+      },
+      {
+        isChecked: false,
+        head: ` Air-drop of NFT for OG/Whitelisted/Wallet Holders`,
+      },
+      {
+        isChecked: false,
+        head: `Announcement of monthly collectors challenge rewards`,
+      },
+      {
+        isChecked: false,
+        head: `Announcement and sneak peaks of the teenager age dinosaurs`,
+      },
+      {
+        isChecked: false,
+        head: `Announcement and sneak peak of GEN2 dinos and how fit into project`,
+      },
+      {
+        isChecked: false,
+        head: `Arrange air-drops for monthly challenges rewards as required`,
+      },
+      {
+        isChecked: false,
         head: `Design and development of Dino Portal to manage dinos`,
       },
       {
         isChecked: false,
-        head: ` Air-drop for OG members and anybody who has purchased a dino(To be announced)`,
+        head: `Deploy Dino Portal on IC blockchain`,
       },
-      { isChecked: false, head: ` Deploy Dino Portal on IC blockchain` },
-      { isChecked: false, head: ` Connect major wallets to our portal ` },
       {
         isChecked: false,
-        head: ` User can see their dinosaur and meta-data of the NFT`,
+        head: `Connect major wallets to our portal`,
+      },
+      {
+        isChecked: false,
+        head: `User can see their dinosaur and meta-data of their NFTs`,
       },
     ],
   },
@@ -78,10 +104,13 @@ const roadmap = [
     progress: 0,
     name: "Third Stage",
     content: [
-      { isChecked: false, head: ` Ability to name your own dinosaur` },
       {
         isChecked: false,
-        head: ` Launch of our own DINO token to be used in portal`,
+        head: `Ability to name your own dinosaur and save in Dino Portal`,
+      },
+      {
+        isChecked: false,
+        head: `Launch of our own DINO token to be used in portal and purchased using ICP`,
       },
       //   {
       //     isChecked: false,
@@ -89,23 +118,19 @@ const roadmap = [
       //   },
       {
         isChecked: false,
-        head: ` Ability for your dinosaur to age with time - 2 more NFT layers for everybody`,
+        head: `Implementing the aging functionality for dinosaurs to age - teenager and adult`,
       },
       {
         isChecked: false,
-        head: ` NFT can change into teenager and adult with age`,
+        head: `Ability to buy other items in the STORE part of the Dino Portal using DINO tokens`,
       },
       {
         isChecked: false,
-        head: ` Ability to buy other add-ons using ICP or DINOs`,
+        head: ` Network with dinosaur groups online and off-line`,
       },
       {
         isChecked: false,
-        head: ` Network with Dinosaur FB Groups`,
-      },
-      {
-        isChecked: false,
-        head: ` Extra marketing done`,
+        head: `Extra marketing done `,
       },
     ],
   },
@@ -115,7 +140,16 @@ const roadmap = [
     content: [
       {
         isChecked: false,
-        head: ` Design and ideas of different p2e game ideas for the dino NFT's`,
+        head: `Design concepts for the P2E game which NFTs can be used within`,
+      },
+      {
+        isChecked: false,
+        head: `Potential other drop of new species to add to the GEN2 pool for collectors rewards/store 
+        `,
+      },
+      {
+        isChecked: false,
+        head: ` More collectors challenges and rewards each month for holders that can be met`,
       },
     ],
   },
@@ -125,7 +159,12 @@ const roadmap = [
     content: [
       {
         isChecked: false,
-        head: `Development of a p2e game which the dinosaurs will be used in and to earn DINO tokens`,
+        head: `Whitepaper and more information for the P2E game concept`,
+      },
+
+      {
+        isChecked: false,
+        head: `Development of P2E game which the dinosaurs will be used in and to earn DINO token`,
       },
       {
         isChecked: false,
