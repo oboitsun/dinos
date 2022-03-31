@@ -1,18 +1,36 @@
-import React, { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 function RoadMap3Point({ point, idx }) {
   const { ref, inView } = useInView({ threshold: 0.5 });
   useEffect(() => {
     if (inView && idx > 0) {
-      const prevChild = document.querySelectorAll('.roadmap-point')[idx - 1];
-      prevChild.querySelector('.road-line.bottom').classList.add('checked');
+      const prevChild = document.querySelectorAll(".roadmap-point")[idx - 1];
+      prevChild.querySelector(".road-line.bottom").classList.add("checked");
     }
   }, [inView]);
+  const half = Math.ceil(point.content.length / 2);
+
+  const firstHalf = point.content.slice(0, half);
+  const secondHalf = point.content.slice(-half);
+  const Point = ({ p, i }) => (
+    <p key={i} className={` ${p.isChecked ? "text-orange" : "text-white"}`}>
+      <span
+        className={`inline-block w-3 h-3 rounded-sm  border-2 mr-2 ${
+          p.isChecked ? "border-orange bg-orange" : "border-white"
+        }`}
+      >
+        {p.isChecked && (
+          <img className="w-2 h-2" src="/imgs/check-mark.svg" alt="checked" />
+        )}
+      </span>
+      <span className="">{p.head}</span>
+    </p>
+  );
   return (
     <div
       ref={ref}
-      className={`roadmap-point ${inView || point.isChecked ? 'checked' : ''}`}
+      className={`roadmap-point ${inView || point.isChecked ? "checked" : ""}`}
     >
       <div className="road-line top">
         <div className="yellow-line w-full bg-orange"></div>
@@ -21,38 +39,27 @@ function RoadMap3Point({ point, idx }) {
         <div className="yellow-line w-full bg-orange"></div>
       </div>
       <div
-        className={`point-mark ${inView || point.isChecked ? 'checked' : ''}`}
+        className={`point-mark ${inView || point.isChecked ? "checked" : ""}`}
       ></div>
       <div className="text-part">
         <p
           className={`progress ${
-            point.isChecked ? 'text-orange' : ' text-white'
+            point.isChecked ? "text-orange" : " text-white"
           } text-border pb-5`}
         >
           {point.name}
         </p>
-        <div className="columns">
-          {point.content.map((p, i) => (
-            <p
-              key={i}
-              className={` ${p.isChecked ? 'text-orange' : 'text-white'}`}
-            >
-              <span
-                className={`inline-block w-3 h-3 rounded-sm  border-2 mr-2 ${
-                  p.isChecked ? 'border-orange bg-orange' : 'border-white'
-                }`}
-              >
-                {p.isChecked && (
-                  <img
-                    className="w-2 h-2"
-                    src="/imgs/check-mark.svg"
-                    alt="checked"
-                  />
-                )}
-              </span>
-              <span className="">{p.head}</span>
-            </p>
-          ))}
+        <div className="grid grid-cols-2">
+          <div>
+            {firstHalf.map((p, i) => (
+              <Point p={p} i={i} />
+            ))}
+          </div>
+          <div>
+            {secondHalf.map((p, i) => (
+              <Point p={p} i={i} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

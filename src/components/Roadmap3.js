@@ -53,7 +53,7 @@ const roadmap = [
     ],
   },
   {
-    isChecked: false,
+    isChecked: true,
     progress: 20,
     name: "Second Stage",
     content: [
