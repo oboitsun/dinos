@@ -58,7 +58,7 @@ const roadmap = [
     name: "Second Stage",
     content: [
       {
-        isChecked: false,
+        isChecked: true,
         head: `Design of NFT air-drop for OG/Whitelisted/Wallet Holders`,
       },
       {
