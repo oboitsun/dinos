@@ -1,36 +1,37 @@
-import React, { useState, useEffect } from 'react';
-import './styles/common.scss';
-import HeroSection from './components/HeroSection';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import ModalMenu from './components/ModalMenu';
-import ComingSoonPopUp from './components/ComingSoonPopUp';
-import FAQ from './components/FAQ';
-import ContactUs from './components/ContactUs';
-import AboutUs from './components/AboutUs';
+import React, { useState, useEffect } from "react";
+import "./styles/common.scss";
+import HeroSection from "./components/HeroSection";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ModalMenu from "./components/ModalMenu";
+import ComingSoonPopUp from "./components/ComingSoonPopUp";
+import FAQ from "./components/FAQ";
+import ContactUs from "./components/ContactUs";
+import AboutUs from "./components/AboutUs";
 // import Team from './components/Team';
 // import Roadmap from './components/Roadmap';
-import NFTUtils from './components/NFTUtils';
+import NFTUtils from "./components/NFTUtils";
 // import Roadmap2 from './components/Roadmap2';
-import Roadmap3 from './components/Roadmap3';
-import Percs from './components/Percs';
-import DiscordPopup from './components/DiscordPopup';
+import Roadmap3 from "./components/Roadmap3";
+import Percs from "./components/Percs";
+import DiscordPopup from "./components/DiscordPopup";
+import SliderDinos from "./components/SliderDinos";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const [userAddress, setUserAddress] = useState('');
+  const [userAddress, setUserAddress] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-  const [showDiscord, setDiscord] = useState({ show: false, what: 'discord' });
+  const [showDiscord, setDiscord] = useState({ show: false, what: "discord" });
   const handleScroll = (e) => {
     if (e.target.scrollingElement.scrollTop < 10) setScrolled(false);
     if (e.target.scrollingElement.scrollTop >= 10) setScrolled(true);
   };
   //scrolling listener
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   });
   //connect wallet functions
@@ -67,6 +68,7 @@ export default function App() {
         />
         <div className="top-gradient absolute w-full h-10 top-0 left-0 z-10"></div>
         <div className="bottom-gradient absolute w-full h-20 bottom-0 left-0 z-10"></div>
+        <SliderDinos />
         <NFTUtils />
         <AboutUs {...props_through} />
       </div>
@@ -81,7 +83,7 @@ export default function App() {
           className="w-full h-full object-cover absolute top-0 left-0 z-auto"
           src="/imgs/turf.svg"
           alt="turf"
-        />{' '}
+        />{" "}
         <img
           style={{ zIndex: 3 }}
           className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 "

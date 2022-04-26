@@ -1,0 +1,38 @@
+.SliderDinos {
+  .slider-button {
+    width: 20px;
+    height: 20px;
+    img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .slider-button {
+    @apply bg-black rounded-2xl absolute top-1/2 transform -translate-y-1/2 flex justify-center items-center;
+  }
+  .slider-prev {
+    @apply left-10 pr-0.5;
+  }
+  .slider-next {
+    @apply right-10 pl-0.5;
+    img {
+      transform: rotate(180deg);
+    }
+  }
+  @media (min-width: 768px) {
+    .slider-button {
+      width: 40px;
+      height: 40px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .slider-prev {
+      @apply left-0;
+    }
+    .slider-next {
+      @apply right-0;
+    }
+  }
+}

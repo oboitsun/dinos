@@ -6,7 +6,7 @@ const NFTUtilsItem = ({ btnStyle, iconSrc, heading, text, delay, inView }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.1, transition: { delay: 0, duration: 0.3 } }}
-      initial={{ x: "100vw", opacity: 0 }}
+      initial={{ x: "0", opacity: 0 }}
       animate={
         inView
           ? {
@@ -77,13 +77,7 @@ function NFTUtils() {
         className="grid grid-cols-2 lg:grid-cols-5 gap-5 xl:gap-10 mb-10 nft-utils-wrapper"
       >
         {nft_utils.map((item, i) => (
-          <NFTUtilsItem
-            btnStyle={item.style}
-            delay={i}
-            inView={inView}
-            {...item}
-            key={i}
-          />
+          <NFTUtilsItem btnStyle={item.style} delay={i} inView={inView} {...item} key={i} />
         ))}
       </div>
     </div>

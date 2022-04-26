@@ -1,10 +1,10 @@
 import React from "react";
-
 import "swiper/swiper.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
 
 SwiperCore.use([Navigation, Autoplay]);
+
 export default function SplashCarousel({ setLegend, idx, slides }) {
   return (
     <div className="w-full relative z-10 h-full flex items-end ">

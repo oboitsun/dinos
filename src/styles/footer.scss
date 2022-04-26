@@ -1,11 +1,12 @@
-@import './variables.scss';
+@import "./variables.scss";
 .footer {
   width: 100%;
-
+  background: linear-gradient(180deg, #544825 0%, #3e3825 100%);
   position: relative;
   z-index: 2;
 
   @media (min-width: 1024px) {
+    padding-bottom: 160px;
   }
 
   @media (min-width: 1280px) {
