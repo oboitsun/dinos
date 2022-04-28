@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import '../styles/hero-section.scss';
-import WelcomeTo from './WelcomeTo';
-import { motion } from 'framer-motion';
-import HeroSectionDinos from './HeroSectionDinos';
-import 'swiper/swiper.scss';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Autoplay } from 'swiper';
+import React, { useEffect, useState } from "react";
+import "../styles/hero-section.scss";
+import WelcomeTo from "./WelcomeTo";
+import { motion } from "framer-motion";
+import HeroSectionDinos from "./HeroSectionDinos";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import "swiper/swiper.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
 SwiperCore.use([Navigation, Autoplay]);
 export default function HeroSection({
   showPopup,
@@ -15,13 +17,13 @@ export default function HeroSection({
   setDiscord,
 }) {
   const slides = [
-    '/imgs/backs/bg1.jpg',
-    '/imgs/backs/bg2.jpg',
-    '/imgs/backs/bg3.jpg',
-    '/imgs/backs/bg4.jpg',
-    '/imgs/backs/bg5.jpg',
+    "/imgs/backs/bg1.jpg",
+    "/imgs/backs/bg2.jpg",
+    "/imgs/backs/bg3.jpg",
+    "/imgs/backs/bg4.jpg",
+    "/imgs/backs/bg5.jpg",
     // '/imgs/backs/bg6.jpg',
-    '/imgs/backs/bg7.jpg',
+    "/imgs/backs/bg7.jpg",
   ];
   // <img
   //         className="w-full h-full top-1/2  transform -translate-y-1/2 absolute left-0  object-cover  "
@@ -56,16 +58,18 @@ export default function HeroSection({
           <img src="/imgs/arrow-prev.svg" alt="previous slide" />
         </div>
         <Swiper
-          navigation={{ nextEl: '#next-slide', prevEl: '#prev-slide' }}
+          navigation={{ nextEl: "#next-slide", prevEl: "#prev-slide" }}
           loop
-          autoplay={{ delay: 3500 }}
+          // autoplay={{ delay: 3500 }}
         >
           {slides.map((slide, i) => (
             <SwiperSlide>
-              <img
-                className="w-full h-full bottom-0  transform  absolute left-0  object-cover  "
+              <LazyLoadImage
+                width={"100%"}
+                wrapperClassName="w-full h-full bottom-0  transform  absolute left-0  object-cover  "
                 src={slide}
                 alt="dinos-splash"
+                effect="blur"
               />
             </SwiperSlide>
           ))}

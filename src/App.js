@@ -72,9 +72,9 @@ export default function App() {
         <div className="bottom-gradient absolute w-full h-20 bottom-0 left-0 z-10"></div>
         <SliderDinos />
         <NFTUtils />
-        <LazyLoadComponent threshold={100}>
-          <GetToKnow />
-        </LazyLoadComponent>
+
+        <GetToKnow />
+
         {/* <AboutUs {...props_through} /> */}
       </div>
       <LazyLoadComponent threshold={100}>

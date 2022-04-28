@@ -1,5 +1,6 @@
 import React from "react";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 export default function BabyDinos() {
   const dinos = [
     { src: "/imgs/nfts/baby/ankylosaurus.png", name: "ankylosaurus" },
@@ -18,7 +19,10 @@ export default function BabyDinos() {
   return dinos.map((d) => (
     <div className="flex flex-col items-center justify-center" key={d.name}>
       <span className="text-white text-lg">{d.name}</span>
-      <img className="mb-4" src={d.src} alt={d.name} />
+      <div className="min-h-[200px]">
+        <LazyLoadImage className alt={d.name} effect="blur" src={d.src} />
+      </div>
+
       <a
         href="https://entrepot.app/marketplace/icdinos"
         className="rounded-full text-white h-10 flex items-center gap-1 justify-center bg-orange w-full"
