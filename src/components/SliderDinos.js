@@ -14,6 +14,12 @@ export default function SliderDinos({ setLegend, idx }) {
     "/imgs/baby_dinos/3.png",
     "/imgs/baby_dinos/4.png",
     "/imgs/baby_dinos/5.png",
+    "/imgs/baby_dinos/6.png",
+    "/imgs/baby_dinos/7.png",
+    "/imgs/baby_dinos/8.png",
+    "/imgs/baby_dinos/9.png",
+    "/imgs/baby_dinos/10.png",
+    "/imgs/baby_dinos/11.png",
   ];
   const [slidesPerView, setSlidesPerView] = useState(5);
   useEffect(() => {
@@ -32,14 +38,15 @@ export default function SliderDinos({ setLegend, idx }) {
   }, []);
   return (
     <div className=" SliderDinos my-container relative ">
-      <div className="slider-button slider-prev">
+      <div id="dinos-prev" className="slider-button slider-prev">
         <img src="/imgs/arrow-prev.svg" alt="prev slide" />
       </div>
-      <div className="slider-button slider-next">
+      <div id="dinos-next" className="slider-button slider-next">
         <img src="/imgs/arrow-prev.svg" alt="next slide" />
       </div>
       <div className=" relative z-10 h-full flex items-end  w-4/5 mx-auto mb-10">
         <Swiper
+          lazy
           autoplay={{ delay: 2500 }}
           className="swiper"
           loop={true}
@@ -47,8 +54,8 @@ export default function SliderDinos({ setLegend, idx }) {
           spaceBetween={0}
           slidesPerView={slidesPerView}
           navigation={{
-            nextEl: idx === 0 ? "#swpr-next" : "#swpr-next1",
-            prevEl: idx === 0 ? "#swpr-prev" : "#swpr-prev1",
+            nextEl: "#dinos-next",
+            prevEl: "#dinos-prev",
           }}
         >
           {slides.map((slide, i) => (

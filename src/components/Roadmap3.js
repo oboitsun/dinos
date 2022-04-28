@@ -196,22 +196,16 @@ function Roadmap3() {
       <div className="bg-gradient-to-t from-roadmap to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div> */}
       <div className="my-container relative z-10">
         <Heading>
-          <span
-            ref={ref}
-            className={`relative  block ${
-              inView ? "shadow-show" : "shadow-none"
-            }`}
-          >
+          <span ref={ref} className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}>
             Roadmap
             {/* <span className="map absolute right-0 bottom-0">map</span> */}
           </span>
         </Heading>
         <SubHeading>
-          We have been working hard on the roadmap for the IC Dinos project and
-          the Dino World. We believe that a successful NFT project requires
-          transparency and a clear vision for the future so that holders know
-          what they can expect from the team and how their NFT's may be utilised
-          in the future.
+          We have been working hard on the roadmap for the IC Dinos project and the Dino World. We
+          believe that a successful NFT project requires transparency and a clear vision for the
+          future so that holders know what they can expect from the team and how their NFT's may be
+          utilised in the future.
         </SubHeading>
 
         <div className="roadmap__road-wrapper pt-10 lg:pt-16">
@@ -220,8 +214,7 @@ function Roadmap3() {
           ))}
         </div>
         <p className="text-center text-white  pb-16">
-          *Please note this roadmap is subject to change at any time and will be
-          updated
+          *Please note this roadmap is subject to change at any time and will be updated
         </p>
       </div>
     </div>

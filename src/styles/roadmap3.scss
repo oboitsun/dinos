@@ -1,5 +1,7 @@
-@import './variables.scss';
+@import "./variables.scss";
 #roadmap {
+  padding-top: 100px;
+  padding-bottom: 20px;
   .roadmap-point {
     position: relative;
     border: none;

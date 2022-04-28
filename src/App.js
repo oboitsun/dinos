@@ -8,6 +8,7 @@ import ComingSoonPopUp from "./components/ComingSoonPopUp";
 import FAQ from "./components/FAQ";
 import ContactUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 // import Team from './components/Team';
 // import Roadmap from './components/Roadmap';
 import NFTUtils from "./components/NFTUtils";
@@ -16,6 +17,7 @@ import Roadmap3 from "./components/Roadmap3";
 import Percs from "./components/Percs";
 import DiscordPopup from "./components/DiscordPopup";
 import SliderDinos from "./components/SliderDinos";
+import GetToKnow from "./components/GetToKnow";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -70,36 +72,45 @@ export default function App() {
         <div className="bottom-gradient absolute w-full h-20 bottom-0 left-0 z-10"></div>
         <SliderDinos />
         <NFTUtils />
-        <AboutUs {...props_through} />
+        <LazyLoadComponent threshold={100}>
+          <GetToKnow />
+        </LazyLoadComponent>
+        {/* <AboutUs {...props_through} /> */}
       </div>
-      <Percs />
+      <LazyLoadComponent threshold={100}>
+        <Percs />
+      </LazyLoadComponent>
       {/* <Team /> */}
-      <Roadmap3 />
+      <LazyLoadComponent threshold={100}>
+        <Roadmap3 />
+      </LazyLoadComponent>
       {/* <Roadmap2 /> */}
       {/* <Roadmap /> */}
-      <div className=" lg:py-20 bg-faq relative">
-        <img
-          style={{ zIndex: 1 }}
-          className="w-full h-full object-cover absolute top-0 left-0 z-auto"
-          src="/imgs/turf.svg"
-          alt="turf"
-        />{" "}
-        <img
-          style={{ zIndex: 3 }}
-          className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 "
-          src="/imgs/border4.svg"
-          alt="border"
-        />
-        {/* <div className="bg-gradient-to-b from-faq to-transparent absolute w-full h-10 top-0 left-0 "></div>
+      <LazyLoadComponent delayTime={200}>
+        <div className=" lg:py-20 bg-faq relative">
+          <img
+            style={{ zIndex: 1 }}
+            className="w-full h-full object-cover absolute top-0 left-0 z-auto"
+            src="/imgs/turf.svg"
+            alt="turf"
+          />{" "}
+          <img
+            style={{ zIndex: 3 }}
+            className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 "
+            src="/imgs/border4.svg"
+            alt="border"
+          />
+          {/* <div className="bg-gradient-to-b from-faq to-transparent absolute w-full h-10 top-0 left-0 "></div>
         <div className="bg-gradient-to-t from-faq to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div> */}
-        <div
-          style={{ zIndex: 2 }}
-          className="my-container grid lg:grid-cols-2 gap-10  relative z-auto "
-        >
-          <FAQ />
-          <ContactUs />
+          <div
+            style={{ zIndex: 2 }}
+            className="my-container grid lg:grid-cols-2 gap-10  relative z-auto "
+          >
+            <FAQ />
+            <ContactUs />
+          </div>
         </div>
-      </div>
+      </LazyLoadComponent>
       <Footer {...props_through} />
       <DiscordPopup showDiscord={showDiscord} setDiscord={setDiscord} />
       <ComingSoonPopUp showPopup={showPopup} setShowPopup={setShowPopup} />

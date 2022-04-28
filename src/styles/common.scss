@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import "./variables.scss";
 .app {
   background: $turf;
   .btn {
@@ -7,7 +7,7 @@
     text-align: center;
     // width: 100%;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     padding: 9px 13px !important;
     color: #fff;
@@ -26,7 +26,7 @@
     box-shadow: 0px 24px 55px -13px rgba(0, 0, 0, 0.4);
   }
   .btn-entrepot {
-    font-family: 'Luckiest Guy', sans-serif;
+    font-family: "Luckiest Guy", sans-serif;
     font-size: 36px;
     padding: 12px 24px !important;
     @media (max-width: 768px) {
@@ -60,7 +60,7 @@
     // font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     min-width: max-content;
-    text-shadow: 0px 1px 4px#29220e;
+    text-shadow: 0px 1px 4px #29220e;
     @apply cursor-pointer  font-bold  transform transition-all;
   }
   .anchor:hover {
@@ -114,20 +114,13 @@
   }
   .about-section {
     .top-gradient {
-      background: linear-gradient(
-        180deg,
-        rgba(191, 172, 112, 1),
-        rgba(191, 172, 112, 0)
-      );
+      background: linear-gradient(180deg, rgba(191, 172, 112, 1), rgba(191, 172, 112, 0));
     }
     .bottom-gradient {
-      background: linear-gradient(
-        0deg,
-        rgba(191, 172, 112, 1),
-        rgba(191, 172, 112, 0)
-      );
+      background: linear-gradient(0deg, rgba(191, 172, 112, 1), rgba(191, 172, 112, 0));
     }
   }
+
   @media (min-width: 1024px) {
     .special-grid {
       gap: 40px;
