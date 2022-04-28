@@ -73,9 +73,7 @@ export default function App() {
         <SliderDinos />
         <NFTUtils />
 
-        <GetToKnow />
-
-        {/* <AboutUs {...props_through} /> */}
+        <AboutUs {...props_through} />
       </div>
       <LazyLoadComponent threshold={100}>
         <Percs />

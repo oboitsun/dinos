@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "./Heading";
 import "../styles/Percs.scss";
 import { useInView } from "react-intersection-observer";
+import GetToKnow from "./GetToKnow";
 const percs = [
   {
     icon: "/imgs/perks/badge.svg",
@@ -55,16 +56,12 @@ function Percs() {
         src="/imgs/turf.svg"
         alt="turf"
       />
+
       {/* <div className="bg-gradient-to-b from-team to-transparent absolute w-full h-10 top-0 left-0 "></div>
       <div className="bg-gradient-to-t from-team to-transparent absolute w-full h-20 bottom-0 left-0  z-10"></div> */}
       <div className="my-container relative  ">
         <Heading>
-          <span
-            ref={ref}
-            className={`relative  block ${
-              inView ? "shadow-show" : "shadow-none"
-            }`}
-          >
+          <span ref={ref} className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}>
             Perks for NFT Holders
           </span>
         </Heading>
@@ -82,6 +79,7 @@ function Percs() {
           ))}
         </div>
       </div>
+      <GetToKnow />
     </div>
   );
 }
