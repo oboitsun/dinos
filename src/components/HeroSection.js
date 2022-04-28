@@ -60,12 +60,13 @@ export default function HeroSection({
         <Swiper
           navigation={{ nextEl: "#next-slide", prevEl: "#prev-slide" }}
           loop
-          // autoplay={{ delay: 3500 }}
+          autoplay={{ delay: 3500 }}
         >
           {slides.map((slide, i) => (
             <SwiperSlide>
               <LazyLoadImage
                 width={"100%"}
+                height={"100%"}
                 wrapperClassName="w-full h-full bottom-0  transform  absolute left-0  object-cover  "
                 src={slide}
                 alt="dinos-splash"
