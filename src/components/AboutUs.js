@@ -20,8 +20,8 @@ export default function AboutUs({ setDiscord }) {
   const { ref, inView } = useInView({ threshold: 0.5 });
   const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.5 });
   return (
-    <div id="about-us">
-      <div className="my-container relative lg:pb-16">
+    <div id="about-us" className="pt-12">
+      <div className="my-container relative  lg:pb-16">
         <div className="grid lg:grid-cols-2 gap-10">
           <div className="flex flex-col ">
             <Heading>

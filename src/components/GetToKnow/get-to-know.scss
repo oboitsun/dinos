@@ -1,4 +1,5 @@
 .get-to-know {
+  padding-top: 40px;
   .text-stroke-sm {
     text-shadow: rgb(125, 103, 32) 3px 0px 0px, rgb(125, 103, 32) 2.83487px 0.981584px 0px,
       rgb(125, 103, 32) 2.35766px 1.85511px 0px, rgb(125, 103, 32) 1.62091px 2.52441px 0px,
@@ -22,5 +23,8 @@
         rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px,
         rgb(0, 0, 0) 2.88051px -0.838247px 0px;
     }
+  }
+  @media (min-width: 768px) {
+    padding-top: 80px;
   }
 }
