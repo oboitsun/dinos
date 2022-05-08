@@ -4,6 +4,7 @@ import BabyDinos from "./BabyDinos";
 import Eggs from "./Eggs";
 import Tabs from "./Tabs";
 import "./get-to-know.scss";
+import Rarities from "./Rarities";
 export default function GetToKnow() {
   const [currTab, setcurrTab] = useState("baby");
   return (
@@ -11,9 +12,10 @@ export default function GetToKnow() {
       <div className="my-container relative z-10">
         <Heading addClasses={"text-center"}>Get to know our world</Heading>
         <Tabs currTab={currTab} setCurrTab={setcurrTab} />
-        <div className="min-h-[440px] grid grid-cols-2 lg:grid-cols-6 gap-y-8 gap-x-4">
+        <div className="min-h-[440px] lg:min-h-[586px]">
           {currTab === "baby" && <BabyDinos />}
           {currTab === "eggs" && <Eggs />}
+          {currTab === "rarities" && <Rarities />}
         </div>
       </div>
     </div>

@@ -4,10 +4,11 @@ export default function Tabs({ currTab, setCurrTab }) {
   const tabs = [
     { name: "Dinos", tab: "baby" },
     { name: "Eggs", tab: "eggs" },
+    { name: "Rarities", tab: "rarities" },
   ];
 
   return (
-    <div className="w-full relative grid grid-cols-2 pb-2 border-b-2  border-white mb-10 mt-5 ">
+    <div className="w-full relative grid grid-cols-3 pb-2 border-b-2  border-white mb-10 mt-5 ">
       {tabs.map((t) => (
         <button
           onClick={() => {
