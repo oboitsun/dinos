@@ -13,7 +13,7 @@ export default function Legendaries() {
 
   return (
     <RarityBox rarityType={"legendaries"}>
-      <div className="flex flex-col justify-center ">
+      <div className="flex flex-col justify-center items-center lg:items-start ">
         <p>
           <span>Ultra rares</span>
         </p>
