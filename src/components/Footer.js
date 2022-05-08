@@ -5,6 +5,7 @@ import { Link as Anchor } from "react-scroll";
 import "../styles/footer.scss";
 import Socials from "./Socials";
 import ConnectWallet from "./ConnectWallet";
+import FooterDinos from "./FooterDinos";
 // const DynamicComponent = dynamic(() => import("./ConnectWallet"), { ssr: false });
 export default function Footer({
   showPopup,
@@ -29,20 +30,38 @@ export default function Footer({
     activeClass: "active",
     className: "anchor text-white ",
   };
+
+  const rockRef = React.useRef(null);
+  const [rockHeight, setRockHeight] = React.useState(0);
+
+  React.useEffect(() => {
+    const screenWidth = window?.innerWidth;
+    setRockHeight(screenWidth * 0.22);
+  }, []);
+
   return (
-    <div className="footer bg-footer py-16 relative z-10 overflow-hidden">
+    <div
+      style={{ minHeight: rockHeight + 60, height: "100%" }}
+      className="footer bg-footer py-16 relative z-10 h-full overflow-hidden"
+    >
       <img
-        className="w-full h-full object-cover absolute top-0 left-0 z-10 pointer-events-none"
+        className="w-full h-auto object-cover absolute top-0 left-0 z-10 pointer-events-none"
         src="/imgs/turf.svg"
         alt="turf"
       />
-      <img
-        className="w-full h-auto object-cover absolute bottom-0 left-0 z-10 pointer-events-none"
-        src="/imgs/footer.svg"
-        alt="footer"
-      />
-      <div className="my-container relative z-10">
-        <div className="w-full justify-between flex flex-col items-center gap-4">
+      <div className="w-full h-full object-cover absolute bottom-0 left-0 z-10 pointer-events-none flex items-end ">
+        <div className="relative w-full">
+          <FooterDinos />
+          <img
+            ref={rockRef}
+            className="w-full h-auto object-cover "
+            src="/imgs/footer.svg"
+            alt="footer"
+          />
+        </div>
+      </div>
+      <div className="my-container relative z-10 h-full">
+        <div className="w-full justify-between flex flex-col items-center h-full gap-4">
           <div className=" ">
             <Socials big showPopup={showPopup} setDiscord={setDiscord} />
           </div>

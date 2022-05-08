@@ -40,11 +40,16 @@ export default function HeroSection({
         // style={{ maxWidth: 1920, margin: "0 auto" }}
         className="absolute w-full h-full overflow-hidden bottom-0 left-1/2 transform -translate-x-1/2 z-10"
       >
-        {/* <img
-          className="absolute w-full h-auto z-10 bottom-0 left-0 pointer-events-none"
-          src="/imgs/eggs-hero-section.png"
+        <img
+          className="absolute w-auto h-1/2 z-10 bottom-5 left-0 pointer-events-none hidden lg:block"
+          src="/imgs/eggs-hero-left.png"
           alt="eggs"
-        /> */}
+        />
+        <img
+          className="absolute w-auto h-1/2 z-10 bottom-5 right-0 pointer-events-none hidden lg:block"
+          src="/imgs/eggs-hero-right.png"
+          alt="eggs"
+        />
         <div
           id="prev-slide"
           className="hidden lg:block absolute  top-2/3 lg:top-1/2 transform -translate-y-1/2 left-4 z-10 cursor-pointer hover:scale-110 transition-all"
@@ -67,7 +72,7 @@ export default function HeroSection({
               <LazyLoadImage
                 width={"100%"}
                 height={"100%"}
-                wrapperClassName="w-full h-full bottom-0  transform  absolute left-0  object-cover  "
+                wrapperClassName="w-full h-full bottom-0  transform  absolute left-1/2 -translate-x-1/2  object-cover  "
                 src={slide}
                 alt="dinos-splash"
                 effect="blur"

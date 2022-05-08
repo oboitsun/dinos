@@ -62,19 +62,19 @@ const roadmap = [
         head: `Design of NFT air-drop for OG/Whitelisted/Wallet Holders`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: ` Air-drop of NFT for OG/Whitelisted/Wallet Holders`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Announcement of monthly collectors challenge rewards`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Announcement and sneak peaks of the teenager age dinosaurs`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Announcement and sneak peak of GEN2 dinos and how fit into project`,
       },
       {
