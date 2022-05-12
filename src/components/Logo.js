@@ -39,7 +39,7 @@ export default function Logo({ wide }) {
         style={{ maxWidth: 154 }}
         src="/imgs/logo.png"
         layout="responsive"
-        alt="Bombs logo"
+        alt="IC Dinos"
       />
     </Anchor>
   );

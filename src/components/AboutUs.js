@@ -78,7 +78,7 @@ export default function AboutUs({ setDiscord }) {
                   }
                   className={`absolute  pic z-10`}
                   src={item.egg}
-                  alt="ham"
+                  alt="egg"
                 />
               </div>
             ))}

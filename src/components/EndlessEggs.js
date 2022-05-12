@@ -12,7 +12,7 @@ const hamsters = [
 const EggTemplate = ({ src }) => (
   <>
     <img className="w-full " src="/imgs/slider1-bg.png" alt="bg" />
-    <img className={`absolute  pic z-10`} src={src} alt="ham" />
+    <img className={`absolute  pic z-10`} src={src} alt="egg" />
   </>
 );
 export default function EndlessEggs({ reverse = false }) {

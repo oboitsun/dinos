@@ -23,12 +23,7 @@ export default function WelcomeTo({
     hidden: { x: "-60vw", opacity: 0, transition: { duration: 1 } },
   };
   return (
-    <motion.div
-      variants={cont}
-      initial="hidden"
-      animate="show"
-      className="welcome-to "
-    >
+    <motion.div variants={cont} initial="hidden" animate="show" className="welcome-to ">
       <motion.p
         variants={item}
         key={1}
