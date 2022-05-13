@@ -12,8 +12,8 @@ export default function Elementals() {
   return (
     <RarityBox rarityType={"elementals"}>
       <div className="flex  justify-between items-center">
-        <p>
-          <span className="text-sm">Elementals</span>
+        <p className="text-center">
+          <span>Super rare elementals</span>
         </p>
         <p className="lg:hidden">
           <span>22.5%</span>
