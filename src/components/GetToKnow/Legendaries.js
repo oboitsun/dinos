@@ -1,5 +1,6 @@
 import React from "react";
 import RarityBox from "./RarityBox";
+import usePicsToShow from "./usePicsToShow";
 
 export default function Legendaries() {
   const commons = [
@@ -10,12 +11,15 @@ export default function Legendaries() {
     "/imgs/rarities/legendaries/5.png",
     "/imgs/rarities/legendaries/6.png",
   ];
-
+  const picsToShow = usePicsToShow();
   return (
     <RarityBox rarityType={"legendaries"}>
-      <div className="flex flex-col justify-center items-center lg:items-start ">
+      <div className="flex justify-between items-center  ">
         <p>
           <span>legendaries</span>
+        </p>
+        <p className="lg:hidden">
+          <span>1%</span>
         </p>
       </div>
       <div className="flex flex-col rarity-pics-container">
@@ -29,9 +33,10 @@ export default function Legendaries() {
             />
             {commons.map(
               (src, i) =>
-                i !== 0 && (
+                i !== 0 &&
+                i < picsToShow && (
                   <img
-                    style={{ transform: `translateX(${i * 64}%)` }}
+                    style={{ transform: `translateX(${i * (picsToShow === 6 ? 64 : 38)}%)` }}
                     className="rarity-pic"
                     src={src}
                     alt="common dino"
@@ -41,7 +46,7 @@ export default function Legendaries() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center">1%</div>
+      <div className="hidden lg:flex items-center justify-center">1%</div>
     </RarityBox>
   );
 }

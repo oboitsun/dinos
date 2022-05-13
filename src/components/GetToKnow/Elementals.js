@@ -11,22 +11,25 @@ export default function Elementals() {
 
   return (
     <RarityBox rarityType={"elementals"}>
-      <div className="flex flex-col justify-center items-center     ">
+      <div className="flex  justify-between items-center">
         <p>
-          <span>Elementals</span>
+          <span className="text-sm">Elementals</span>
+        </p>
+        <p className="lg:hidden">
+          <span>22.5%</span>
         </p>
       </div>
       <div className="flex flex-col rarity-pics-container">
-        <div className="flex justify-between  w-full max-w-[375px] xl:max-w-[420px]  mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4  w-full max-w-[375px] xl:max-w-[420px]  mx-auto">
           {elementals.map((el, i) => (
             <div key={el.name} className=" relative">
-              <img className="" src={el.src} alt={`${el.name} dino`} />{" "}
+              <img className="w-full md:w-auto" src={el.src} alt={`${el.name} dino`} />{" "}
               <p className="legend">{el.name}</p>
             </div>
           ))}
         </div>
       </div>
-      <div className="flex items-center justify-center">22.5%</div>
+      <div className="hidden lg:flex items-center justify-center">22.5%</div>
     </RarityBox>
   );
 }

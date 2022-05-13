@@ -21,9 +21,9 @@ export default function HeroSection({
     "/imgs/backs/bg2.jpg",
     "/imgs/backs/bg3.jpg",
     "/imgs/backs/bg4.jpg",
-    "/imgs/backs/bg5.jpg",
+    // "/imgs/backs/bg5.jpg",
     // '/imgs/backs/bg6.jpg',
-    "/imgs/backs/bg7.jpg",
+    // "/imgs/backs/bg7.jpg",
   ];
   // <img
   //         className="w-full h-full top-1/2  transform -translate-y-1/2 absolute left-0  object-cover  "

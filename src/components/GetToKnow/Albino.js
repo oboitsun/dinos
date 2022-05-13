@@ -2,36 +2,36 @@ import React from "react";
 import RarityBox from "./RarityBox";
 import usePicsToShow from "./usePicsToShow";
 
-export default function UltraRares() {
-  const commons = [
-    "/imgs/rarities/ultra_rares/1.png",
-    "/imgs/rarities/ultra_rares/2.png",
-    "/imgs/rarities/ultra_rares/3.png",
-    "/imgs/rarities/ultra_rares/4.png",
-    "/imgs/rarities/ultra_rares/5.png",
-    "/imgs/rarities/ultra_rares/6.png",
+export default function Albino() {
+  const albino = [
+    "/imgs/rarities/albinos/1.png",
+    "/imgs/rarities/albinos/2.png",
+    "/imgs/rarities/albinos/3.png",
+    "/imgs/rarities/albinos/4.png",
+    "/imgs/rarities/albinos/5.png",
+    "/imgs/rarities/albinos/6.png",
   ];
   const picsToShow = usePicsToShow();
   return (
-    <RarityBox rarityType={"ultra-rares"}>
-      <div className="flex justify-between items-center">
+    <RarityBox rarityType={"commons"}>
+      <div className="flex  justify-between items-center ">
         <p>
-          <span>Ultra rares</span>
+          <span>Albino</span>
         </p>
         <p className="lg:hidden">
-          <span>4.5%</span>
+          <span>36%</span>
         </p>
       </div>
       <div className="flex flex-col rarity-pics-container">
-        <div className="flex flex-col gap-y-5 w-full max-w-[375px] xl:max-w-[420px]  mx-auto">
-          <div className="relative">
+        <div className="flex flex-col gap-y-5 w-full max-w-[375px] xl:max-w-[420px]  lg:mx-auto">
+          <div className="w-full relative">
             <img
               // style={{ height: 120, width: "auto" }}
               className="pic-main"
-              src={commons[0]}
+              src={albino[0]}
               alt="common dino"
             />
-            {commons.map(
+            {albino.map(
               (src, i) =>
                 i !== 0 &&
                 i < picsToShow && (
@@ -46,7 +46,7 @@ export default function UltraRares() {
           </div>
         </div>
       </div>
-      <div className="hidden lg:flex items-center justify-center">4.5%</div>
+      <div className="hidden lg:flex items-center justify-center">36%</div>
     </RarityBox>
   );
 }

@@ -20,7 +20,7 @@ export default function Eggs() {
     <div className="min-h-[440px] grid grid-cols-2 lg:grid-cols-6 gap-y-8 gap-x-4">
       {eggs.map((d) => (
         <div className="flex flex-col items-center justify-center" key={d.name}>
-          <span className="text-white text-lg">{d.name}</span>
+          {/* <span className="text-white text-lg">{d.name}</span> */}
           <div className="min-h-[200px]">
             <LazyLoadImage className alt={d.name} effect="blur" src={d.src} />
           </div>
