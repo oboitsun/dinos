@@ -11,7 +11,7 @@ export default function Items() {
     { label: "10,000 token", btnType: "buy_now", src: "/imgs/rarities/items/10k.svg" },
     { label: "5,000 token", btnType: "buy_now", src: "/imgs/rarities/items/5k.svg" },
     { label: "mystery token", btnType: "buy_now", src: "/imgs/rarities/items/mystery.svg" },
-    // { label: "1,000,000 token", btnType: "discord", src: "/imgs/rarities/items/1kk.svg" },
+    { label: "new items", btnType: "discord", src: "/imgs/rarities/items/soon.svg" },
   ];
   return (
     <div className="grid grid-cols-2 lg:grid-cols-6 gap-x-4 gap-y-10">
