@@ -5,6 +5,7 @@ import Eggs from "./Eggs";
 import Tabs from "./Tabs";
 import "./get-to-know.scss";
 import Rarities from "./Rarities";
+import Items from "./Items";
 export default function GetToKnow() {
   const [currTab, setcurrTab] = useState("baby");
   return (
@@ -16,6 +17,7 @@ export default function GetToKnow() {
           {currTab === "baby" && <BabyDinos />}
           {currTab === "eggs" && <Eggs />}
           {currTab === "rarities" && <Rarities />}
+          {currTab === "item" && <Items />}
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ export default function BabyDinos() {
             i < 10 && (
               <div className="flex flex-col items-center justify-center" key={d.name}>
                 <span className="text-white text-lg">{d.name}</span>
-                <div className="min-h-[200px]">
+                <div className="lg:min-h-[200px]">
                   <LazyLoadImage className alt={d.name} effect="blur" src={d.src} />
                 </div>
 
@@ -64,9 +64,9 @@ export default function BabyDinos() {
         {dinos.map(
           (d, i) =>
             i > 9 && (
-              <div className="flex flex-col items-center justify-center" key={d.name}>
+              <div className="flex flex-col items-center justify-center gap-4" key={d.name}>
                 <span className="text-white text-lg">{d.name}</span>
-                <div className="min-h-[200px]">
+                <div className="lg:min-h-[200px]">
                   <LazyLoadImage className alt={d.name} effect="blur" src={d.src} />
                 </div>
 
