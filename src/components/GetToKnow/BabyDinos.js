@@ -59,7 +59,7 @@ export default function BabyDinos() {
       <div
         ref={content}
         style={{ maxHeight: `${setHeight}` }}
-        className="transition-all overflow-hidden  grid grid-cols-2 lg:grid-cols-5 gap-y-8 gap-x-4 mb-10"
+        className="transition-all overflow-hidden  grid grid-cols-2 lg:grid-cols-5 gap-y-8 gap-x-4 pb-10"
       >
         {dinos.map(
           (d, i) =>
