@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 export default function Items() {
   const items = [
     { label: "1,000,000 token", btnType: "buy_now", src: "/imgs/rarities/items/1kk.svg" },
@@ -13,12 +13,34 @@ export default function Items() {
     { label: "mystery token", btnType: "buy_now", src: "/imgs/rarities/items/mystery.svg" },
     { label: "new items", btnType: "discord", src: "/imgs/rarities/items/soon.svg" },
   ];
+  const block = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: (custom) => {
+      return {
+        opacity: 1,
+        transition: { duration: 1, delay: custom * 0.1 },
+      };
+    },
+  };
   return (
     <div className="grid grid-cols-2 lg:grid-cols-6 gap-x-4 gap-y-10">
       {items.map((item, i) => (
-        <div key={i} className="flex flex-col items-center gap-5">
+        <motion.div
+          key={i}
+          custom={i}
+          variants={block}
+          initial="hidden"
+          animate="visible"
+          className="flex flex-col items-center gap-5"
+        >
           <span className="text-white text-md lg:text-[18px] leading-none">{item.label}</span>
-          <img src={item.src} alt={item.label} />
+          <img
+            className={` nft-pic ${i % 2 === 0 ? "skew-left" : "skew-right"}`}
+            src={item.src}
+            alt={item.label}
+          />
           {item.btnType === "buy_now" ? (
             <a
               href="https://entrepot.app/marketplace/icdinos"
@@ -50,7 +72,7 @@ export default function Items() {
               </svg>
             </a>
           )}
-        </div>
+        </motion.div>
       ))}
     </div>
   );

@@ -38,7 +38,7 @@ export default function Commons() {
                 i < picsToShow && (
                   <img
                     key={i}
-                    style={{ transform: `translateX(${i * (picsToShow === 6 ? 64 : 38)}%)` }}
+                    style={{ left: `${i * (picsToShow === 6 ? 15 : 18)}%` }}
                     className="rarity-pic"
                     src={src}
                     alt="common dino"

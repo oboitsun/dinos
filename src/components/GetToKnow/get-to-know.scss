@@ -41,14 +41,37 @@
       rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px,
       rgb(0, 0, 0) 2.88051px -0.838247px 0px;
   }
+  .nft-pic {
+    transition: all 0.3s;
+
+    &:hover {
+      &.skew-left {
+        transform: rotate(-5deg) scale(0.95);
+      }
+      &.skew-right {
+        transform: rotate(5deg) scale(0.95);
+      }
+    }
+  }
   .pic-main {
+    position: relative;
     height: 142px;
+    transition: all 0.3s;
+    &:hover {
+      z-index: 999;
+      transform: scale(1.2);
+    }
   }
   .rarity-pic {
     position: absolute;
     top: 0;
     height: 100%;
     width: auto;
+    transition: all 0.3s;
+    &:hover {
+      z-index: 999;
+      transform: scale(1.2);
+    }
   }
   .divider {
     width: 100%;

@@ -36,7 +36,7 @@ export default function Legendaries() {
                 i !== 0 &&
                 i < picsToShow && (
                   <img
-                    style={{ transform: `translateX(${i * (picsToShow === 6 ? 64 : 38)}%)` }}
+                    style={{ left: `${i * (picsToShow === 6 ? 15 : 18)}%` }}
                     className="rarity-pic"
                     src={src}
                     alt="common dino"

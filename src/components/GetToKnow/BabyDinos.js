@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
 import "react-lazy-load-image-component/src/effects/blur.css";
 export default function BabyDinos() {
   const [setActive, setActiveState] = useState("");
@@ -9,7 +10,7 @@ export default function BabyDinos() {
 
   function toggleAccordion() {
     setActiveState(setActive === "" ? "active" : "");
-    setHeightState(setActive === "active" ? "0px" : `${content.current.scrollHeight}px`);
+    setHeightState(setActive === "active" ? "0px" : `${content.current.scrollHeight + 64}px`);
   }
   const dinos = [
     { src: "/imgs/nfts/baby/ankylosaurus.png", name: "ankylosaurus" },
@@ -33,15 +34,36 @@ export default function BabyDinos() {
     { src: "/imgs/nfts/baby/silvisaurus.png", name: "silvisaurus" },
     { src: "/imgs/nfts/baby/diplodocus.png", name: "diplodocus" },
   ];
+  const item = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: (custom) => {
+      return {
+        opacity: 1,
+        transition: { duration: 1, delay: custom * 0.05 },
+      };
+    },
+  };
+
   return (
-    <>
-      <div className="min-h-[440px] grid grid-cols-2 lg:grid-cols-5 gap-y-8 gap-x-4">
+    <div>
+      <div className="min-h-[440px] grid grid-cols-2 lg:grid-cols-5 gap-y-8 gap-x-4 pb-8">
         {dinos.map(
           (d, i) =>
             i < 10 && (
-              <div className="flex flex-col items-center justify-center" key={d.name}>
+              <motion.div
+                custom={i}
+                variants={item}
+                initial="hidden"
+                animate="visible"
+                className="flex flex-col items-center justify-center"
+                key={d.name}
+              >
                 <span className="text-white text-lg">{d.name}</span>
-                <div className="lg:min-h-[200px]">
+                <div
+                  className={`lg:min-h-[200px] nft-pic ${i % 2 === 0 ? "skew-left" : "skew-right"}`}
+                >
                   <LazyLoadImage className alt={d.name} effect="blur" src={d.src} />
                 </div>
 
@@ -52,21 +74,32 @@ export default function BabyDinos() {
                   <span className="relative top-0.5">buy now</span>{" "}
                   <img className="" src="/imgs/entrepot-logo-small.png" alt="buy on entrepot" />
                 </a>
-              </div>
+              </motion.div>
             )
         )}
       </div>
       <div
         ref={content}
         style={{ maxHeight: `${setHeight}` }}
-        className="transition-all overflow-hidden  grid grid-cols-2 lg:grid-cols-5 gap-y-8 gap-x-4 pb-10"
+        className={`transition-all overflow-hidden  grid grid-cols-2 lg:grid-cols-5 gap-y-8 gap-x-4  ${
+          setActive ? "pb-8" : ""
+        }`}
       >
         {dinos.map(
           (d, i) =>
             i > 9 && (
-              <div className="flex flex-col items-center justify-center gap-4" key={d.name}>
+              <motion.div
+                custom={i - 9}
+                variants={item}
+                initial="hidden"
+                animate={setActive ? "visible" : "hidden"}
+                className="flex flex-col items-center justify-center gap-4"
+                key={d.name}
+              >
                 <span className="text-white text-lg">{d.name}</span>
-                <div className="lg:min-h-[200px]">
+                <div
+                  className={`lg:min-h-[200px] nft-pic ${i % 2 === 0 ? "skew-left" : "skew-right"}`}
+                >
                   <LazyLoadImage className alt={d.name} effect="blur" src={d.src} />
                 </div>
 
@@ -77,7 +110,7 @@ export default function BabyDinos() {
                   <span className="relative top-0.5">buy now</span>{" "}
                   <img className="" src="/imgs/entrepot-logo-small.png" alt="buy on entrepot" />
                 </a>
-              </div>
+              </motion.div>
             )
         )}
       </div>
@@ -94,6 +127,6 @@ export default function BabyDinos() {
           </span>
         </button>
       </div>
-    </>
+    </div>
   );
 }
