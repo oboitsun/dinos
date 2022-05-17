@@ -53,6 +53,17 @@
       }
     }
   }
+  .elemental {
+    img {
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
   .pic-main {
     position: relative;
     height: 142px;

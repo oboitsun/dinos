@@ -22,8 +22,8 @@ export default function Elementals() {
       <div className="flex flex-col rarity-pics-container">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4  w-full max-w-[375px] xl:max-w-[420px]  mx-auto">
           {elementals.map((el, i) => (
-            <div key={el.name} className=" relative">
-              <img className="w-full md:w-auto" src={el.src} alt={`${el.name} dino`} />{" "}
+            <div key={el.name} className=" relative elemental">
+              <img className="w-full md:w-auto " src={el.src} alt={`${el.name} dino`} />{" "}
               <p className="legend">{el.name}</p>
             </div>
           ))}
