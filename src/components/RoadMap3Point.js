@@ -14,42 +14,33 @@ function RoadMap3Point({ point, idx }) {
   const firstHalf = point.content.slice(0, half);
   const secondHalf = point.content.slice(-half);
   const Point = ({ p, i }) => (
-    <p key={i} className={` ${p.isChecked ? "text-orange" : "text-white"}`}>
+    <p key={i} className={`lg:text-base text-sm ${p.isChecked ? "text-orange" : "text-white"}`}>
       <span
         className={`inline-block w-3 h-3 rounded-sm  border-2 mr-2 ${
           p.isChecked ? "border-orange bg-orange" : "border-white"
         }`}
       >
-        {p.isChecked && (
-          <img className="w-2 h-2" src="/imgs/check-mark.svg" alt="checked" />
-        )}
+        {p.isChecked && <img className="w-2 h-2" src="/imgs/check-mark.svg" alt="checked" />}
       </span>
       <span className="">{p.head}</span>
     </p>
   );
   return (
-    <div
-      ref={ref}
-      className={`roadmap-point ${inView || point.isChecked ? "checked" : ""}`}
-    >
+    <div ref={ref} className={`roadmap-point ${inView || point.isChecked ? "checked" : ""}`}>
       <div className="road-line top">
         <div className="yellow-line w-full bg-orange"></div>
       </div>
       <div className="road-line bottom">
         <div className="yellow-line w-full bg-orange"></div>
       </div>
-      <div
-        className={`point-mark ${inView || point.isChecked ? "checked" : ""}`}
-      ></div>
+      <div className={`point-mark ${inView || point.isChecked ? "checked" : ""}`}></div>
       <div className="text-part">
         <p
-          className={`progress ${
-            point.isChecked ? "text-orange" : " text-white"
-          } text-border pb-5`}
+          className={`progress ${point.isChecked ? "text-orange" : " text-white"} text-border pb-5`}
         >
           {point.name}
         </p>
-        <div className="grid grid-cols-2">
+        <div className="grid lg:grid-cols-2">
           <div>
             {firstHalf.map((p, i) => (
               <Point p={p} i={i} />

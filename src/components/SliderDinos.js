@@ -23,9 +23,17 @@ export default function SliderDinos({ setLegend, idx }) {
   ];
   const [slidesPerView, setSlidesPerView] = useState(5);
   useEffect(() => {
+    const width = window.innerWidth;
+    let perView = 5;
+    if (width <= 480) {
+      perView = 1;
+    }
+    if (width > 480) {
+      perView = 5;
+    }
+    console.log(perView);
+
     window.addEventListener("resize", () => {
-      const width = window.innerWidth;
-      let perView = 5;
       if (width <= 480) {
         perView = 1;
       }
@@ -33,8 +41,8 @@ export default function SliderDinos({ setLegend, idx }) {
         perView = 5;
       }
       console.log(perView);
-      setSlidesPerView(perView);
     });
+    setSlidesPerView(perView);
   }, []);
   return (
     <div className=" SliderDinos my-container relative ">
@@ -60,7 +68,9 @@ export default function SliderDinos({ setLegend, idx }) {
         >
           {slides.map((slide, i) => (
             <SwiperSlide className="slide-wrapper" key={i}>
-              <img className="slide-img  " src={slide} alt="baby dino" />
+              <div className="w-full relative">
+                <img className="w-full h-full object-cover  " src={slide} alt="baby dino" />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
