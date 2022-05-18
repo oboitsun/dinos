@@ -1,9 +1,9 @@
-import Burger from './Burger';
-import Logo from './Logo';
-import { Link as Anchor } from 'react-scroll';
-import '../styles/header.scss';
-import Socials from './Socials';
-import ConnectWallet from './ConnectWallet';
+import Burger from "./Burger";
+import Logo from "./Logo";
+import { Link as Anchor } from "react-scroll";
+import "../styles/header.scss";
+import Socials from "./Socials";
+import ConnectWallet from "./ConnectWallet";
 
 export default function Header({
   setDiscord,
@@ -16,11 +16,12 @@ export default function Header({
   scrolled,
 }) {
   const links = [
-    { href: 'about-us', text: 'About' },
-    { href: 'percs', text: 'Perks' },
-    { href: 'roadmap', text: 'Roadmap' },
-    { href: 'https://dino-portal.vercel.app', text: 'Portal' },
-    { href: 'faq', text: 'FAQ' },
+    { href: "about-us", text: "About" },
+    { href: "percs", text: "Perks" },
+    { href: "roadmap", text: "Roadmap" },
+    { href: "whitepaper", text: "whitepaper" },
+    { href: "https://dino-portal.vercel.app", text: "Portal" },
+    { href: "faq", text: "FAQ" },
   ];
 
   const linkProps = {
@@ -28,32 +29,27 @@ export default function Header({
     smooth: true,
     offset: -100,
     duration: 500,
-    activeClass: 'active',
-    className: 'anchor text-white  relative top-0.5  mr-5',
+    activeClass: "active",
+    className: "anchor text-white  relative top-0.5  mr-5",
   };
   return (
-    <div
-      id="header"
-      className={` ${
-        scrolled ? 'bg-turf bg-opacity-80 py-3 shadow-lg' : 'py-7'
-      }`}
-    >
-      {' '}
+    <div id="header" className={` ${scrolled ? "bg-turf bg-opacity-80 py-3 shadow-lg" : "py-7"}`}>
+      {" "}
       <div className="my-container justify-between flex items-center">
-        {' '}
+        {" "}
         <div className="w-1/4 lg:w-1/8 flex justify-center  flex-shrink-0 ">
           <Logo wide={false} />
         </div>
         <div className="hidden lg:flex    ">
           {links.map((l, i) => {
-            return l.text !== 'Portal' ? (
+            return l.text !== "Portal" && l.text !== "whitepaper" ? (
               <Anchor key={i} to={l.href} {...linkProps}>
                 {l.text}
               </Anchor>
             ) : (
               <button
                 onClick={() => {
-                  setDiscord({ show: true, what: 'Portal' });
+                  setDiscord({ show: true, what: l.text });
                 }}
                 key={i}
                 className="anchor text-white relative top-0.5 mr-5"
