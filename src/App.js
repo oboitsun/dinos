@@ -75,13 +75,13 @@ export default function App() {
 
         <AboutUs {...props_through} />
       </div>
-      <LazyLoadComponent threshold={100}>
-        <Percs />
-      </LazyLoadComponent>
+
+      <Percs />
+
       {/* <Team /> */}
-      <LazyLoadComponent threshold={100}>
-        <Roadmap3 />
-      </LazyLoadComponent>
+
+      <Roadmap3 />
+
       {/* <Roadmap2 /> */}
       {/* <Roadmap /> */}
       <LazyLoadComponent delayTime={200}>
