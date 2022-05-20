@@ -8,28 +8,34 @@ import { useInView } from "react-intersection-observer";
 const faqs = [
   {
     qstn: "How do I buy a  An IC Dinos Egg?",
-    answr: `We are going to most likely be partnered with Entrepot for our initial sale of the eggs - this will be confirmed soon. You will be able to connect your Stoic Wallet and purchase from the Entrepot marketplace.
-    `,
+    answr: `You can purchase an egg at www.entrepot.app - they are our partners for our NFT collections.`,
     back: "orange-btn",
   },
   {
     qstn: "What Blockhain  are  IC Dinos on?",
-    answr: "IC Dinos is based on DFINITY Internet Computer Blockchain.",
+    answr: "IC Dinos are on the DFINITY Internet Computer blockchain - no gas fees!",
     back: "yellow-btn",
   },
   {
-    qstn: "how many dino eggs can I buy??",
-    answr: `There is going to be a limit of how many dino eggs can be given to those who have whitelist. In the public sale, you will be able to buy as many as you want! Get in quick - afterwards you will be able to buy eggs on the secondary marketplace.`,
+    qstn: "HOW DO I GROW MY DINO?",
+    answr: `There will be a GROW button soon added under your NFT in which you will be able to grow to a teenager.`,
     back: "green-btn",
   },
   {
     qstn: "HOW LONG WILL IT TAKE FOR MY DINO EGG TO HATCH?",
-    answr: `We do not have an exact time frame right now, but it will be announced shortly on when the eggs will be ready to be hatched. Don't worry you won't be waiting for too long!`,
+    answr: `You are able to hatch your dinosaur immediately using the "GROW" button in your collections on Entrepot.`,
     back: "brown-btn",
   },
   {
     qstn: "HOW MUCH WILL AN IC DINOS EGG COST?",
-    answr: `We will announce the pricing in Discord as well as the launch date when it's ready.`,
+    answr: (
+      <span>
+        Eggs price is always changing depending on demand - check out current floor prices at{" "}
+        <a style={{ textDecoration: "underline" }} href="https://entrepot.app/sale/icdinos">
+          www.entrepot.app
+        </a>
+      </span>
+    ),
     back: "darkBrown-btn",
   },
 ];
@@ -58,17 +64,14 @@ export default function FAQ() {
             <div className="flex justify-center">
               <span
                 ref={ref}
-                className={`relative  block ${
-                  inView ? "shadow-show" : "shadow-none"
-                }`}
+                className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}
               >
                 FAQ'S <span className="map absolute right-0 bottom-0">'S</span>
               </span>
             </div>
           </Heading>
           <SubHeading>
-            Some answers to the questions you may have about the IC Dinos
-            project and NFT collection
+            Some answers to the questions you may have about the IC Dinos project and NFT collection
           </SubHeading>
         </div>
         <div className="grid grid-cols-1  gap-4 lg:gap-4 w-full">
