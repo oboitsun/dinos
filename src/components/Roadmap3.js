@@ -78,7 +78,7 @@ const roadmap = [
         head: `Announcement and sneak peak of GEN2 dinos and how fit into project`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Arrange air-drops for monthly challenges rewards as required`,
       },
       {
