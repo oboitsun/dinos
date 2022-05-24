@@ -6,7 +6,7 @@ import GetToKnow from "./GetToKnow";
 const percs = [
   {
     icon: "/imgs/perks/badge.svg",
-    head: "We are going to announce monthly rewards for holders soon",
+    head: "Buy and sell your dinos when you want",
     text: "",
     btnStyle: "orange-btn",
   },
