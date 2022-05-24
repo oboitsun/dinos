@@ -172,7 +172,7 @@ const roadmap = [
       },
       {
         isChecked: false,
-        head: `Development and design concept of 3D Dinosaurs `,
+        head: `Development and design concept of 3D Dinosaurs`,
       },
     ],
   },

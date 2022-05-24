@@ -9,9 +9,9 @@ function RoadMap3Point({ point, idx }) {
       prevChild.querySelector(".road-line.bottom").classList.add("checked");
     }
   }, [inView]);
-  const half = Math.ceil(point.content.length / 2);
+  const half = Math.floor(point.content.length / 2);
 
-  const firstHalf = point.content.slice(0, half);
+  const firstHalf = point.content.slice(0, half + (point.content.length % 2));
   const secondHalf = point.content.slice(-half);
   const Point = ({ p, i }) => (
     <p key={i} className={`lg:text-base text-sm ${p.isChecked ? "text-orange" : "text-white"}`}>
@@ -25,6 +25,7 @@ function RoadMap3Point({ point, idx }) {
       <span className="">{p.head}</span>
     </p>
   );
+  point.name === "Fourth Stage" && console.log(firstHalf, secondHalf);
   return (
     <div ref={ref} className={`roadmap-point ${inView || point.isChecked ? "checked" : ""}`}>
       <div className="road-line top">
