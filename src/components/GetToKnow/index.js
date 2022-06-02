@@ -6,6 +6,7 @@ import Tabs from "./Tabs";
 import "./get-to-know.scss";
 import Rarities from "./Rarities";
 import Items from "./Items";
+import Dinos from "./Dinos";
 
 export default function GetToKnow() {
   const [currTab, setcurrTab] = useState("baby");
@@ -16,7 +17,7 @@ export default function GetToKnow() {
         <Tabs currTab={currTab} setCurrTab={setcurrTab} />
 
         <div className="min-h-[440px] lg:min-h-[586px]">
-          {currTab === "baby" && <BabyDinos />}
+          {currTab === "baby" && <Dinos />}
           {currTab === "eggs" && <Eggs />}
           {currTab === "rarities" && <Rarities />}
           {currTab === "item" && <Items />}
