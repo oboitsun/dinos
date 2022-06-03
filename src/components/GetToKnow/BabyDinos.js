@@ -33,7 +33,7 @@ export default function BabyDinos() {
     { src: "/imgs/nfts/baby/isanosaurus.png", name: "isanosaurus" },
     { src: "/imgs/nfts/baby/silvisaurus.png", name: "silvisaurus" },
     { src: "/imgs/nfts/baby/diplodocus.png", name: "diplodocus" },
-  ];
+  ].sort((a, b) => a.name.localeCompare(b.name));
   const item = {
     hidden: {
       opacity: 0,

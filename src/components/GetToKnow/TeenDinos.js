@@ -33,7 +33,7 @@ export default function TeenDinos() {
     { src: "/imgs/nfts/teen/triceratops.png", name: "triceratops" },
     { src: "/imgs/nfts/teen/tsintaosaurus.png", name: "tsintaosaurus" },
     { src: "/imgs/nfts/teen/velociraptor.png", name: "velociraptor" },
-  ];
+  ].sort((a, b) => a.name.localeCompare(b.name));
   const item = {
     hidden: {
       opacity: 0,
