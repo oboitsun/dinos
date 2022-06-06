@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Heading from "../Heading";
 import BabyDinos from "./BabyDinos";
-import Tabs from "./Tabs";
 import TeenDinos from "./TeenDinos";
+
 export default function Dinos() {
   const [currTab, setcurrTab] = useState("baby");
   const subtabs = [

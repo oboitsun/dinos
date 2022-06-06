@@ -82,19 +82,19 @@ const roadmap = [
         head: `Arrange air-drops for monthly challenges rewards as required`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Design and development of Dino Portal to manage dinos`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Deploy Dino Portal on IC blockchain`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Connect major wallets to our portal`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `User can see their dinosaur and meta-data of their NFTs`,
       },
     ],
