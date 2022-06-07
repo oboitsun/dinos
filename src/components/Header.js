@@ -20,8 +20,9 @@ export default function Header({
     { href: "percs", text: "Perks" },
     { href: "roadmap", text: "Roadmap" },
     { href: "whitepaper", text: "whitepaper" },
-    { href: "https://portal.icdinos.io/", text: "Portal" },
+
     { href: "faq", text: "FAQ" },
+    // { href: "https://portal.icdinos.io/", text: "Portal" },
   ];
 
   const linkProps = {
@@ -59,6 +60,12 @@ export default function Header({
               </button>
             );
           })}
+          <a
+            href="https://portal.icdinos.io/"
+            className="anchor text-white  relative top-0.5  mr-5"
+          >
+            Portal
+          </a>
         </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
         <div className="hidden lg:flex lg:w-1/4 text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center  flex-shrink-0 min-w-max">
