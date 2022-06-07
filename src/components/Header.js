@@ -20,7 +20,7 @@ export default function Header({
     { href: "percs", text: "Perks" },
     { href: "roadmap", text: "Roadmap" },
     { href: "whitepaper", text: "whitepaper" },
-    { href: "https://dino-portal.vercel.app", text: "Portal" },
+    { href: "https://portal.icdinos.io/", text: "Portal" },
     { href: "faq", text: "FAQ" },
   ];
 
@@ -42,7 +42,7 @@ export default function Header({
         </div>
         <div className="hidden lg:flex    ">
           {links.map((l, i) => {
-            return l.text !== "Portal" && l.text !== "whitepaper" ? (
+            return l.text !== "whitepaper" ? (
               <Anchor key={i} to={l.href} {...linkProps}>
                 {l.text}
               </Anchor>
