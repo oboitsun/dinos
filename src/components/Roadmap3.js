@@ -100,7 +100,7 @@ const roadmap = [
     ],
   },
   {
-    isChecked: false,
+    isChecked: true,
     progress: 0,
     name: "Third Stage",
     content: [
