@@ -105,7 +105,7 @@ const roadmap = [
     name: "Third Stage",
     content: [
       {
-        isChecked: false,
+        isChecked: true,
         head: `Ability to name your own dinosaur and save in Dino Portal`,
       },
       {
