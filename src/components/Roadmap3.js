@@ -109,7 +109,7 @@ const roadmap = [
         head: `Ability to name your own dinosaur and save in Dino Portal`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Launch of our own DINO token to be used in portal and purchased using ICP`,
       },
       //   {
@@ -117,25 +117,17 @@ const roadmap = [
       //     head: ` Ability to interact and look after your dinosaur`,
       //   },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Implementing the aging functionality for dinosaurs to age - teenager and adult`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Ability to buy other items in the STORE part of the Dino Portal using DINO tokens`,
-      },
-      {
-        isChecked: false,
-        head: ` Network with dinosaur groups online and off-line`,
-      },
-      {
-        isChecked: false,
-        head: `Extra marketing done `,
       },
     ],
   },
   {
-    isChecked: false,
+    isChecked: true,
     name: "Fourth Stage",
     content: [
       {
@@ -173,6 +165,14 @@ const roadmap = [
       {
         isChecked: false,
         head: `Development and design concept of 3D Dinosaurs`,
+      },
+      {
+        isChecked: false,
+        head: ` Network with dinosaur groups online and off-line`,
+      },
+      {
+        isChecked: false,
+        head: `Extra marketing done `,
       },
     ],
   },

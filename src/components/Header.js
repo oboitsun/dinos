@@ -69,13 +69,19 @@ export default function Header({
         </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
         <div className="hidden lg:flex lg:w-1/4 text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center  flex-shrink-0 min-w-max">
-          <ConnectWallet
+          {/* <ConnectWallet
             header
             showPopup={showPopup}
             setShowPopup={setShowPopup}
             setUserAddress={setUserAddress}
             userAddress={userAddress}
-          />
+          /> */}
+          <a
+            className="bg-orange text-white px-3 py-3 rounded-full  "
+            href="https://portal.icdinos.io/"
+          >
+            <span className="relative top-0.5">Go to Portal</span>
+          </a>
           <Socials setDiscord={setDiscord} />
         </div>
       </div>
