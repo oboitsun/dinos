@@ -17,7 +17,7 @@ export default function Header({
 }) {
   const links = [
     { href: "about-us", text: "About" },
-    { href: "percs", text: "Perks" },
+    { href: "perks", text: "Perks" },
     { href: "roadmap", text: "Roadmap" },
     { href: "whitepaper", text: "whitepaper" },
 

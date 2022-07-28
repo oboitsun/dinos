@@ -131,22 +131,22 @@ const roadmap = [
     name: "Fourth Stage",
     content: [
       {
-        isChecked: false,
+        isChecked: true,
         head: `Design concepts for the P2E game which NFTs can be used within`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Potential other drop of new species to add to the GEN2 pool for collectors rewards/store 
         `,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: ` More collectors challenges and rewards each month for holders that can be met`,
       },
     ],
   },
   {
-    isChecked: false,
+    isChecked: true,
     name: "Fifth stage",
     content: [
       {

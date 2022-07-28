@@ -6,38 +6,38 @@ import GetToKnow from "./GetToKnow";
 const percs = [
   {
     icon: "/imgs/perks/badge.svg",
-    head: "Buy and sell your dinos when you want",
+    head: "Buy and sell your dinos on our own marketplace or secondary one",
     text: "",
     btnStyle: "orange-btn",
   },
   {
     icon: "/imgs/perks/coins.svg",
     btnStyle: "yellow-btn",
-    head: "25% of public sale will be used for on-going marketing of project online and offline",
+    head: "Earn DINO tokens by taking place in our coming P2E game",
     text: "",
   },
   {
     icon: "/imgs/perks/star.svg",
     btnStyle: "green-btn",
-    head: "Monthly collectors challenges to receive awards",
+    head: "Monthly collector challenges to receive prizes ",
     text: "",
   },
   {
     icon: "/imgs/perks/diamond.svg",
-    head: "Some eggs will hold rare valuable dinosaurs",
+    head: "Many rarities of dinosaurs including super rare elementals and ultra rare/legendaries",
     text: "",
     btnStyle: "darkBrown-btn",
   },
   {
     icon: "/imgs/perks/breed.svg",
     btnStyle: "turf-btn",
-    head: "Many rarity of dinosaurs including albino, super rare elementals and ultra rare/legendaries",
+    head: "Over 20 different species of dinosaurs in the collection",
     text: "",
   },
   {
     icon: "/imgs/perks/egg.svg",
     btnStyle: "brown-btn",
-    head: "20 different species of dinosaurs in first collection",
+    head: "Dino eggs can hold some rare dinosaurs inside",
     text: "",
   },
 ];
@@ -45,7 +45,7 @@ const percs = [
 function Percs() {
   const { ref, inView } = useInView({ threshold: 0.5 });
   return (
-    <div id="percs" className="relative bg-team">
+    <div id="perks" className="relative bg-team">
       <img
         className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 z-10"
         src="/imgs/border2.svg"
