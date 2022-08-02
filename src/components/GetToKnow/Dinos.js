@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Heading from "../Heading";
+import AdultDinos from "./AdultDinos";
 import BabyDinos from "./BabyDinos";
 import TeenDinos from "./TeenDinos";
 
@@ -31,11 +32,7 @@ export default function Dinos() {
       </div>
       {currTab === "baby" && <BabyDinos />}
       {currTab === "teen" && <TeenDinos />}
-      {currTab === "adult" && (
-        <div className="py-16 ">
-          <Heading>Coming soon</Heading>
-        </div>
-      )}
+      {currTab === "adult" && <AdultDinos />}
     </>
   );
 }
