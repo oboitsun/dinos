@@ -13,7 +13,7 @@ export default function AboutUsEggItem({ inView2, i, item }) {
   const toggleOpened = () => {
     setOpened(!opened);
   };
-  console.log(isShown);
+
   return (
     <div
       onMouseEnter={() => {

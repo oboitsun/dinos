@@ -1,0 +1,19 @@
+.listbox {
+  .button {
+    @apply rounded-2xl text-white p-5 w-full flex justify-between text-[20px] leading-none;
+  }
+  .drop {
+    @apply py-5 rounded-2xl text-white gap-2 flex flex-col  absolute z-10 top-20 mt-1 max-h-60 w-full overflow-auto  text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
+  }
+  .option {
+    @apply relative px-5  cursor-pointer py-2;
+    font-size: 20px;
+    line-height: 1;
+    span {
+      @apply relative top-0.5;
+    }
+    &:hover {
+      @apply text-yellow-300 bg-white/30;
+    }
+  }
+}
