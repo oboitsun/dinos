@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-
-import { Listbox } from "@headlessui/react";
-
 import AdultDinos from "./AdultDinos";
 import BabyDinos from "./BabyDinos";
 import TeenDinos from "./TeenDinos";

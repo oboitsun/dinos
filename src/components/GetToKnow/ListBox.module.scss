@@ -1,6 +1,9 @@
 .listbox {
   .button {
     @apply rounded-2xl text-white p-5 w-full flex justify-between text-[20px] leading-none;
+    span {
+      @apply relative top-0.5;
+    }
   }
   .drop {
     @apply py-5 rounded-2xl text-white gap-2 flex flex-col  absolute z-10 top-20 mt-1 max-h-60 w-full overflow-auto  text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;

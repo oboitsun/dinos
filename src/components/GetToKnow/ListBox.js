@@ -17,7 +17,9 @@ export default function ListBox({ pickedTab, tabName, selectFunc, tabs, addClass
       <Listbox value={pickedTab} onChange={selectFunc}>
         <div className="relative mt-1">
           <Listbox.Button className={`${addClassName || ""}  ${styles.button}`}>
-            {tabName}:{pickedTab.name}
+            <span>
+              {tabName}:{pickedTab.name}
+            </span>
             <img className={`w-5 `} src="/imgs/expand-arrow.svg" alt="expand" />
           </Listbox.Button>
           <Transition

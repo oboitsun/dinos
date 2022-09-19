@@ -1,0 +1,130 @@
+.tableWrapper {
+  @apply p-3 lg:p-10 rounded-2xl bg-khaki;
+  width: 100%;
+  overflow-x: auto;
+  table {
+    width: 100%;
+    overflow: hidden;
+    border-collapse: collapse;
+    border: 1px solid white;
+
+    color: white;
+    tr:nth-child(1) {
+      th {
+        border-bottom: 1px solid white;
+      }
+    }
+    td,
+    th {
+      @apply relative top-0.5 text-center;
+      color: white;
+      text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px,
+        rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px,
+        rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px,
+        rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+    }
+    td,
+    th {
+      font-size: 12px;
+      line-height: 1;
+      padding: 8px 2px;
+      text-align: center;
+
+      &:nth-child(1) {
+        text-align: left;
+        padding-left: 30px;
+        // position: sticky;
+        // left: 0;
+        // z-index: 1;
+        // @apply bg-khaki;
+      }
+      &:last-child {
+        padding-right: 30px;
+      }
+      &:nth-child(2) {
+        color: #e8b72c;
+      }
+      &:nth-child(4) {
+        color: #9bd655;
+      }
+      &:nth-child(5) {
+        color: #cccccc;
+      }
+      &:nth-child(6) {
+        color: #ff8f60;
+      }
+      &:nth-child(7) {
+        color: #74eaff;
+      }
+      &:nth-child(8) {
+        color: #e4cfff;
+      }
+      &:nth-child(9) {
+        color: #c63693;
+      }
+    }
+    th {
+      padding: 25px 2px;
+      &:nth-child(1) {
+      }
+    }
+    .total {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+    .rarity {
+      td {
+        span.digits {
+          @apply relative w-max;
+          &:after {
+            content: "%";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateX(100%) translateY(-50%);
+          }
+        }
+        &:nth-child(3) {
+          color: #e4cfff;
+        }
+        &:nth-child(4) {
+          color: #c63693;
+        }
+        &:nth-child(5) {
+          color: white;
+        }
+      }
+    }
+
+    @media (min-width: 1024px) {
+      tr:nth-child(2) {
+        td {
+          padding-top: 20px;
+        }
+      }
+      tr:last-child {
+        td {
+          // padding-bottom: 20px;
+        }
+      }
+      td,
+      th {
+        font-size: 18px;
+        line-height: 1;
+        padding: 8px 0;
+
+        &:nth-child(1) {
+          text-align: left;
+          padding-left: 30px;
+          // position: sticky;
+          // left: 0;
+          // z-index: 1;
+          // @apply bg-khaki;
+        }
+      }
+      th {
+        padding: 25px 0;
+      }
+    }
+  }
+}
