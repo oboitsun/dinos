@@ -48,21 +48,6 @@ export default function Dinos() {
             addClassName={"brown-btn"}
           />
         </div>
-        {/* {subtabs.map((t) => (
-          <button
-            onClick={() => {
-              setcurrTab(t.tab);
-            }}
-            className={`relative text-stroke-sm text-white ${
-              currTab === t.tab ? "picked" : ""
-            }  text-lg lg:text-xl`}
-          >
-            {t.name}
-            {currTab === t.tab && (
-              <span className="inline-block absolute w-full -bottom-3 left-0 h-1 bg-black"></span>
-            )}
-          </button>
-        ))} */}
       </div>
       {genTab.tabs?.[ageTab.tab] || (
         <div className="sm:h-40 lg:h-80 flex justify-center items-center text-white text-center text-4xl">

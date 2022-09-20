@@ -32,7 +32,6 @@ const slide = {
     opacity: 1,
   },
   exit: {
-    x: "50vw",
     opacity: 0,
   },
 };
