@@ -13,7 +13,7 @@ export default function Albino() {
   ];
   const picsToShow = usePicsToShow();
   return (
-    <RarityBox rarityType={"commons"}>
+    <RarityBox rarityType={"albino"}>
       <div className="flex  justify-between items-center ">
         <p>
           <span>Albino</span>

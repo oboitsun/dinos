@@ -76,12 +76,14 @@
       td {
         span.digits {
           @apply relative w-max;
+          z-index: 2;
           &:after {
             content: "%";
             position: absolute;
             top: 50%;
             right: 0;
-            transform: translateX(100%) translateY(-50%);
+            z-index: 1;
+            transform: translateX(calc(100% + 3px)) translateY(-50%);
           }
         }
         &:nth-child(3) {

@@ -48,7 +48,7 @@ export default function Commons() {
           </div>
         </div>
       </div>
-      <div className="hidden md:flex items-center justify-center">36.0%</div>
+      <div className="hidden md:flex items-center justify-center">36%</div>
     </RarityBox>
   );
 }

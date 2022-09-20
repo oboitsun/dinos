@@ -67,20 +67,19 @@ export default function SupplyTable({ tableData }) {
           <td>Rarity</td>
           <td colspan="6">
             <span className={styles.digits}>
-              {" "}
               {((rarityPercents.ultraRare * 100) / total.total).toFixed(1)}
             </span>
           </td>
 
           <td>
             <span className={styles.digits}>
-              {" "}
               {((rarityPercents.ultraRare * 100) / total.total).toFixed(1)}
             </span>
           </td>
           <td>
-            {((rarityPercents.legendary * 100) / total.total).toFixed(1)}
-            <span>%</span>
+            <span className={styles.digits}>
+              {((rarityPercents.legendary * 100) / total.total).toFixed(1)}
+            </span>
           </td>
           <td>
             <span className={styles.digits}> 100</span>

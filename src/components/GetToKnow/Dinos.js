@@ -35,7 +35,7 @@ export default function Dinos() {
             pickedTab={ageTab}
             selectFunc={setAgeTab}
             tabs={ageTabs}
-            tabName="age"
+            tabName=""
             addClassName={"orange-btn"}
           />
         </div>
@@ -44,7 +44,7 @@ export default function Dinos() {
             pickedTab={genTab}
             selectFunc={setGenTab}
             tabs={genTabs}
-            tabName="gen"
+            tabName=""
             addClassName={"brown-btn"}
           />
         </div>

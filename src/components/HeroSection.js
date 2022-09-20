@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/hero-section.scss";
 import WelcomeTo from "./WelcomeTo";
 import { motion } from "framer-motion";
-import HeroSectionDinos from "./HeroSectionDinos";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "swiper/swiper.scss";
