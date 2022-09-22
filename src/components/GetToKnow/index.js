@@ -14,7 +14,7 @@ const tabs = [
   { name: "Item", tab: "item" },
 ];
 export default function GetToKnow() {
-  const [currTab, setcurrTab] = useState("rarities");
+  const [currTab, setcurrTab] = useState("item");
   return (
     <div className="get-to-know pb-10 pt-16">
       <div className="my-container relative z-10">
