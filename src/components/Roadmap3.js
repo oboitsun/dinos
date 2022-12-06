@@ -166,10 +166,10 @@ const roadmap = [
         isChecked: false,
         head: `Development and design concept of 3D Dinosaurs`,
       },
-      {
-        isChecked: false,
-        head: ` Network with dinosaur groups online and off-line`,
-      },
+      // {
+      //   isChecked: false,
+      //   head: ` Network with dinosaur groups online and off-line`,
+      // },
       {
         isChecked: false,
         head: `Extra marketing done `,
