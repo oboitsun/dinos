@@ -6,6 +6,7 @@ import "../styles/footer.scss";
 import Socials from "./Socials";
 import ConnectWallet from "./ConnectWallet";
 import FooterDinos from "./FooterDinos";
+import ChainStormLogo from "./ChainStormLogo";
 // const DynamicComponent = dynamic(() => import("./ConnectWallet"), { ssr: false });
 export default function Footer({
   showPopup,
@@ -70,7 +71,7 @@ export default function Footer({
             dates, giveaways and more!
           </p>
           <div className="flex  items-center mx-auto gap-4">
-            <Logo wide={false} />
+            <ChainStormLogo wide={false} />
             <div className=" ">
               <ConnectWallet
                 header
