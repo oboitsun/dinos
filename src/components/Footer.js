@@ -71,7 +71,7 @@ export default function Footer({
             dates, giveaways and more!
           </p>
           <div className="flex  items-center mx-auto gap-4">
-            <ChainStormLogo wide={false} />
+            <Logo wide={false} />
             <div className=" ">
               <ConnectWallet
                 header
