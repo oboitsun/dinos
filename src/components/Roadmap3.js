@@ -164,7 +164,7 @@ const roadmap = [
       },
       {
         isChecked: false,
-        head: `Development and design concept of 3D Dinosaurs`,
+        head: `Dino Game Simulator for internal testing`,
       },
       // {
       //   isChecked: false,
@@ -172,7 +172,7 @@ const roadmap = [
       // },
       {
         isChecked: false,
-        head: `Extra marketing done `,
+        head: `Preparing for the next NFT bull market`,
       },
     ],
   },
