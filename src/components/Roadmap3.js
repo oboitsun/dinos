@@ -150,20 +150,20 @@ const roadmap = [
     name: "Fifth stage",
     content: [
       {
-        isChecked: false,
+        isChecked: true,
         head: `Whitepaper and more information for the P2E game concept`,
       },
 
       {
-        isChecked: false,
+        isChecked: true,
         head: `Development of P2E game which the dinosaurs will be used in and to earn DINO token`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Leaderboard will be live and viewable on blockchain`,
       },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Dino Game Simulator for internal testing`,
       },
       // {
@@ -171,7 +171,7 @@ const roadmap = [
       //   head: ` Network with dinosaur groups online and off-line`,
       // },
       {
-        isChecked: false,
+        isChecked: true,
         head: `Preparing for the next NFT bull market`,
       },
     ],
