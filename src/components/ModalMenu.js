@@ -1,30 +1,34 @@
-import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
 
-import '../styles/modal-menu.scss';
-import { Link as Anchor } from 'react-scroll';
-import Socials from './Socials';
-import ConnectWallet from './ConnectWallet';
+import "../styles/modal-menu.scss";
+import { Link as Anchor } from "react-scroll";
+import Socials from "./Socials";
+import ConnectWallet from "./ConnectWallet";
 
 export default function ModalMenu({ showMenu, setShowMenu }) {
   const links = [
-    { href: 'about-us', text: 'About Us' },
-    { href: 'percs', text: 'Perks' },
-    { href: 'roadmap', text: 'Roadmap' },
+    { href: "about-us", text: "About Us" },
+    { href: "percs", text: "Perks" },
+    { href: "roadmap", text: "Roadmap" },
+    {
+      href: "https://medium.com/@icdinos/ic-dinos-dino-survival-game-d13747249ca",
+      text: "Whitepaper",
+    },
     // { href: "market", text: "Market" },
-    { href: 'faq', text: 'FAQ' },
+    { href: "faq", text: "FAQ" },
   ];
   const linkProps = {
     spy: true,
     smooth: true,
     offset: -100,
     duration: 500,
-    activeClass: 'active',
-    className: 'cursor-pointer text-white  ',
+    activeClass: "active",
+    className: "cursor-pointer text-white  ",
   };
   const cont = {
     show: {
-      height: '100vh',
+      height: "100vh",
       zIndex: 20,
       opacity: 1,
       transition: {
@@ -34,44 +38,59 @@ export default function ModalMenu({ showMenu, setShowMenu }) {
       },
     },
     hidden: {
-      height: '100vh',
+      height: "100vh",
       zIndex: 0,
       opacity: 0,
     },
   };
   useEffect(() => {
     if (showMenu && window) {
-      window.document.body.style.position = 'fixed';
+      window.document.body.style.position = "fixed";
     }
     if (!showMenu && window) {
-      window.document.body.style.position = 'static';
+      window.document.body.style.position = "static";
     }
   }, [showMenu]);
   return (
     <motion.div
       variants={cont}
       initial="hidden"
-      animate={showMenu ? 'show' : 'hidden '}
-      className={`modal-menu ${!showMenu && 'pointer-events-none'}`}
+      animate={showMenu ? "show" : "hidden "}
+      className={`modal-menu ${!showMenu && "pointer-events-none"}`}
     >
-      {links.map((l, i) => (
-        <motion.div key={i} className="text-3xl mb-5">
-          <Anchor
-            onClick={() => {
-              setShowMenu(false);
-            }}
-            to={l.href}
-            {...linkProps}
-          >
-            {l.text}
-          </Anchor>
-        </motion.div>
-      ))}
+      {links.map((l, i) => {
+        return l.text !== "whitepaper" ? (
+          <motion.div key={i} className="text-3xl mb-5">
+            <Anchor
+              onClick={() => {
+                setShowMenu(false);
+              }}
+              to={l.href}
+              {...linkProps}
+            >
+              {l.text}
+            </Anchor>
+          </motion.div>
+        ) : (
+          <motion.div key={i} className="text-3xl mb-5">
+            <a
+              // onClick={() => {
+              //   setDiscord({ show: true, what: l.text });
+              // }}
+              key={i}
+              className="anchor text-white relative top-0.5 "
+              href={l.href}
+            >
+              {l.text}
+            </a>{" "}
+          </motion.div>
+        );
+      })}
       <motion.div key={11} className="">
         <ConnectWallet />
       </motion.div>
       <motion.div key={12} className="  ">
-        <Socials big modal />{' '}
+        <Socials big modal />{" "}
       </motion.div>
       <img
         style={{ width: 64 }}

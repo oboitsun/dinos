@@ -19,7 +19,10 @@ export default function Header({
     { href: "about-us", text: "About" },
     { href: "perks", text: "Perks" },
     { href: "roadmap", text: "Roadmap" },
-    { href: "whitepaper", text: "whitepaper" },
+    {
+      href: "https://medium.com/@icdinos/ic-dinos-dino-survival-game-d13747249ca",
+      text: "whitepaper",
+    },
 
     { href: "faq", text: "FAQ" },
     // { href: "https://portal.icdinos.io/", text: "Portal" },
@@ -48,16 +51,16 @@ export default function Header({
                 {l.text}
               </Anchor>
             ) : (
-              <button
-                onClick={() => {
-                  setDiscord({ show: true, what: l.text });
-                }}
+              <a
+                // onClick={() => {
+                //   setDiscord({ show: true, what: l.text });
+                // }}
                 key={i}
                 className="anchor text-white relative top-0.5 mr-5"
                 href={l.href}
               >
                 {l.text}
-              </button>
+              </a>
             );
           })}
           <a
