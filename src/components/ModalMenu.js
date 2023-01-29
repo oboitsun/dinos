@@ -13,7 +13,7 @@ export default function ModalMenu({ showMenu, setShowMenu }) {
     { href: "roadmap", text: "Roadmap" },
     {
       href: "https://medium.com/@icdinos/ic-dinos-dino-survival-game-d13747249ca",
-      text: "Whitepaper",
+      text: "whitepaper",
     },
     // { href: "market", text: "Market" },
     { href: "faq", text: "FAQ" },
