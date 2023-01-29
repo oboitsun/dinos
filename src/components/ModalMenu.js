@@ -78,7 +78,7 @@ export default function ModalMenu({ showMenu, setShowMenu }) {
               //   setDiscord({ show: true, what: l.text });
               // }}
               key={i}
-              className="anchor text-white relative top-0.5 "
+              className=" text-white relative top-0.5 "
               href={l.href}
             >
               {l.text}
