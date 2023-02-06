@@ -156,7 +156,7 @@ const roadmap = [
 
       {
         isChecked: true,
-        head: `Development of P2E game which the dinosaurs will be used in and to earn DINO token`,
+        head: `Development of web3 game which the dinosaurs will be used in and to earn DINO tokens`,
       },
       {
         isChecked: true,
@@ -172,7 +172,7 @@ const roadmap = [
       // },
       {
         isChecked: true,
-        head: `Preparing for the next NFT bull market`,
+        head: `Project ready for the next NFT bull market`,
       },
     ],
   },

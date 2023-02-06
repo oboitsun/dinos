@@ -57,8 +57,8 @@ const nft_utils = [
   },
   {
     iconSrc: "/imgs/nft-utils/gamepad.svg",
-    heading: "P2E Game",
-    text: "Take part of the IC Dinos p2e game",
+    heading: "WEB3 Game",
+    text: "Survive daily events against other NFTs",
     style: "turf-btn",
   },
   {
