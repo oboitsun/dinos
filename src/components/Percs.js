@@ -13,7 +13,7 @@ const percs = [
   {
     icon: "/imgs/perks/coins.svg",
     btnStyle: "yellow-btn",
-    head: "Earn DINO tokens by taking place in our coming P2E game",
+    head: "Earn DINO tokens in our daily dino survival web3 game",
     text: "",
   },
   {
