@@ -132,7 +132,7 @@ const roadmap = [
     content: [
       {
         isChecked: true,
-        head: `Design concepts for the P2E game which NFTs can be used within`,
+        head: `Design concepts for the WEB3 game which NFTs can be used within`,
       },
       {
         isChecked: true,
@@ -151,7 +151,7 @@ const roadmap = [
     content: [
       {
         isChecked: true,
-        head: `Whitepaper and more information for the P2E game concept`,
+        head: `Whitepaper and more information for the WEB3 game concept`,
       },
 
       {
