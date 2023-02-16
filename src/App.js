@@ -18,6 +18,7 @@ import Percs from "./components/Percs";
 import DiscordPopup from "./components/DiscordPopup";
 import SliderDinos from "./components/SliderDinos";
 import GetToKnow from "./components/GetToKnow";
+import axios from "axios";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -31,11 +32,13 @@ export default function App() {
   };
   //scrolling listener
   useEffect(() => {
+    axios.get('https://stats-api.icdinos.com/api/game/get-last-event').then((res)=>console.log(res.data)).catch(err=>console.log(err))
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  });
+    
+  },[]);
   //connect wallet functions
 
   const props_through = {

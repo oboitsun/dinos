@@ -29,6 +29,9 @@ export default function Eggs() {
     },
   };
   return (
+    <><div className="rounded-2xl text-white  flex items-center gap-1 justify-center yellow-btn py-4 w-full mb-8 text-2xl px-3 text-center">
+     <span className="relative top-1"> completely unique generated egg designs  </span>
+    </div>
     <div className="min-h-[440px] grid grid-cols-2 lg:grid-cols-6 gap-y-8 gap-x-4">
       {eggs.map((d, i) => (
         <motion.div
@@ -54,5 +57,6 @@ export default function Eggs() {
         </motion.div>
       ))}
     </div>
+    </>
   );
 }
