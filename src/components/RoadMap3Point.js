@@ -25,7 +25,7 @@ function RoadMap3Point({ point, idx }) {
       <span className="">{p.head}</span>
     </p>
   );
-  point.name === "Fourth Stage" && console.log(firstHalf, secondHalf);
+
   return (
     <div ref={ref} className={`roadmap-point ${inView || point.isChecked ? "checked" : ""}`}>
       <div className="road-line top">

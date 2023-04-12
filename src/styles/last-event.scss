@@ -1,0 +1,129 @@
+
+.gradient-box {
+    /* Common styles */
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+    padding: 18px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, var(--gradient-color-1,red) 0%, var(--gradient-color-2,white) 100%);
+    color:var(--color, #FFF);
+    background-clip: padding-box; 
+    border: solid var(--border-width, 5px) transparent;
+    border-radius: 20px;
+    transition: all 0.3s;
+    line-height: 1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: calc(var(--border-width, 5px) * -1);
+    border-radius: inherit;
+    transition: all 0.3s;
+    background: linear-gradient(0deg, var(--gradient-color-1,red) 0%, var(--gradient-color-2,white) 100%);
+  }
+  @media (min-width:1024px) {
+    padding: 18px 76px;
+  }
+  .inner{
+    @apply flex items-center flex-col lg:flex-row gap-4 lg:gap-6;
+    font-size: 28px;
+    span{
+      position: relative;
+      top: 4px;
+    }
+  }
+  
+   .last-event{
+       &-announce{
+        font-size: 12px;
+        width: min-content;
+       }
+       &-data{
+        @apply flex items-center gap-2;
+       }
+       
+
+   }
+   .divider{
+    @apply flex-shrink-0 w-full h-px lg:w-0.5 lg:h-6;
+    background-color: var(--color,#fff);
+    
+   }
+   .play-now-link{
+    color:white;
+transition: transform 0.2s;
+&:hover{
+  transform: scale(1.02);
+}
+   }
+   
+   
+  &.drought {
+    --color:rgba(255,255,255,0.7);
+    --gradient-color-1: #FFD962;
+    --gradient-color-2:  #B0912C;
+
+  }
+  &.storm {
+    --color:rgba(255,255,255,0.7);
+    --gradient-color-1:#697DA4;
+    --gradient-color-2: #273C64;
+  }
+  &.comets {
+    --color:rgba(255,255,255,0.7);
+    --gradient-color-1:#A9724B;
+    --gradient-color-2: #5E2F14;
+  }
+  &.tsunami {
+    --color:rgba(255,255,255,0.7);
+    --gradient-color-1:#79E3DD;
+    --gradient-color-2: #52AFD7;
+  }
+  &.blizzard {
+    --color:rgba(0,0,0,0.4);
+    --gradient-color-1:#E6F0FF;
+    --gradient-color-2: #C1D1E9;
+    .play-now-link{
+      color:var(--color)
+    }
+  }
+  &.earthquake {
+    --color:rgba(255,255,255,0.7);
+    --gradient-color-1:#4F411B;
+    --gradient-color-2: #342909;
+  }
+  &.hurricane {
+    --color:rgba(255,255,255,0.7);
+    --gradient-color-1:#AACBEA;
+    --gradient-color-2: #3E7EBA;
+  }
+  &.volcano {
+    --color:rgba(255,255,255,0.7);
+    --gradient-color-1:#8A7A4D;
+    --gradient-color-2: #5E5029;
+  }
+  &.fire {
+    --color:rgba(255,255,255,0.7);
+    --gradient-color-1:#E72828;
+    --gradient-color-2: #8C1313;
+  }
+  &.flood {
+    --color:rgba(255,255,255,0.7);
+    --gradient-color-1:#2897E7;
+    --gradient-color-2: #2C48A9;
+  }
+  &.ice-age,&.default {
+    --color:rgba(0, 0, 0, 0.5);
+    --gradient-color-1:#F4F4F4;
+    --gradient-color-2: #D0D0D0;
+    .play-now-link{
+      color:var(--color)
+    }
+  }
+ 
+}
+ 

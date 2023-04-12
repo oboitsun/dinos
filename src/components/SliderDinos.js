@@ -31,7 +31,6 @@ export default function SliderDinos({ setLegend, idx }) {
     if (width > 480) {
       perView = 5;
     }
-    console.log(perView);
 
     window.addEventListener("resize", () => {
       if (width <= 480) {
@@ -40,7 +39,6 @@ export default function SliderDinos({ setLegend, idx }) {
       if (width > 480) {
         perView = 5;
       }
-      console.log(perView);
     });
     setSlidesPerView(perView);
   }, []);

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Timer from "./Timer";
 // import dynamic from "next/dynamic";
 import ConnectWallet from "./ConnectWallet";
+import LastEventInfo from "./LastEventInfo";
 // const DynamicComponent = dynamic(() => import("./ConnectWallet"), { ssr: false });
 export default function WelcomeTo({
   setShowPopup,
@@ -42,8 +43,13 @@ export default function WelcomeTo({
       <span className="text-lg mb-2 text-center  text-white leading-none">
         An NFT based dinosaur project of 8888 dinos on the ICP blockchain
       </span>
+
       <motion.div className="pb-5 lg:pb-0" variants={item} key={4}>
         <Timer />
+      </motion.div>
+      <motion.div className="pb-5 lg:pb-0" variants={item} key={4}>
+        {" "}
+        <LastEventInfo />{" "}
       </motion.div>
       <motion.div
         variants={item}

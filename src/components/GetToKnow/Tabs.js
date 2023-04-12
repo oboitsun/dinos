@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Tabs({ currTab, setCurrTab, tabs }) {
   const [currTabIndex, setCurrTabIndex] = React.useState(tabs.findIndex((t) => t.tab === currTab));
-  console.log(currTabIndex);
+
   return (
     <div
       style={{ gridTemplateColumns: `repeat(${tabs.length},1fr)` }}

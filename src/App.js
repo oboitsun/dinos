@@ -32,14 +32,11 @@ export default function App() {
   };
   //scrolling listener
   useEffect(() => {
-    axios.get('https://stats-api.icdinos.com/api/game/get-last-event').then((res)=>console.log(res.data)).catch(err=>console.log(err))
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-    
-  },[]);
-  //connect wallet functions
+  }, []);
 
   const props_through = {
     showPopup,

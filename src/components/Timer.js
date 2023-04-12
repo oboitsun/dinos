@@ -22,7 +22,7 @@ export default function Timer() {
     };
   });
   return (
-    <div className=" flex items-center  mb-4 lg:mb-6  relative ">
+    <div className=" flex items-center  mb-2 relative ">
       {dayX < today ? (
         <a
           href="https://entrepot.app/sale/icdinos"
