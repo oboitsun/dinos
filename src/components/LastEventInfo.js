@@ -91,7 +91,7 @@ export default function LastEventInfo() {
           </div>
         </div>
         <div className="divider"></div>
-        <a className="play-now-link" href="https://game.icdinos.com">
+        <a className="play-now-link" href="https://portal.icdinos.io">
           <span>play now</span>
         </a>
       </div>
