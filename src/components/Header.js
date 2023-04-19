@@ -20,7 +20,7 @@ export default function Header({
     { href: "perks", text: "Perks" },
     { href: "roadmap", text: "Roadmap" },
     {
-      href: "https://medium.com/@icdinos/ic-dinos-dino-survival-game-d13747249ca",
+      href: "/white-paper-icdinos.pdf",
       text: "whitepaper",
     },
 
