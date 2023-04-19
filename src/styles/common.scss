@@ -27,13 +27,17 @@
   }
   .btn-entrepot {
     font-family: "Luckiest Guy", sans-serif;
-    font-size: 36px;
-    padding: 12px 24px !important;
-    @media (max-width: 768px) {
-      font-size: 20px;
+    font-size: 20px;
+    padding: 8px 12px !important;
+    width: 100%;
+    @media (min-width: 1024px) {
+      padding: 12px 24px !important;
+      font-size: 36px;
     }
   }
   .btn-discord {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
     background: #3a3a3a;
   }
   .btn-mint {

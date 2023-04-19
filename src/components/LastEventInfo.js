@@ -78,21 +78,27 @@ export default function LastEventInfo() {
 
   return (
     <div className={`gradient-box ${currEvent.name}`}>
-      <div className="inner">
-        <div className="flex gap-6 items-center">
-          <p className="last-event-announce">
+      <div className="inner mx-auto">
+        <div className="flex gap-6 items-center ">
+          <p className="hidden lg:block last-event-announce text-[8px]">
             <span>last event</span>
           </p>
           <div className="last-event-data">
-            <img src={currEvent.imgSrc} className={"last-event-icon"} alt={currEvent.label} />
-            <p className="last-event-name">
-              <span>{currEvent.label}</span>
-            </p>
+            <img src={currEvent.imgSrc} className={"last-event-icon w-7"} alt={currEvent.label} />
+            <div>
+              <p className="last-event-name">
+                <p className="lg:hidden block last-event-announce min-w-max text-[8px]">
+                  <span>last event</span>
+                </p>
+                <span>{currEvent.label}</span>
+              </p>
+            </div>
           </div>
         </div>
-        <div className="divider"></div>
-        <a className="play-now-link" href="https://portal.icdinos.io">
-          <span>play now</span>
+        <div className="divider "></div>
+        <a className="play-now-link " href="https://portal.icdinos.io">
+          <span className="lg:hidden block ">play </span>
+          <span className="hidden lg:block">now </span>
         </a>
       </div>
     </div>

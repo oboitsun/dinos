@@ -40,21 +40,21 @@ export default function WelcomeTo({
           alt="IC Dinos  logo"
         /> */}
       </motion.p>
-      <span className="text-lg mb-2 text-center  text-white leading-none">
+      <span className="lg:text-lg mb-2 text-center  text-white leading-none">
         An NFT based dinosaur project of 8888 dinos on the ICP blockchain
       </span>
-
-      <motion.div className="pb-5 lg:pb-0" variants={item} key={4}>
-        <Timer />
-      </motion.div>
-      <motion.div className="pb-5 lg:pb-0" variants={item} key={4}>
+      <motion.div className="pb-3 " variants={item} key={3}>
         {" "}
         <LastEventInfo />{" "}
       </motion.div>
+      <motion.div className="pb-3  w-full lg:w-auto" variants={item} key={4}>
+        <Timer />
+      </motion.div>
+
       <motion.div
         variants={item}
         key={5}
-        className="w-full lg:w-auto connect-wallet z-20 flex flex-col lg:flex-row items-center  gap-3"
+        className="w-full lg:w-auto connect-wallet z-20 grid grid-cols-2 lg:flex lg:flex-row items-center  gap-3"
       >
         <ConnectWallet
           showPopup={showPopup}
@@ -74,7 +74,7 @@ export default function WelcomeTo({
         </a>{" "}
         <img
           style={{ width: 64 }}
-          className="block   h-auto"
+          className="block   h-auto col-span-2  mx-auto"
           src="/imgs/dfinity-logo.png"
           alt="dfinity-blockchain"
         />

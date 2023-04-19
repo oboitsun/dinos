@@ -26,7 +26,7 @@ export default function Timer() {
       {dayX < today ? (
         <a
           href="https://entrepot.app/sale/icdinos"
-          className="btn btn-entrepot text-2xl lg:text-4xl text-white"
+          className="btn btn-entrepot text-xl lg:text-4xl text-white"
         >
           <span className="relative top-1">Buy Now on Entrepot</span>
         </a>
