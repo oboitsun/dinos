@@ -1,7 +1,7 @@
 
 .gradient-box {
     /* Common styles */
-    @apply flex p-3 lg:p-4 items-center m-1 lg:m-2.5 relative;
+    @apply flex p-3 lg:p-4 items-center m-1  relative;
     box-sizing: border-box;
     background: linear-gradient(180deg, var(--gradient-color-1,red) 0%, var(--gradient-color-2,white) 100%);
     color:var(--color, #FFF);

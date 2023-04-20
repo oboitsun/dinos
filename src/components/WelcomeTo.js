@@ -43,11 +43,14 @@ export default function WelcomeTo({
       <span className="lg:text-lg mb-2 text-center  text-white leading-none">
         An NFT based dinosaur project of 8888 dinos on the ICP blockchain
       </span>
+      <motion.div className="  w-full lg:w-auto hidden lg:block" variants={item} key={4}>
+        <Timer />
+      </motion.div>
       <motion.div className="pb-3 " variants={item} key={3}>
         {" "}
         <LastEventInfo />{" "}
       </motion.div>
-      <motion.div className="pb-3  w-full lg:w-auto" variants={item} key={4}>
+      <motion.div className="pb-3  w-full lg:w-auto lg:hidden " variants={item} key={4}>
         <Timer />
       </motion.div>
 

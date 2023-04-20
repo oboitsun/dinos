@@ -96,9 +96,10 @@ export default function LastEventInfo() {
           </div>
         </div>
         <div className="divider "></div>
-        <a className="play-now-link " href="https://portal.icdinos.io">
-          <span className=" block ">play </span>
-          <span className="hidden lg:block">now </span>
+        <a className="play-now-link min-w-max inline" href="https://portal.icdinos.io">
+          <span>
+            play <b className="hidden lg:inline"> now</b>
+          </span>
         </a>
       </div>
     </div>
