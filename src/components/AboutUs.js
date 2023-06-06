@@ -5,6 +5,7 @@ import "../styles/about-us.scss";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import AboutUsEggItem from "./AboutUsEggItem";
+import DelayedRender from "./DelayRender";
 
 const dinos = [
   { dino: "/imgs/dinos/1.png", egg: "/imgs/eggs/1.png", back: "/imgs/nftBacks/1.jpg" },
@@ -22,44 +23,46 @@ export default function AboutUs({ setDiscord }) {
   const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.5 });
   return (
     <div id="about-us" className="pt-12">
-      <div className="my-container relative  lg:pb-16">
-        <div className="grid lg:grid-cols-2 gap-10">
-          <div className="flex flex-col ">
-            <Heading>
-              <div className="flex justify-center lg:justify-start">
-                <div
-                  ref={ref}
-                  className={`relative z-20 text-left block text-orange relative ${
-                    inView ? "shadow-show" : "shadow-none"
-                  }`}
-                >
-                  8888 Unique <br /> NFT Dinosaur <br /> Eggs to Hatch
+      <DelayedRender delay={500}>
+        <div className="my-container relative  lg:pb-16">
+          <div className="grid lg:grid-cols-2 gap-10">
+            <div className="flex flex-col ">
+              <Heading>
+                <div className="flex justify-center lg:justify-start">
+                  <div
+                    ref={ref}
+                    className={`relative z-20 text-left block text-orange relative ${
+                      inView ? "shadow-show" : "shadow-none"
+                    }`}
+                  >
+                    8888 Unique <br /> NFT Dinosaur <br /> Eggs to Hatch
+                  </div>
                 </div>
-              </div>
-            </Heading>
-            <SubHeading>
-              IC Dinos is an NFT collection on the DFINITY Internet Computer blockchain centered
-              around hatchable and oh-so-adorable dinosaurs that make up the Dino Planet. Each dino
-              egg is unique and owned 100% by you. Your eggs will hatch when ready onto a baby
-              dinosaur and then grow into a teen and adult in time. Enjoy the journey!
-            </SubHeading>
-            <a
-              //   onClick={() => {
-              //     setDiscord({ show: true, what: 'discord' });
-              //   }}
-              className="bg-black w-max text-white leading-none py-4 px-6 rounded-full cursor-pointer mt-2 hover:bg-orange transition-all duration-500"
-              href="https://discord.gg/icdinos"
-            >
-              <span className="relative top-1">join the community</span>
-            </a>
-          </div>
-          <div ref={ref2} className="grid grid-cols-4 gap-2 self-start">
-            {dinos.map((item, i) => (
-              <AboutUsEggItem key={i} i={i} inView2={inView2} item={item} />
-            ))}
+              </Heading>
+              <SubHeading>
+                IC Dinos is an NFT collection on the DFINITY Internet Computer blockchain centered
+                around hatchable and oh-so-adorable dinosaurs that make up the Dino Planet. Each
+                dino egg is unique and owned 100% by you. Your eggs will hatch when ready onto a
+                baby dinosaur and then grow into a teen and adult in time. Enjoy the journey!
+              </SubHeading>
+              <a
+                //   onClick={() => {
+                //     setDiscord({ show: true, what: 'discord' });
+                //   }}
+                className="bg-black w-max text-white leading-none py-4 px-6 rounded-full cursor-pointer mt-2 hover:bg-orange transition-all duration-500"
+                href="https://discord.gg/icdinos"
+              >
+                <span className="relative top-1">join the community</span>
+              </a>
+            </div>
+            <div ref={ref2} className="grid grid-cols-4 gap-2 self-start">
+              {dinos.map((item, i) => (
+                <AboutUsEggItem key={i} i={i} inView2={inView2} item={item} />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </DelayedRender>
     </div>
   );
 }

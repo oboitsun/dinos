@@ -22,7 +22,8 @@
     "react-swipeable": "^6.2.0",
     "sass": "^1.45.1",
     "swiper": "6.8.4",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",

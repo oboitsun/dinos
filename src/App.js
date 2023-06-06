@@ -9,18 +9,16 @@ import FAQ from "./components/FAQ";
 import ContactUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
-// import Team from './components/Team';
-// import Roadmap from './components/Roadmap';
 import NFTUtils from "./components/NFTUtils";
-// import Roadmap2 from './components/Roadmap2';
 import Roadmap3 from "./components/Roadmap3";
 import Percs from "./components/Percs";
 import DiscordPopup from "./components/DiscordPopup";
 import SliderDinos from "./components/SliderDinos";
-import GetToKnow from "./components/GetToKnow";
-import axios from "axios";
+import LoadingScreen from "./components/LoadingScreen";
+import WebFont from "webfontloader";
 
 export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const [scrolled, setScrolled] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [userAddress, setUserAddress] = useState("");
@@ -37,7 +35,16 @@ export default function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ["Luckiest Guy:300,400,500,700", "sans-serif"], // Add the desired Google Font families here
+      },
+      active: () => {
+        setIsLoading(false);
+      },
+    });
+  }, []);
   const props_through = {
     showPopup,
     showDiscord,
@@ -47,7 +54,7 @@ export default function App() {
     userAddress,
   };
 
-  return (
+  return !isLoading ? (
     <div className=" relative overflow-hidden app">
       <div id="top"></div>
       <Header
@@ -84,35 +91,37 @@ export default function App() {
 
       {/* <Roadmap2 /> */}
       {/* <Roadmap /> */}
-      <LazyLoadComponent delayTime={200}>
-        <div className=" lg:py-20 bg-faq relative">
-          <img
-            style={{ zIndex: 1 }}
-            className="w-full h-full object-cover absolute top-0 left-0 z-auto"
-            src="/imgs/turf.svg"
-            alt="turf"
-          />{" "}
-          <img
-            style={{ zIndex: 3 }}
-            className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 "
-            src="/imgs/border4.svg"
-            alt="border"
-          />
-          {/* <div className="bg-gradient-to-b from-faq to-transparent absolute w-full h-10 top-0 left-0 "></div>
-        <div className="bg-gradient-to-t from-faq to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div> */}
-          <div
-            style={{ zIndex: 2 }}
-            className="my-container grid lg:grid-cols-2 gap-10  relative z-auto "
-          >
-            <FAQ />
-            <ContactUs />
-          </div>
+
+      <div className=" lg:py-20 bg-faq relative">
+        <img
+          style={{ zIndex: 1 }}
+          className="w-full h-full object-cover absolute top-0 left-0 z-auto"
+          src="/imgs/turf.svg"
+          alt="turf"
+        />{" "}
+        <img
+          style={{ zIndex: 3 }}
+          className="w-full h-auto absolute bottom-0 transform translate-y-1/2 left-0 "
+          src="/imgs/border4.svg"
+          alt="border"
+        />
+        {/* <div className="bg-gradient-to-b from-faq to-transparent absolute w-full h-10 top-0 left-0 "></div>
+      <div className="bg-gradient-to-t from-faq to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div> */}
+        <div
+          style={{ zIndex: 2 }}
+          className="my-container grid lg:grid-cols-2 gap-10  relative z-auto "
+        >
+          <FAQ />
+          <ContactUs />
         </div>
-      </LazyLoadComponent>
+      </div>
+
       <Footer {...props_through} />
       <DiscordPopup showDiscord={showDiscord} setDiscord={setDiscord} />
       <ComingSoonPopUp showPopup={showPopup} setShowPopup={setShowPopup} />
       <ModalMenu showMenu={showMenu} setShowMenu={setShowMenu} />
     </div>
+  ) : (
+    <LoadingScreen />
   );
 }

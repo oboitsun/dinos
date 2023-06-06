@@ -4,6 +4,7 @@ import "../styles/faq.scss";
 import Heading from "./Heading";
 import SubHeading from "./SubHeading";
 import { useInView } from "react-intersection-observer";
+import DelayedRender from "./DelayRender";
 
 const faqs = [
   {
@@ -43,8 +44,9 @@ export default function FAQ() {
   const { ref, inView } = useInView({ threshold: 0.5 });
   return (
     <div id="faq" className="relative">
-      <div className=" relative">
-        {/* <img
+      <DelayedRender delay={1200}>
+        <div className=" relative">
+          {/* <img
           className=" absolute top-0 right-full ml-10 w-1/12"
           src="/imgs/turf3.png"
           alt="turf"
@@ -59,27 +61,29 @@ export default function FAQ() {
           src="/imgs/bone.png"
           alt="bone"
         /> */}
-        <div className="">
-          <Heading>
-            <div className="flex justify-center">
-              <span
-                ref={ref}
-                className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}
-              >
-                FAQ'S <span className="map absolute right-0 bottom-0">'S</span>
-              </span>
-            </div>
-          </Heading>
-          <SubHeading>
-            Some answers to the questions you may have about the IC Dinos project and NFT collection
-          </SubHeading>
+          <div className="">
+            <Heading>
+              <div className="flex justify-center">
+                <span
+                  ref={ref}
+                  className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}
+                >
+                  FAQ'S <span className="map absolute right-0 bottom-0">'S</span>
+                </span>
+              </div>
+            </Heading>
+            <SubHeading>
+              Some answers to the questions you may have about the IC Dinos project and NFT
+              collection
+            </SubHeading>
+          </div>
+          <div className="grid grid-cols-1  gap-4 lg:gap-4 w-full">
+            {faqs.map((f, i) => (
+              <FaqItem key={i} {...f} />
+            ))}
+          </div>
         </div>
-        <div className="grid grid-cols-1  gap-4 lg:gap-4 w-full">
-          {faqs.map((f, i) => (
-            <FaqItem key={i} {...f} />
-          ))}
-        </div>
-      </div>
+      </DelayedRender>
     </div>
   );
 }

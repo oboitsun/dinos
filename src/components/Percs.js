@@ -3,6 +3,7 @@ import Heading from "./Heading";
 import "../styles/Percs.scss";
 import { useInView } from "react-intersection-observer";
 import GetToKnow from "./GetToKnow";
+import DelayedRender from "./DelayRender";
 const percs = [
   {
     icon: "/imgs/perks/badge.svg",
@@ -59,27 +60,29 @@ function Percs() {
 
       {/* <div className="bg-gradient-to-b from-team to-transparent absolute w-full h-10 top-0 left-0 "></div>
       <div className="bg-gradient-to-t from-team to-transparent absolute w-full h-20 bottom-0 left-0  z-10"></div> */}
-      <div className="my-container relative  ">
-        <Heading>
-          <span ref={ref} className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}>
-            Perks for NFT Holders
-          </span>
-        </Heading>
+      <DelayedRender delay={900}>
+        <div className="my-container relative  ">
+          <Heading>
+            <span ref={ref} className={`relative  block ${inView ? "shadow-show" : "shadow-none"}`}>
+              Perks for NFT Holders
+            </span>
+          </Heading>
 
-        <div className="grid lg:grid-cols-3 gap-9 mt-9">
-          {percs.map((p, i) => (
-            <div key={i} className="flex">
-              <div
-                className={`${p.btnStyle} w-20 h-20 rounded-2xl flex items-center justify-center mr-4 flex-shrink-0`}
-              >
-                <img className="w-10 h-10" src={p.icon} alt="icon" />
+          <div className="grid lg:grid-cols-3 gap-9 mt-9">
+            {percs.map((p, i) => (
+              <div key={i} className="flex">
+                <div
+                  className={`${p.btnStyle} w-20 h-20 rounded-2xl flex items-center justify-center mr-4 flex-shrink-0`}
+                >
+                  <img className="w-10 h-10" src={p.icon} alt="icon" />
+                </div>
+                <p className="text-white leading-relaxed">{p.head}</p>
               </div>
-              <p className="text-white leading-relaxed">{p.head}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-      <GetToKnow />
+        <GetToKnow />
+      </DelayedRender>
     </div>
   );
 }
