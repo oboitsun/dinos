@@ -3,7 +3,11 @@ import Logo from "./Logo";
 import { motion } from "framer-motion";
 export default function LoadingScreen() {
   return (
-    <div className="min-h-screen flex h-full w-full justify-center items-center bg-turf">
+    <motion.div
+      key={1}
+      exit={{ opacity: 0, y: "100vh" }}
+      className="min-h-screen flex h-full w-full justify-center items-center"
+    >
       <motion.div
         initial={{ y: "50vh", opacity: 0 }}
         animate={{ y: "0vh", opacity: 1 }}
@@ -12,6 +16,6 @@ export default function LoadingScreen() {
       >
         <Logo />
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
