@@ -1,23 +1,22 @@
-import React, { useState, useEffect } from "react";
-import "./styles/common.scss";
-import HeroSection from "./components/HeroSection";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import ModalMenu from "./components/ModalMenu";
-import ComingSoonPopUp from "./components/ComingSoonPopUp";
-import FAQ from "./components/FAQ";
-import ContactUs from "./components/ContactUs";
-import AboutUs from "./components/AboutUs";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
-import NFTUtils from "./components/NFTUtils";
-import Roadmap3 from "./components/Roadmap3";
-import Percs from "./components/Percs";
-import DiscordPopup from "./components/DiscordPopup";
-import SliderDinos from "./components/SliderDinos";
-import LoadingScreen from "./components/LoadingScreen";
-import WebFont from "webfontloader";
+import { Analytics } from "@vercel/analytics/react";
 import { AnimatePresence, motion } from "framer-motion";
-
+import React, { useEffect, useState } from "react";
+import WebFont from "webfontloader";
+import AboutUs from "./components/AboutUs";
+import ComingSoonPopUp from "./components/ComingSoonPopUp";
+import ContactUs from "./components/ContactUs";
+import DiscordPopup from "./components/DiscordPopup";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import LoadingScreen from "./components/LoadingScreen";
+import ModalMenu from "./components/ModalMenu";
+import NFTUtils from "./components/NFTUtils";
+import Percs from "./components/Percs";
+import Roadmap3 from "./components/Roadmap3";
+import SliderDinos from "./components/SliderDinos";
+import "./styles/common.scss";
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [scrolled, setScrolled] = useState(false);
@@ -57,14 +56,14 @@ export default function App() {
 
   return (
     <div className="bg-turf min-h-screen w-full">
+      <Analytics />
       <AnimatePresence exitBeforeEnter>
         {!isLoading ? (
           <motion.div
             initial={{ filter: "blur(40px)" }}
             animate={{ filter: "blur(0px)" }}
             key={0}
-            className=" relative overflow-hidden app bg-turf"
-          >
+            className=" relative overflow-hidden app bg-turf">
             <div id="top"></div>
             <Header
               {...props_through}
@@ -118,8 +117,7 @@ export default function App() {
       <div className="bg-gradient-to-t from-faq to-transparent absolute w-full h-10 bottom-0 left-0 z-10"></div> */}
               <div
                 style={{ zIndex: 2 }}
-                className="my-container grid lg:grid-cols-2 gap-10  relative z-auto "
-              >
+                className="my-container grid lg:grid-cols-2 gap-10  relative z-auto ">
                 <FAQ />
                 <ContactUs />
               </div>
