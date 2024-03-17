@@ -1,12 +1,10 @@
 import React from "react";
 
-import Logo from "./Logo";
-import { Link as Anchor } from "react-scroll";
 import "../styles/footer.scss";
-import Socials from "./Socials";
 import ConnectWallet from "./ConnectWallet";
 import FooterDinos from "./FooterDinos";
-import ChainStormLogo from "./ChainStormLogo";
+import Logo from "./Logo";
+import Socials from "./Socials";
 // const DynamicComponent = dynamic(() => import("./ConnectWallet"), { ssr: false });
 export default function Footer({
   showPopup,
@@ -43,8 +41,7 @@ export default function Footer({
   return (
     <div
       style={{ minHeight: rockHeight + 60, height: "100%" }}
-      className="footer bg-footer py-16 relative z-10 h-full overflow-hidden"
-    >
+      className="footer bg-footer py-16 relative z-10 h-full overflow-hidden">
       <img
         className="w-full h-auto object-cover absolute top-0 left-0 z-10 pointer-events-none"
         src="/imgs/turf.svg"
@@ -69,6 +66,12 @@ export default function Footer({
           <p className=" max-w-2xl text-center  text-white leading-loose">
             Head over to our Discord and Twitter to keep up with the latest information on release
             dates, giveaways and more!
+          </p>
+          <p className="text-xs italic text-center font-sans text-white">
+            Kindly be aware that investing in NFTs can carry financial risks. The floor price may
+            fluctuate unpredictably, and there are no assurances of profitability. While we commit
+            to fulfilling our promises as detailed in our roadmap, purchasing entails inherent risk.
+            IC Dinos does not offer refunds, replacements, or guarantees.
           </p>
           <div className="flex  items-center mx-auto gap-4">
             <Logo wide={false} />
