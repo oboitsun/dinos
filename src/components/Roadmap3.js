@@ -1,9 +1,9 @@
 import React from "react";
-import Heading from "./Heading";
-import SubHeading from "./SubHeading";
-import "../styles/roadmap3.scss";
 import { useInView } from "react-intersection-observer";
+import "../styles/roadmap3.scss";
+import Heading from "./Heading";
 import RoadMap3Point from "./RoadMap3Point";
+import SubHeading from "./SubHeading";
 const roadmap = [
   {
     isChecked: true,
@@ -170,10 +170,6 @@ const roadmap = [
       //   isChecked: false,
       //   head: ` Network with dinosaur groups online and off-line`,
       // },
-      {
-        isChecked: true,
-        head: `Project ready for the next NFT bull market`,
-      },
     ],
   },
 ];
