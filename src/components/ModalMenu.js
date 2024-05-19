@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import React, { useEffect } from "react";
 
-import "../styles/modal-menu.scss";
 import { Link as Anchor } from "react-scroll";
-import Socials from "./Socials";
+import "../styles/modal-menu.scss";
 import ConnectWallet from "./ConnectWallet";
+import Socials from "./Socials";
 
-export default function ModalMenu({ showMenu, setShowMenu }) {
+export default function ModalMenu({ showMenu, setShowMenu, setShowLore }) {
   const links = [
     { href: "about-us", text: "About Us" },
     { href: "percs", text: "Perks" },
@@ -56,36 +56,41 @@ export default function ModalMenu({ showMenu, setShowMenu }) {
       variants={cont}
       initial="hidden"
       animate={showMenu ? "show" : "hidden "}
-      className={`modal-menu ${!showMenu && "pointer-events-none"}`}
-    >
+      className={`modal-menu w-screen ${!showMenu && "pointer-events-none"}`}>
       {links.map((l, i) => {
         return l.text !== "whitepaper" ? (
-          <motion.div key={i} className="text-3xl mb-5">
+          <motion.div key={i} className="text-3xl">
             <Anchor
               onClick={() => {
                 setShowMenu(false);
               }}
               to={l.href}
-              {...linkProps}
-            >
+              {...linkProps}>
               {l.text}
             </Anchor>
           </motion.div>
         ) : (
-          <motion.div key={i} className="text-3xl mb-5">
+          <motion.div key={i} className="text-3xl ">
             <a
               // onClick={() => {
               //   setDiscord({ show: true, what: l.text });
               // }}
               key={i}
               className=" text-white relative top-0.5 "
-              href={l.href}
-            >
+              href={l.href}>
               {l.text}
             </a>{" "}
           </motion.div>
         );
       })}
+      <button
+        onClick={() => {
+          setShowMenu(false);
+          setShowLore(true);
+        }}
+        className="text-3xl text-white">
+        story
+      </button>
       <motion.div key={11} className="">
         <ConnectWallet />
       </motion.div>

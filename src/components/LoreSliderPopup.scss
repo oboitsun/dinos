@@ -1,0 +1,21 @@
+.lore-slide {
+  .slide-img-container {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    padding-bottom: 46.7%;
+  }
+  .slide-img {
+    border: 5px solid #8a7c4e;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 53.7%;
+
+    img {
+      @apply absolute w-full h-full object-cover;
+    }
+  }
+}

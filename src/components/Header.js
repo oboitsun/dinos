@@ -1,9 +1,8 @@
-import Burger from "./Burger";
-import Logo from "./Logo";
 import { Link as Anchor } from "react-scroll";
 import "../styles/header.scss";
+import Burger from "./Burger";
+import Logo from "./Logo";
 import Socials from "./Socials";
-import ConnectWallet from "./ConnectWallet";
 
 export default function Header({
   setDiscord,
@@ -11,6 +10,7 @@ export default function Header({
   setShowPopup,
   userAddress,
   setUserAddress,
+  setShowLore,
   showMenu,
   setShowMenu,
   scrolled,
@@ -57,18 +57,23 @@ export default function Header({
                 // }}
                 key={i}
                 className="anchor text-white relative top-0.5 mr-5"
-                href={l.href}
-              >
+                href={l.href}>
                 {l.text}
               </a>
             );
           })}
           <a
             href="https://portal.icdinos.io/"
-            className="anchor text-white  relative top-0.5  mr-5"
-          >
+            className="anchor text-white  relative top-0.5  mr-5">
             Portal
           </a>
+          <button
+            onClick={() => {
+              setShowLore(true);
+            }}
+            className="anchor text-white relative top-0.5">
+            story
+          </button>
         </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
         <div className="hidden lg:flex lg:w-1/4 text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center  flex-shrink-0 min-w-max">
@@ -81,8 +86,7 @@ export default function Header({
           /> */}
           <a
             className="bg-orange text-white px-3 py-3 rounded-full  "
-            href="https://portal.icdinos.io/"
-          >
+            href="https://portal.icdinos.io/">
             <span className="relative top-0.5">Go to Portal</span>
           </a>
           <Socials setDiscord={setDiscord} />

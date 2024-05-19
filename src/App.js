@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import LoadingScreen from "./components/LoadingScreen";
+import LoreSliderPopup from "./components/LoreSliderPopup";
 import ModalMenu from "./components/ModalMenu";
 import NFTUtils from "./components/NFTUtils";
 import Percs from "./components/Percs";
@@ -24,6 +25,7 @@ export default function App() {
   const [userAddress, setUserAddress] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [showDiscord, setDiscord] = useState({ show: false, what: "discord" });
+  const [showLore, setShowLore] = useState(false);
   const handleScroll = (e) => {
     if (e.target.scrollingElement.scrollTop < 10) setScrolled(false);
     if (e.target.scrollingElement.scrollTop >= 10) setScrolled(true);
@@ -70,6 +72,7 @@ export default function App() {
               setShowMenu={setShowMenu}
               showMenu={showMenu}
               scrolled={scrolled}
+              setShowLore={setShowLore}
             />
             <HeroSection {...props_through} />
             <div className="about-section relative bg-lightTurf py-10">
@@ -126,7 +129,8 @@ export default function App() {
             <Footer {...props_through} />
             <DiscordPopup showDiscord={showDiscord} setDiscord={setDiscord} />
             <ComingSoonPopUp showPopup={showPopup} setShowPopup={setShowPopup} />
-            <ModalMenu showMenu={showMenu} setShowMenu={setShowMenu} />
+            <ModalMenu showMenu={showMenu} setShowMenu={setShowMenu} setShowLore={setShowLore} />
+            <LoreSliderPopup showLore={showLore} setShowLore={setShowLore} />
           </motion.div>
         ) : (
           <LoadingScreen />

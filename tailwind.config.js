@@ -15,6 +15,9 @@ module.exports = {
       "2xl": "1600px",
     },
     extend: {
+      borderRadius: {
+        20: "20px",
+      },
       colors: {
         khaki: "#9c8d5e",
         orange: "#e8b72c",
