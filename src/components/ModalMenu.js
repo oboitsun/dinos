@@ -83,6 +83,17 @@ export default function ModalMenu({ showMenu, setShowMenu, setShowLore }) {
           </motion.div>
         );
       })}
+      <motion.div key={10} className="text-3xl ">
+        <a
+          // onClick={() => {
+          //   setDiscord({ show: true, what: l.text });
+          // }}
+
+          className=" text-white relative top-0.5 "
+          href="https://portal.icdinos.io/">
+          Portal
+        </a>{" "}
+      </motion.div>
       <button
         onClick={() => {
           setShowMenu(false);

@@ -124,7 +124,14 @@
       background: linear-gradient(0deg, rgba(191, 172, 112, 1), rgba(191, 172, 112, 0));
     }
   }
-
+  .orange-btn-sm {
+    background: linear-gradient(180deg, #ff9400 0%, #cc7703 100%);
+    border: 2px solid #9b6418;
+  }
+  .yellow-btn-sm {
+    background: linear-gradient(180deg, #e7b628 0%, #a9892c 100%);
+    border: 2px solid #a58115;
+  }
   @media (min-width: 1024px) {
     .special-grid {
       gap: 40px;

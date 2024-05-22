@@ -62,21 +62,9 @@ export default function Header({
               </a>
             );
           })}
-          <a
-            href="https://portal.icdinos.io/"
-            className="anchor text-white  relative top-0.5  mr-5">
-            Portal
-          </a>
-          <button
-            onClick={() => {
-              setShowLore(true);
-            }}
-            className="anchor text-white relative top-0.5">
-            story
-          </button>
         </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
-        <div className="hidden lg:flex lg:w-1/4 text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center  flex-shrink-0 min-w-max">
+        <div className="hidden lg:flex lg:w-1/4 text-xs xl:text-base font-bold lg:gap-6   items-center  flex-shrink-0 min-w-max">
           {/* <ConnectWallet
             header
             showPopup={showPopup}
@@ -84,10 +72,17 @@ export default function Header({
             setUserAddress={setUserAddress}
             userAddress={userAddress}
           /> */}
+          <button
+            onClick={() => {
+              setShowLore(true);
+            }}
+            className="orange-btn-sm text-white py-1.5 px-3 leading-none rounded-lg">
+            <span className="relative top-0.5"> story</span>
+          </button>
           <a
-            className="bg-orange text-white px-3 py-3 rounded-full  "
+            className="yellow-btn-sm text-white py-1.5 leading-none rounded-lg px-3 "
             href="https://portal.icdinos.io/">
-            <span className="relative top-0.5">Go to Portal</span>
+            <span className="relative top-0.5"> Portal</span>
           </a>
           <Socials setDiscord={setDiscord} />
         </div>
