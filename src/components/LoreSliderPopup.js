@@ -52,7 +52,7 @@ const lore = [
 ];
 SwiperCore.use([Navigation, EffectFade]);
 export default function LoreSliderPopup({ showLore, setShowLore }) {
-  const [slideCount, setSlideCount] = useState(1);
+  const [slideCount, setSlideCount] = useState(0);
   useEffect(() => {
     if (showLore) {
       document.body.style.overflow = "hidden";
@@ -62,6 +62,7 @@ export default function LoreSliderPopup({ showLore, setShowLore }) {
   }, [showLore]);
   const handleClose = () => {
     setShowLore(false);
+    setSlideCount(0);
   };
   return (
     <div
@@ -75,7 +76,7 @@ export default function LoreSliderPopup({ showLore, setShowLore }) {
           <p className="text-stroke-sm text-white text-3xl ">
             ic dinos story{" "}
             <span className="text-orange">
-              {slideCount}/{lore?.length}
+              {slideCount + 1}/{lore?.length}
             </span>
           </p>
           <button className="popup-close " onClick={handleClose}>
@@ -86,11 +87,11 @@ export default function LoreSliderPopup({ showLore, setShowLore }) {
         <div className="w-full overflow-hidden relative">
           <Swiper
             onSlideChange={(e) => {
-              setSlideCount(e.activeIndex + 1);
+              setSlideCount(e.activeIndex);
             }}
             effect="fade"
             fadeEffect={{ crossFade: true }}
-            initialSlide={0}
+            initialSlide={slideCount}
             className="swiper"
             centeredSlides
             spaceBetween={0}
