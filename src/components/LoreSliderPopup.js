@@ -53,6 +53,7 @@ const lore = [
 SwiperCore.use([Navigation, EffectFade]);
 export default function LoreSliderPopup({ showLore, setShowLore }) {
   const [slideCount, setSlideCount] = useState(0);
+  const [swiper, setSwiper] = useState();
   useEffect(() => {
     if (showLore) {
       document.body.style.overflow = "hidden";
@@ -63,10 +64,11 @@ export default function LoreSliderPopup({ showLore, setShowLore }) {
   const handleClose = () => {
     setShowLore(false);
     setSlideCount(0);
+    swiper.slideTo(0);
   };
   return (
     <div
-      className={`fixed top-0 left-0 bg-black bg-opacity-50 w-screen    h-screen overflow-hidden flex justify-center items-center transition-all ${
+      className={`fixed top-0 left-0 bg-black bg-opacity-50 w-screen    h-[100svh] overflow-hidden flex justify-center items-center transition-all ${
         showLore ? "opacity-100 z-30" : "opacity-0 pointer-events-none"
       }`}>
       <div
@@ -86,6 +88,10 @@ export default function LoreSliderPopup({ showLore, setShowLore }) {
 
         <div className="w-full overflow-hidden relative">
           <Swiper
+            onSwiper={(sw) => {
+              console.log(sw);
+              setSwiper(sw);
+            }}
             onSlideChange={(e) => {
               setSlideCount(e.activeIndex);
             }}
@@ -142,7 +148,7 @@ export default function LoreSliderPopup({ showLore, setShowLore }) {
         </div>
         <button
           onClick={handleClose}
-          className="w-full border-4 border-black rounded-20 text-white py-6 bg-black bg-opacity-75 text-center text-3xl leading-none">
+          className="w-full border-4 border-black rounded-xl xl:rounded-20 text-white py-2 xl:py-6 bg-black bg-opacity-75 text-center text-lg xl:text-3xl leading-none">
           <span className="relative top-1">Close</span>
         </button>
       </div>

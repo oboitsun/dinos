@@ -1,5 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
+import React from "react";
 import Timer from "./Timer";
 // import dynamic from "next/dynamic";
 import ConnectWallet from "./ConnectWallet";
@@ -28,8 +28,7 @@ export default function WelcomeTo({
       <motion.p
         variants={item}
         key={1}
-        className="title flex flex-col items-center  text-center mb-2 relative"
-      >
+        className="title flex flex-col items-center  text-center mb-2 relative">
         <span className="text-white "> Hatch.grow.play.</span>
 
         <span className="title-big">Enter the Dino-verse now</span>
@@ -57,24 +56,22 @@ export default function WelcomeTo({
       <motion.div
         variants={item}
         key={5}
-        className="w-full lg:w-auto connect-wallet z-20 grid grid-cols-2 lg:flex lg:flex-row items-center  gap-3"
-      >
+        className="w-full lg:w-auto connect-wallet z-20 grid grid-cols-2 lg:flex lg:flex-row items-center  gap-3">
         <ConnectWallet
           showPopup={showPopup}
           setShowPopup={setShowPopup}
           setUserAddress={setUserAddress}
           userAddress={userAddress}
         />
-        <a
+        <button
           href="https://discord.gg/icdinos"
-          //   onClick={() => {
-          //     setDiscord({ show: true, what: 'discord' });
-          //   }}
-          className="btn btn-discord w-full"
-        >
+          onClick={() => {
+            setDiscord({ show: true, what: "discord" });
+          }}
+          className="btn btn-discord w-full">
           {" "}
           Join The Discord
-        </a>{" "}
+        </button>{" "}
         <img
           style={{ width: 64 }}
           className="block   h-auto col-span-2  mx-auto"
