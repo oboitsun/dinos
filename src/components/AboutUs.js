@@ -1,11 +1,10 @@
 import React from "react";
-import Heading from "./Heading";
-import SubHeading from "./SubHeading";
-import "../styles/about-us.scss";
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+import "../styles/about-us.scss";
 import AboutUsEggItem from "./AboutUsEggItem";
 import DelayedRender from "./DelayRender";
+import Heading from "./Heading";
+import SubHeading from "./SubHeading";
 
 const dinos = [
   { dino: "/imgs/dinos/1.png", egg: "/imgs/eggs/1.png", back: "/imgs/nftBacks/1.jpg" },
@@ -33,8 +32,7 @@ export default function AboutUs({ setDiscord }) {
                     ref={ref}
                     className={`relative z-20 text-left block text-orange relative ${
                       inView ? "shadow-show" : "shadow-none"
-                    }`}
-                  >
+                    }`}>
                     8888 Unique <br /> NFT Dinosaur <br /> Eggs to Hatch
                   </div>
                 </div>
@@ -50,8 +48,7 @@ export default function AboutUs({ setDiscord }) {
                 //     setDiscord({ show: true, what: 'discord' });
                 //   }}
                 className="bg-black w-max text-white leading-none py-4 px-6 rounded-full cursor-pointer mt-2 hover:bg-orange transition-all duration-500"
-                href="https://discord.gg/icdinos"
-              >
+                href="https://discord.com/invite/icdinosofficial">
                 <span className="relative top-1">join the community</span>
               </a>
             </div>

@@ -14,11 +14,11 @@ export default function Socials({ big = false, setDiscord }) {
           />
         </svg>
       </a> */}
-      <button
-        // href="https://discord.gg/icdinos"
-        onClick={() => {
-          setDiscord({ show: true, what: "discord" });
-        }}
+      <a
+        href="https://discord.com/invite/icdinosofficial"
+        // onClick={() => {
+        //   setDiscord({ show: true, what: "discord" });
+        // }}
         className={`socials-icon ${big ? "w-10" : "w-5"}`}>
         <svg
           className="fill-current w-full"
@@ -32,7 +32,7 @@ export default function Socials({ big = false, setDiscord }) {
             fill="current"
           />
         </svg>
-      </button>
+      </a>
       <a className={`socials-icon ${big ? "w-10" : "w-5"}`} href="https://twitter.com/icdinos">
         <svg
           className="fill-current w-full"
