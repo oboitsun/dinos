@@ -85,7 +85,7 @@ export default function Footer({
               />
             </div>
           </div>
-          <p className="text-white lg:hidden text-center py-5">2021 © IC Dinos</p>
+          <p className="text-white lg:hidden text-center py-5">IC Dinos 22</p>
           {/* <div className="hidden lg:flex text-xs xl:text-base font-bold lg:gap-8 xl:gap-10 items-center">
             {links.map((l, i) => (
               <Anchor key={i} to={l.href} {...linkProps}>
